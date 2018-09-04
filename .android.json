@@ -1,0 +1,1 @@
+{"layout": null, "package": "meiji.yuri", "include_pil": false, "numeric_version": "1", "expansion": false, "name": "meiji wa yuri", "source": false, "icon_name": "meiji wa yuri", "version": "0.1", "target_version": 14, "permissions": ["VIBRATE"], "include_sqlite": false, "store": "none", "orientation": "sensorLandscape"}

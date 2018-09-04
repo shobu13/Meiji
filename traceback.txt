@@ -1,0 +1,27 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 569, in script call
+    "Alors que le Japon était resté sur un modèle féodal fermé, dirigé par une lignée de puissants Shogun pendant près de deux siècles, la récente guerre a permis à l’empereur de retrouver son pouvoir."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+ScriptError: could not find label 'test'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 569, in script call
+    "Alors que le Japon était resté sur un modèle féodal fermé, dirigé par une lignée de puissants Shogun pendant près de deux siècles, la récente guerre a permis à l’empereur de retrouver son pouvoir."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "<string>", line 1, in script
+  File "C:\renpy\renpy\ast.py", line 1600, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\renpy\renpy\script.py", line 873, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'test'.
+
+Windows-8-6.2.9200
+Ren'Py 7.0.0.196
+Ezo2 1.0
+Mon Jul 23 14:17:23 2018

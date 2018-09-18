@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1610: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
-    label fin_prologue:
+File "game/screens.rpy", line 474: end of line expected.
+    if main_menu:
     ^
 
 Ren'Py Version: Ren'Py 7.0.0.196
-Tue Jul 24 13:03:16 2018
+Tue Sep 18 23:37:10 2018

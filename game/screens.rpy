@@ -361,50 +361,21 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        pass
+    imagemap:
+        ground "gui/meiji_menup_idle.png"
+        hover "gui/meiji_menup_hover.png"
+
+        hotspot (99, 94, 134, 62) action ShowMenu("load")
+        hotspot (46, 272, 250, 49) action Start()
+        hotspot (100, 354, 125, 55) action ShowMenu("preferences")
+        hotspot (106, 444, 118, 52) action Start()
+        hotspot (110, 531, 107, 37) action ShowMenu("about")
+        hotspot (199, 631, 93, 32) action Quit(confirm=False)
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    # use navigation
 
-    if gui.show_name:
-
-        vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
-
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
-style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text
-
-style main_menu_frame:
-    xsize 280
-    yfill True
-
-    background "gui/overlay/main_menu.png"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -20
-    xmaximum 800
-    yalign 1.0
-    yoffset -20
-
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
-
-style main_menu_title:
-    properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
 
 
 ## Écran du menu de jeu ########################################################
@@ -1524,8 +1495,3 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 600
-
-
-
-
-

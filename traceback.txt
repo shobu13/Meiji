@@ -1,27 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 569, in script call
-    "Alors que le Japon était resté sur un modèle féodal fermé, dirigé par une lignée de puissants Shogun pendant près de deux siècles, la récente guerre a permis à l’empereur de retrouver son pouvoir."
-  File "renpy/common/00console.rpy", line 765, in script call
-    python in _console:
-ScriptError: could not find label 'test'.
+  File "renpy/common/00start.rpy", line 203, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 446, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 446, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 456, in _execute_python_hide
+    renpy.load("_reload-2")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 569, in script call
-    "Alors que le Japon était resté sur un modèle féodal fermé, dirigé par une lignée de puissants Shogun pendant près de deux siècles, la récente guerre a permis à l’empereur de retrouver son pouvoir."
-  File "renpy/common/00console.rpy", line 765, in script call
-    python in _console:
-  File "<string>", line 1, in script
-  File "C:\renpy\renpy\ast.py", line 1600, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\renpy\renpy\script.py", line 873, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'test'.
+  File "renpy/common/00start.rpy", line 203, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 446, in script
+    python hide:
+  File "C:\renpy\renpy\ast.py", line 862, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\renpy\renpy\python.py", line 1912, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00keymap.rpy", line 446, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 456, in _execute_python_hide
+    renpy.load("_reload-2")
+  File "C:\renpy\renpy\loadsave.py", line 728, in load
+    log.unfreeze(roots, label="_after_load")
+  File "C:\renpy\renpy\python.py", line 1867, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "C:\renpy\renpy\python.py", line 1696, in rollback
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 Windows-8-6.2.9200
 Ren'Py 7.0.0.196
 Ezo2 1.0
-Mon Jul 23 14:17:23 2018
+Tue Sep 18 23:40:12 2018

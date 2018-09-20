@@ -37,4 +37,4 @@ Exception: Couldn't find a place to stop rolling back. Perhaps the script change
 Windows-8-6.2.9200
 Ren'Py 7.0.0.196
 Ezo2 1.0
-Tue Sep 18 23:40:12 2018
+Thu Sep 20 22:08:20 2018

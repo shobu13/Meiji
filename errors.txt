@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 474: end of line expected.
-    if main_menu:
-    ^
+File "game/screens.rpy", line 292: screen expects a non-empty block.
+    screen navigation():
+                        ^
 
 Ren'Py Version: Ren'Py 7.0.0.196
-Tue Sep 18 23:37:10 2018
+Thu Sep 20 22:06:15 2018

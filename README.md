@@ -1,3 +1,3 @@
 Ezo2
 
-blu o/
+~~blu o/~~

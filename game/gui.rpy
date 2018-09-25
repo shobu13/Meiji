@@ -24,23 +24,23 @@ init python:
 
 ## Une couleur utilisée dans l’interface pour mettre l’accent sur un texte
 ## (surbrillance).
-define gui.accent_color = '#0099cc'
+define gui.accent_color = '#c17526'
 
 ## La couleur utilisée pour le texte d’un bouton quand il n’a jamais été
 ## sélectionné ou survolé.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#c17526'
 
 ## La petite couleur est utilisé pour les textes courts qui nécessitent d’être
 ## assombris ou éclairés pour obtenir le même effet.
 define gui.idle_small_color = '#aaaaaa'
 
 ## Cette couleur est utilisée pour les boutons et les barres qui sont survolées.
-define gui.hover_color = '#66c1e0'
+define gui.hover_color = '#40270d'
 
 ## Cette couleur est utilisé pour le texte d’un bouton sélectionné, mais qui n’a
 ## pas le focus. Un bouton est sélectionné s’il est sur l’écran actuel ou si
 ## c’est la valeur de préférence.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#000000'
 
 ## La couleur utilisée pour le texte d’un bouton qui ne peut pas être
 ## sélectionné.
@@ -66,7 +66,7 @@ define gui.text_font = "DejaVuSans.ttf"
 define gui.name_text_font = "DejaVuSans.ttf"
 
 ## Les polices utilisées pour les textes « hors du jeu ».
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "gui/Sofia-Regular.otf"
 
 ## La taille normale pour les dialogues.
 define gui.text_size = 22
@@ -230,8 +230,8 @@ define gui.choice_button_text_hover_color = "#ffffff"
 ## button, comme les autres types de bouton.
 
 ## Le bouton d’emplacement de sauvegarde.
-define gui.slot_button_width = 276
-define gui.slot_button_height = 206
+define gui.slot_button_width = 217
+define gui.slot_button_height = 195
 define gui.slot_button_borders = Borders(10, 10, 10, 10)
 define gui.slot_button_text_size = 14
 define gui.slot_button_text_xalign = 0.5
@@ -241,8 +241,8 @@ define gui.slot_button_text_selected_hover_color = gui.hover_color
 
 ## La largeur et la hauteur des vignettes de sauvegarde utilisée pour les
 ## emplacements de sauvegarde.
-define config.thumbnail_width = 256
-define config.thumbnail_height = 144
+define config.thumbnail_width = 197
+define config.thumbnail_height = 139
 
 ## Le nombre de colonnes et de lignes pour la grille des emplacements de
 ## sauvegarde.
@@ -281,7 +281,7 @@ define gui.pref_button_spacing = 0
 define gui.page_spacing = 0
 
 ## L’espacement entre les emplacements de sauvegarde.
-define gui.slot_spacing = 10
+define gui.slot_spacing = 40
 
 ## The position of the main menu text.
 define gui.main_menu_text_xalign = 1.0
@@ -321,7 +321,7 @@ define gui.frame_tile = False
 ## des barres, des ascenseurs et des curseurs verticaux.
 define gui.bar_size = 25
 define gui.scrollbar_size = 12
-define gui.slider_size = 25
+define gui.slider_size = 36
 
 ## « True » (Vrai)  si les images de barres doivent être en mosaïques.
 ## « False »(Faux) si elles doivent être mise à l'échelle (étirement).
@@ -484,6 +484,3 @@ init python:
 
         gui.nvl_button_width = 1240
         gui.nvl_button_xpos = 20
-
-
-

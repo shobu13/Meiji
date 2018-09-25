@@ -568,6 +568,10 @@ init:
     $ bar_ok = False
     $ cuisine_ok = False
 
+    # relations
+    $relation_akie = 0
+    $relation_sei = 0
+
 define connards = Character("connards")
 
 # Le jeu commence ici
@@ -1644,6 +1648,7 @@ label start:
             show clateau B1 S3 Y4 at right
             with dissolve
             clateau "Je vais te laisser. À demain."
+            jump salle_ch1
         "La cuisine":
             show ezo B2 S3 Y3 at left, xflip
             with dissolve

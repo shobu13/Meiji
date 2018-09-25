@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 292: screen expects a non-empty block.
-    screen navigation():
-                        ^
+File "game/screens.rpy", line 713: expected a keyword argument or end of line.
+    style expos 200
+                ^
 
-Ren'Py Version: Ren'Py 7.0.0.196
-Thu Sep 20 22:06:15 2018
+Ren'Py Version: Ren'Py 7.1.0.882
+Sun Sep 23 18:03:36 2018

@@ -290,65 +290,47 @@ style quick_button_text:
 ## fournit l’accès aux autres menus et permet le démarrage du jeu.
 
 screen navigation():
+    if main_menu:
+        imagemap:
+            ground "gui/meiji_menubar_main_idle.png"
+            idle "gui/meiji_menubar_main_idle.png"
+            hover "gui/meiji_menubar_main_hover.png"
+            selected_idle "gui/meiji_menubar_main_idle.png"
 
-    imagemap:
-        ground "gui/meiji_menubar_main_idle.png"
-        hover "gui/meiji_menubar_main_hover.png"
+            # charger partie
+            hotspot (99, 94, 134, 62) action ShowMenu("load")
+            # nouvelle partie
+            hotspot (46, 272, 250, 49) action Start()
+            # options
+            hotspot (100, 354, 125, 55) action ShowMenu("preferences")
+            # galerie
+            hotspot (106, 444, 118, 52) action Start()
+            # credits
+            hotspot (110, 531, 107, 37) action ShowMenu("about")
+            # quitter
+            hotspot (199, 631, 93, 32) action Quit()
+    else:
+        imagemap:
+            ground "gui/meiji_menubar_idle.png"
+            idle "gui/meiji_menubar_idle.png"
+            hover "gui/meiji_menubar_hover.png"
+            selected_idle "gui/meiji_menubar_idle.png"
 
-        hotspot (99, 94, 134, 62) action Start()
+            # charger partie
+            hotspot (99, 94, 134, 62) action ShowMenu("load")
+            # sauvegarde
+            hotspot (71, 186, 197, 53) action ShowMenu("save")
+            # nouvelle partie
+            hotspot (46, 272, 250, 49) action Start()
+            # options
+            hotspot (100, 354, 125, 55) action ShowMenu("preferences")
+            # galerie
+            hotspot (106, 444, 118, 52) action Start()
+            # credits
+            hotspot (110, 531, 107, 37) action ShowMenu("about")
+            # quitter
+            hotspot (199, 631, 93, 32) action Quit()
 
-#     vbox:
-#         style_prefix "navigation"
-#
-#         xpos gui.navigation_xpos
-#         yalign 0.5
-#
-#         spacing gui.navigation_spacing
-#
-#         if main_menu:
-#
-#             textbutton _("Nouvelle partie") action Start()
-#
-#         else:
-#
-#             textbutton _("Historique") action ShowMenu("history")
-#
-#             textbutton _("Sauvegarde") action ShowMenu("save")
-#
-#         textbutton _("Charger") action ShowMenu("load")
-#
-#         textbutton _("Préférences") action ShowMenu("preferences")
-#
-#         if _in_replay:
-#
-#             textbutton _("Fin de la rediffusion") action EndReplay(confirm=True)
-#
-#         elif not main_menu:
-#
-#             textbutton _("Menu principal") action MainMenu()
-#
-#         textbutton _("À propos") action ShowMenu("about")
-#
-#         if renpy.variant("pc"):
-#
-#             ## L'aide n’est ni nécessaire ni pertinante sur les appareils
-#             ## mobiles.
-#             textbutton _("Aide") action ShowMenu("help")
-#
-#             ## Le bouton pour quitter est banni sur iOs et n'est pas nécessaire
-#             ## sur Android.
-#             textbutton _("Quitter") action Quit(confirm=not main_menu)
-#
-#
-# style navigation_button is gui_button
-# style navigation_button_text is gui_button_text
-#
-# style navigation_button:
-#     size_group "navigation"
-#     properties gui.button_properties("navigation_button")
-#
-# style navigation_button_text:
-#     properties gui.button_text_properties("navigation_button")
 
 
 ## Écran du menu principal #####################################################
@@ -366,9 +348,6 @@ screen main_menu():
 
     add gui.main_menu_background
 
-    ## This empty frame darkens the main menu.
-    frame:
-        pass
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
@@ -425,11 +404,7 @@ style main_menu_version:
 screen game_menu(title, scroll=None, yinitial=0.0):
 
     style_prefix "game_menu"
-
-    if main_menu:
-        add gui.main_menu_background
-    else:
-        add gui.game_menu_background
+    add gui.game_menu_background
 
     frame:
         style "game_menu_outer_frame"
@@ -483,7 +458,8 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
         action Return()
 
-    label title
+    label title:
+        xpos 660
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
@@ -506,7 +482,6 @@ style game_menu_outer_frame:
     bottom_padding 30
     top_padding 120
 
-    background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
     xsize 280
@@ -731,7 +706,7 @@ screen preferences():
     use game_menu(_("Préférences"), scroll="viewport"):
 
         vbox:
-
+            xpos 100
             hbox:
                 box_wrap True
 

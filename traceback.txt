@@ -1,40 +1,68 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 203, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 446, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 446, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 456, in _execute_python_hide
-    renpy.load("_reload-2")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+Exception: DynamicImage u'gui/slider/horizontal_[prefix_]thumb.png': could not find image. (u'gui/slider/horizontal_hover_thumb.png', u'gui/slider/horizontal_thumb.png')
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 203, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 446, in script
-    python hide:
-  File "C:\renpy\renpy\ast.py", line 862, in execute
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "C:\renpy\renpy\ast.py", line 882, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\renpy\renpy\python.py", line 1912, in py_exec_bytecode
+  File "C:\renpy\renpy\python.py", line 1913, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "renpy/common/00keymap.rpy", line 446, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 456, in _execute_python_hide
-    renpy.load("_reload-2")
-  File "C:\renpy\renpy\loadsave.py", line 728, in load
-    log.unfreeze(roots, label="_after_load")
-  File "C:\renpy\renpy\python.py", line 1867, in unfreeze
-    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
-  File "C:\renpy\renpy\python.py", line 1696, in rollback
-    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "C:\renpy\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\renpy\renpy\display\core.py", line 2662, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\renpy\renpy\display\core.py", line 3049, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\screen.py", line 428, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 521, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy\renpy\display\core.py", line 511, in visit_all
+    for d in self.visit():
+  File "C:\renpy\renpy\display\image.py", line 720, in visit
+    self.find_target()
+  File "C:\renpy\renpy\display\image.py", line 634, in find_target
+    raise Exception(error)
+Exception: DynamicImage u'gui/slider/horizontal_[prefix_]thumb.png': could not find image. (u'gui/slider/horizontal_hover_thumb.png', u'gui/slider/horizontal_thumb.png')
 
 Windows-8-6.2.9200
-Ren'Py 7.0.0.196
-Ezo2 1.0
-Thu Sep 20 22:08:20 2018
+Ren'Py 7.1.0.882
+Meiji 1.0
+Sun Sep 23 18:24:37 2018

@@ -6,7 +6,7 @@ scene bg grenier
 hide ezo
 with dissolve
 ezo "Aaaah, il va falloir que je me lève. Commençons cette nouvelle vie sur de bonnes bases, soldat !"
-show ezo Mi
+show ezo Mi B3 S1 Y1
 # TODONE Ezo porte son uniforme de militaire
 "Motivée, elle enfila son uniforme, et sortit de sa chambre, descendant les escaliers deux à deux et arriva en cuisine."
 scene bg cuisine

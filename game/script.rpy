@@ -669,6 +669,7 @@ label start:
     ezo "Pas la peine. En plus, je…"
     show akie B2 S1 Y2 at right
     with dissolve
+    $akie_nom = "Akié"
     akie "Laisse, je te dois bien ça pour ce que tu as fait. Ah ! Au fait, je m'appelle Akié, et toi ?"
     show ezo B2 S2 Y4 at left, xflip
     with dissolve
@@ -698,6 +699,7 @@ label start:
     akie "Oui, oui Yoshino... "
     hide yoshino
     with dissolve
+    $yoshino_nom = "Yoshino"
     yoshino "Je connais ce ton… T’as encore ramené un chat sauvage, c’est ça ?!"
     # on ne montre toujours pas le sprite de Yoshino là
     hide akie
@@ -829,6 +831,7 @@ label start:
     "Yoshino attrapa Akié par le col de sa tunique et la tira vers la salle. Clateau resta seul avec Ezo dans un coin du bar."
     show clateau B3 S1 Y1 at right
     with dissolve
+    $clateau_nom = "Clateau"
     clateau "Alors ? Tu as choisis de venir finalement ?"
     show ezo B4 S2 Y2 at left, xflip
     with dissolve

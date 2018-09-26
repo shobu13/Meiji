@@ -1,96 +1,80 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While parsing game/scripts/salle/chap1.rpy.
-  File "game/script.rpy", line 582, in script call
-    "Les puissances occidentales, la France et le Royaume-Uni ont chacune aidées un camp, les Français aidant le pouvoir shogunal, et les britanniques les impériaux."
-  File "renpy/common/00console.rpy", line 765, in script call
+While running game code:
+  File "game/script.rpy", line 581, in script call
+    "Nous sommes en 1870, à Tokyo, capitale nouvellement renommée de l’Empire du Japon. Depuis peu, le pays s’ouvre aux techniques étrangères, et de nombreux occidentaux parcourent ses rues."
+  File "renpy/common/00console.rpy", line 765, in script
     python in _console:
-  File "game/scripts/salle/chap1.rpy", line 8, in script
-    ezo "Aaaah, il va falloir que je me lève. Commençons cette nouvelle vie sur de bonnes bases, soldat !"
-  File "renpy/common/00director.rpy", line 1308, in event
-    rv = self.child.event(ev, x, y, st)
-  File "renpy/common/00director.rpy", line 1250, in __call__
-    update_ast()
-  File "renpy/common/00director.rpy", line 457, in update_ast
-    renpy.scriptedit.add_to_ast_before(statement, state.filename, linenumber)
-  File "game/script.rpy", line 582, in script call
-    "Les puissances occidentales, la France et le Royaume-Uni ont chacune aidées un camp, les Français aidant le pouvoir shogunal, et les britanniques les impériaux."
-  File "renpy/common/00console.rpy", line 765, in script call
-    python in _console:
-ScriptError: could not find label '('<string>', 1537918247, 0)'.
+  File "renpy/common/00console.rpy", line 766, in <module>
+    console.interact()
+  File "renpy/common/00console.rpy", line 325, in interact
+    line = ui.interact()
+Exception: Backslash in filename, use '/' instead: u'gui\\Sofia-Regular.otf'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 582, in script call
-    "Les puissances occidentales, la France et le Royaume-Uni ont chacune aidées un camp, les Français aidant le pouvoir shogunal, et les britanniques les impériaux."
-  File "renpy/common/00console.rpy", line 765, in script call
+  File "game/script.rpy", line 581, in script call
+    "Nous sommes en 1870, à Tokyo, capitale nouvellement renommée de l’Empire du Japon. Depuis peu, le pays s’ouvre aux techniques étrangères, et de nombreux occidentaux parcourent ses rues."
+  File "renpy/common/00console.rpy", line 765, in script
     python in _console:
-  File "game/scripts/salle/chap1.rpy", line 8, in script
-    ezo "Aaaah, il va falloir que je me lève. Commençons cette nouvelle vie sur de bonnes bases, soldat !"
-  File "C:\renpy\renpy\ast.py", line 678, in execute
-    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
-  File "C:\renpy\renpy\exports.py", line 1203, in say
-    who(what, *args, **kwargs)
-  File "C:\renpy\renpy\character.py", line 1027, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\renpy\renpy\character.py", line 819, in do_display
-    **display_args)
-  File "C:\renpy\renpy\character.py", line 568, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\renpy\renpy\ast.py", line 882, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\renpy\renpy\python.py", line 1913, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00console.rpy", line 766, in <module>
+    console.interact()
+  File "renpy/common/00console.rpy", line 325, in interact
+    line = ui.interact()
   File "C:\renpy\renpy\ui.py", line 289, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\renpy\renpy\display\core.py", line 2662, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\renpy\renpy\display\core.py", line 3467, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "C:\renpy\renpy\display\layout.py", line 995, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy\renpy\display\layout.py", line 995, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy\renpy\display\layout.py", line 995, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy\renpy\display\screen.py", line 697, in event
-    rv = self.child.event(ev, x, y, st)
-  File "C:\renpy\renpy\display\layout.py", line 995, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/common/00director.rpy", line 1308, in event
-    rv = self.child.event(ev, x, y, st)
-  File "C:\renpy\renpy\display\layout.py", line 241, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "C:\renpy\renpy\display\layout.py", line 995, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy\renpy\display\layout.py", line 995, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy\renpy\display\layout.py", line 995, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy\renpy\display\layout.py", line 995, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy\renpy\display\behavior.py", line 907, in event
-    return handle_click(self.clicked)
-  File "C:\renpy\renpy\display\behavior.py", line 842, in handle_click
-    rv = run(action)
-  File "C:\renpy\renpy\display\behavior.py", line 315, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00director.rpy", line 1250, in __call__
-    update_ast()
-  File "renpy/common/00director.rpy", line 457, in update_ast
-    renpy.scriptedit.add_to_ast_before(statement, state.filename, linenumber)
-  File "C:\renpy\renpy\scriptedit.py", line 358, in add_to_ast_before
-    renpy.game.log.replace_node(old, block[0])
-  File "C:\renpy\renpy\python.py", line 1423, in replace_node
-    i.context.replace_node(old, new)
-  File "game/script.rpy", line 582, in script call
-    "Les puissances occidentales, la France et le Royaume-Uni ont chacune aidées un camp, les Français aidant le pouvoir shogunal, et les britanniques les impériaux."
-  File "renpy/common/00console.rpy", line 765, in script call
-    python in _console:
-  File "C:\renpy\renpy\execution.py", line 318, in replace_one
-    n = renpy.game.script.lookup(name)
-  File "C:\renpy\renpy\script.py", line 873, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label '('<string>', 1537918247, 0)'.
+  File "C:\renpy\renpy\display\core.py", line 3148, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\renpy\renpy\display\core.py", line 2065, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 487, in renpy.display.render.render_screen
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\renpy\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\renpy\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\renpy\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\renpy\renpy\display\motion.py", line 179, in render
+    child = render(self.child, width, height, st, at)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\renpy\renpy\display\image.py", line 497, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\renpy\renpy\display\image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\renpy\renpy\text\text.py", line 1846, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\renpy\renpy\text\text.py", line 594, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\renpy\renpy\text\text.py", line 240, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "C:\renpy\renpy\text\font.py", line 666, in get_font
+    face = load_face(fn)
+  File "C:\renpy\renpy\text\font.py", line 582, in load_face
+    font_file = renpy.loader.load(fn)
+  File "C:\renpy\renpy\loader.py", line 567, in load
+    raise Exception("Backslash in filename, use '/' instead: %r" % name)
+Exception: Backslash in filename, use '/' instead: u'gui\\Sofia-Regular.otf'
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 Meiji 1.0
-Wed Sep 26 01:38:11 2018
+Wed Sep 26 18:43:22 2018

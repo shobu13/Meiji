@@ -5,6 +5,7 @@
 
 #backgrounds
 
+image bg main_gui = "gui/main_menu.png"
 image bg ciel = "bg/bg_ciel.png"
 image bg ruelle = "bg/bg_ruelle.jpg"
 image bg bar = "bg/bg_bar.jpg"

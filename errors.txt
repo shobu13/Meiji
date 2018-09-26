@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 713: expected a keyword argument or end of line.
-    style expos 200
-                ^
+The label salle_ch1 is defined twice, at
+  File "game/scripts/salle/chap1.rpyc", line 1 and
+  File "game/scripts/salle/salle_ch1.rpy", line 1.
 
 Ren'Py Version: Ren'Py 7.1.0.882
-Sun Sep 23 18:03:36 2018
+Wed Sep 26 18:38:31 2018

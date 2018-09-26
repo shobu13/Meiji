@@ -810,7 +810,7 @@ if relation_sei > relation_akie:
     "Sei remis un papier blanc plié en quatre, en expliquant qu’il s’agissait de son adresse, et d’un plan, pour ne pas qu’Ezo se perde."
     "Cette dernière protesta un peu sur ce point, mais elle la remercia et lui promit d’être à l’heure."
 else:
-    # TODO : à déclencher Si beaucoup de point Akié
+    # TODONE : à déclencher Si beaucoup de point Akié
     scene bg bar
     "Yoshino fut calmée pour la fin de la journée. Après le service, Akié vint voir Ezo."
     show akie B1 S1 Y2 at right
@@ -829,3 +829,4 @@ else:
     with dissolve
     akie "Super ! Je te rejoindrai devant le restaurant alors."
     "Ezo répondit évasivement. Elle avait peu l’habitude de ce genre de sociabilisation."
+    jump akie_ch2

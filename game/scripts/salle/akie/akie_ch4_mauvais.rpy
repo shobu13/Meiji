@@ -42,3 +42,6 @@ with dissolve
 ezo "Je vois."
 "Elle passa le reste de la semaine sans parler. Les autres aussi étaient encore sous le choc, et personne ne la dérangea."
 "Un matin, Ezo n’était plus dans sa chambre. Il n’y avait qu’une lettre, de quelques mots, qui expliquait à Clateau qu’elle retournait dans l’armée. Elle ne revint plus jamais au restaurant."
+show bg Black
+with dissolve
+jump credits

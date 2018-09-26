@@ -14,3 +14,6 @@ show akie B1 S1 Y4 at right
 with dissolve
 akie "Tu as réussi, mon chaton !"
 "Akié se pencha encore un peu plus, et elle posa ses lèvres sur celles d’Ezo."
+show bg Black
+with dissolve
+jump credits

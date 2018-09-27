@@ -6,11 +6,15 @@
 #backgrounds
 
 image bg main_gui = "gui/main_menu.png"
-image bg ciel = "bg/bg_ciel.png"
-image bg ruelle = "bg/bg_ruelle.jpg"
+image bg wafu = "bg/bg_japonaise.jpg"
+image bg cuisine = "bg/bg_cuisine.jpg"
 image bg bar = "bg/bg_bar.jpg"
-image bg chambre = "bg/bg_chambre.jpg"
 image bg grenier = "bg/bg_grenier.jpg"
+image bg salle = "bg/bg_salle.jpg"
+image bg port = "bg/bg_port.jpg"
+image bg rue = "bg/bg_ruelle.jpg"
+image bg chambre = "bg/bg_chambre.jpg"
+image bg ciel = "bg/bg_ciel.png"
 image bg salle = "bg/bg_salle.jpg"
 image bg White = "#ffffff"
 image bg Black = '#000000'

@@ -115,7 +115,7 @@ with dissolve
 show tsugumi B6 S3 Y4 at right
 with dissolve
 tsugumi "C’est de belles enflures même."
-show tsugumi B6 S3 Y6:droite at center
+show tsugumi B6 S3 Y6 at right
 with dissolve
 tsugumi "À l’usine aussi, ils nous mettent une pression de dingue ! Si je pouvais, je me révolterais, et ils feraient moins les malins !"
 show ezo B1 S3 Y2 at left, xflip

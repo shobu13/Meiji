@@ -506,6 +506,8 @@ with dissolve
 "Akié se sentait un peu plus en confiance. Elle avait maintenant des sentiments contraires envers Ezo : son coté maternelle lui faisait protéger et s’occuper d’Ezo,"
 "et dans le même temps elle appréciait que ce soit elle qui la protège dans des situations comme celle-ci. Elle finit par en rire ; peut-être se posait-elle trop de questions."
 # fondu en noir
+show bg Black
+with dissolve
 "Les jours passèrent, et Akié et Ezo se retrouvèrent encore une fois à nourrir des animaux derrière le restaurant."
 show akie B4 S2 Y2 eH at right
 with dissolve

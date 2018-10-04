@@ -375,4 +375,6 @@ with dissolve
 ezo "Moi aussi."
 "Akié la quitta en lui faisant un petit geste de la main tout en s’éloignant. Ezo la regardait partir. Elle savait qu’elle aimait Akié, et cet épisode rocambolesque le lui avait définitivement confirmé."
 
+show bg Black
+with dissolve
 jump akie_ch4_bon

@@ -576,4 +576,6 @@ with dissolve
 "Elle se contenta de lui sourire, et une fois devant le restaurant, Akié reparti chez elle."
 "Ezo, remontée sans sa chambre, s’endormi en repensant à la journée. Elle était contente d’avoir une amie, quelqu’un qui la comprenait."
 
+show bg Black
+with dissolve
 jump akie_ch3

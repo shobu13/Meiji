@@ -616,4 +616,6 @@ with dissolve
 sei "Et la prochaine fois que tu doutes ainsi, tu peux m’en parler !"
 "Ezo acquiesça sans bruit. Elle était vraiment heureuse d’avoir trouvé une amie et même plus."
 
+show bg Black
+with dissolve
 jump sei_ch3

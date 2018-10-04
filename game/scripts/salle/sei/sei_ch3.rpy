@@ -279,7 +279,9 @@ menu:
     " Ne t’inquiète pas, je suis là pour toi":
         pass
     " J’ai demandé à Ran et Clateau de s’occuper de la partie administrative. On pourra vaincre ce gouvernement !":
-        pass
+        show bg Black
+        with dissolve
+        jump sei_ch4_mauvais
 # Si « ne t’inquiète pas, je suis là pour toi » sinon MAUVAIS CHAPITRE
 "Ezo fixait Sei après sa déclaration."
 "Comme elle ne répondait pas et qu’elle continuait à la fixer, Ezo commença à rougir un peu."
@@ -379,4 +381,6 @@ show akie B1 S2 Y4 at right
 with dissolve
 akie "Aaaah, Ezo, ça suffit les câlins !"
 
+show bg Black
+with dissolve
 jump sei_ch4_bon

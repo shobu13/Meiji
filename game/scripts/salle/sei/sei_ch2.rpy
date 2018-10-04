@@ -542,7 +542,7 @@ with dissolve
 hide ran
 with dissolve
 "Ezo et Ran commencèrent à parler de littérature, d’auteurs, et Tsugumi était petit à petit mise hors de la discussion, si bien qu’à la fin elle se concentra uniquement sur ses pintes de bières."
-show tsugumi (B1 S1 Y2 at right
+show tsugumi B1 S1 Y2 at right
 with dissolve
 tsugumi "Pfff, tout cela est bien trop compliqué pour moi ! Allez, ressert moi en une, Ran !"
 show tsugumi B1 S1 Y1 at right

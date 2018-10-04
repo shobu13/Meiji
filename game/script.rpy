@@ -299,6 +299,15 @@ layeredimage ezo:
         attribute Mi default
         attribute Cui
         attribute Se
+    group yeux:
+        attribute Y1
+        attribute Y2
+        attribute Y3
+        attribute Y4
+        attribute Y5
+        attribute Y6
+        attribute Y7
+        attribute Y8
     group cheveux:
         attribute base default
     group bouche:
@@ -314,15 +323,6 @@ layeredimage ezo:
         attribute S1
         attribute S2
         attribute S3
-    group yeux:
-        attribute Y1
-        attribute Y2
-        attribute Y3
-        attribute Y4
-        attribute Y5
-        attribute Y6
-        attribute Y7
-        attribute Y8
     group exp:
         attribute R1
         attribute R2
@@ -588,9 +588,9 @@ label start:
     "D’abord fortements impliquées, les puissances étrangères se retirèrent rapidement du conflit, ce qui n'empêcha pas les officiers français de déserter leur armée pour soutenir le Shogunat Tokugawa."
     "Retranchés sur l’île septentrionale d’Ezo et ayant fondé leur propre république, ils furent définitivement écrasés à Hakodate après un vaillant combat. Les derniers soutiens du Shogun se suicidèrent, et les officiers étrangers se dispersèrent ou retournèrent au pays."
     # fondu au noir
-    "Débarquée par une vieille canonnière française quelques heures plus tôt, une jeune fille dans un uniforme militaire étrange déambule en cherchant son chemin, serrant dans sa main un morceau de papier où figure une adresse griffonnée à la va-vite."
     scene bg Black
     with dissolve
+    "Débarquée par une vieille canonnière française quelques heures plus tôt, une jeune fille dans un uniforme militaire étrange déambule en cherchant son chemin, serrant dans sa main un morceau de papier où figure une adresse griffonnée à la va-vite."
     show ezo B4 S1 Y1 eH at left, xflip
     with dissolve
     ezo "Bordel, un vrai enfer de s’orienter ici… "

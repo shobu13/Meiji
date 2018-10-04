@@ -1,6 +1,14 @@
 label salle_ch1:
     pass
 
+init:
+    image chapter = Text("{size=60}Travail en salle", font="gui/Sofia-Regular.otf", text_align=0.5, color="#ff9900")
+show chapter:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg grenier
 with dissolve
 "Les premiers rayons du soleil matinal vinrent caresser la joue d’Ezo, recroquevillée sur son lit. Elle passa sa main près de ses yeux comme pour les chasser, et ouvrit les yeux. Il était encore tôt, mais ses habitudes militaires la faisaient se lever aux aurores."
@@ -589,6 +597,7 @@ menu:
         "Ezo et Akié discutèrent encore un peu, mais Ezo pressa cette dernière de se dépêcher de rentrer chez elle avant que la nuit ne tombe totalement et qu’elle se fasse de nouveau embêter."
         scene bg grenier
         with dissolve
+        "Ezo grommela qu’elle ne pouvait décidément pas se balader tranquille et alla se coucher. Le lendemain, elle se réveilla assez tôt malgré s’être couché si tard."
 # fondu en noir
 show bg Black
 with dissolve

@@ -31,6 +31,7 @@ hide ezo
 with dissolve
 hide akie
 with dissolve
+"Ezo tendit ce qu’elle avait prit dans la réserve. Akié reconnu le sac de pain dur que lui laissait Yoshino, mais elle s’étonna de voir que Ezo avait aussi des bouteilles de lait."
 show akie B1 S1 Y2 at right
 with dissolve
 akie "C’est pour les chatons ? Tu es sûr que tu peux ?"
@@ -351,6 +352,8 @@ with dissolve
 "De la manière dont Akié s’adressa à Ezo, tout le monde en rigola."
 "Sauf Ezo elle-même, qui, toutes rouges, faisait des bulles dans son verre, sans rien dire. Akié avait utilisé un diminutif affectif envers elle, et c’était bien la première fois, elle était toute chamboulée."
 # fondu en noir
+show bg Black
+with dissolve
 "Le prochain jour de repos, Ezo arriva devant Akié avec un énorme sac de provisions. Yoshino ne l’avait pas fait à moitié."
 "Toutes les choses inutiles et bientôt périmée ou à jeter lui avait été donnée, rien n’avait été oublié."
 scene bg rue
@@ -526,7 +529,8 @@ with dissolve
 "Ezo, elle marchait d’un pas sûr et cadencé, comme à l’armée. Elle se retournait de temps en temps pour sourire à Akié et lui montrer qu’elle n’avait rien à craindre."
 "Akié se sentait un peu plus en confiance. Elle avait maintenant des sentiments contraires envers Ezo : son coté maternelle lui faisait protéger et s’occuper d’Ezo,"
 "et dans le même temps elle appréciait que ce soit elle qui la protège dans des situations comme celle-ci. Elle finit par en rire ; peut-être se posait-elle trop de questions."
-# fondu en noir
+show bg Black
+with dissolve
 "Les jours passèrent, et Akié et Ezo se retrouvèrent encore une fois à nourrir des animaux derrière le restaurant."
 show akie B4 S2 Y2 eH at right
 with dissolve

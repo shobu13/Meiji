@@ -590,6 +590,8 @@ label start:
     # fondu au noir
     scene bg Black
     with dissolve
+    scene bg port
+    with dissolve
     "Débarquée par une vieille canonnière française quelques heures plus tôt, une jeune fille dans un uniforme militaire étrange déambule en cherchant son chemin, serrant dans sa main un morceau de papier où figure une adresse griffonnée à la va-vite."
     show ezo B4 S1 Y1 eH at left, xflip
     with dissolve
@@ -682,7 +684,7 @@ label start:
     with dissolve
     hide akie
     with dissolve
-    scene bg ruelle
+    scene bg rue
     with dissolve
     "Akié saisit la main d’Ezo et l'entraîna dans le dédale de ruelles de la capitale. Elle se planta devant un restaurant, et en poussa la porte."
     scene bg bar
@@ -968,6 +970,8 @@ label start:
             clateau "D’accord, d’accord ! Mais… Tu peux te préparer ? Je vais te présenter aux autres, elles attendent en bas."
     hide ezo
     with dissolve
+    scene bg cuisine
+    with dissolve
     "Dans les cuisines, toute l’équipe du restaurant attendait leur patron pour commencer leur journée. Clateau se mit à côté d’Ezo et lui fit signe de s’avancer."
     show clateau B1 S1 Y1 at right
     with dissolve
@@ -1086,13 +1090,20 @@ label start:
         pass
     menu:
         " Cuisine":
+            scene bg Black
+            with dissolve
             jump cuisine
         " Salle":
+            scene bg Black
+            with dissolve
             jump salle
         " Bar":
+            scene bg Black
+            with dissolve
             jump bar
     label cuisine:
-        scene bg Black
+        scene bg cuisine
+        with dissolve
         $ cuisine_ok = True
         # la cuisine
         show ezo B1 S3 Y2 at left, xflip
@@ -1198,6 +1209,8 @@ label start:
     label salle:
         $ salle_ok = True
         # Salle
+        scene bg salle
+        with dissolve
         "Ezo se dirigea ensuite dans la salle, où l’attendait avec Akié et Sei."
         show akie B1 S1 Y4 at right
         with dissolve
@@ -1282,6 +1295,7 @@ label start:
                     jump cuisine
     label bar:
         scene bg bar
+        with dissolve
         $ bar_ok = True
         # Le Bar
         if moment_journee == 1:
@@ -1631,7 +1645,11 @@ label start:
         pass
     scene bg Black
     with dissolve
+    scene bg bar
+    with dissolve
     "Cette longue journée se terminait enfin. Les derniers pochtrons rentraient chez eux, et les serveuses terminaient leur service. Après avoir lustré sa cuisinière, Yoshino fut la dernière à partir."
+    scene bg grenier
+    with dissolve
     "Clateau et Ezo finirent de ranger le restaurant avant de remonter à l’étage. Clateau était songeur, et après un moment de silence, il ouvrit la discussion."
     show clateau B1 S1 Y1 at right
     with dissolve

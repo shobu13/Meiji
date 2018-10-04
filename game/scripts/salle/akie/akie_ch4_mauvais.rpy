@@ -5,6 +5,8 @@ label akie_ch4_mauvais:
 "À mi-chemin, elle reçu sur le haut du crâne un violent coup. Le type qu’elle venait de repousser s’était relevé trop vite et venait de lui asséner un coup sur la tête avec une barre en fer."
 "La vision d’Ezo se troubla, pendant qu’elle voyait Akié s’éloigner."
 # Fondu en noir
+show bg Black
+with dissolve
 "Quand elle se réveilla, Ezo était dans sa chambre. Elle avait un bandage autour de la tête. Elle passa ses doigts dessus."
 show ezo B6 S6 Y2 at left, xflip
 with dissolve

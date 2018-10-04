@@ -1,14 +1,21 @@
 label akie_ch2:
     pass
 
+scene bg grenier
+with dissolve
 "Le lendemain matin, Ezo s’était réveillé un peu après l’aube. Elle défaisait les nœuds dans ses cheveux. Elle devait rejoindre Akié devant le restaurant."
 "Elle, elle y habitait déjà, donc elle aurai pu se lever bien plus tard, mais comme elle avait du mal avec ce genre de choses, elle ne voulait surtout pas arriver les mains vides."
-"Ezo descendit en réserve, et y trouva encore une fois un petit sac de pain dur. Cette fois-ci, elle ne fit pas l’erreur de les manger. En regardant le sac, elle se dit que ce n’était pas beaucoup, et elle se demanda si elle ne pouvait pas en prendre un peu plus. Peut-être que Yoshino ne le remarquera pas…"
+scene bg cuisine
+with dissolve
+"Ezo descendit en réserve, et y trouva encore une fois un petit sac de pain dur. Cette fois-ci, elle ne fit pas l’erreur de les manger."
+"En regardant le sac, elle se dit que ce n’était pas beaucoup, et elle se demanda si elle ne pouvait pas en prendre un peu plus. Peut-être que Yoshino ne le remarquera pas…"
 "En fouillant parmi les sacs, elle finit par trouver deux petites bouteilles de laits. Disposée là ostentatoirement."
 show ezo B2 S3 Y1 at left, xflip
 with dissolve
 ezo "Ça sent le coup de Clateau ça…"
 hide ezo
+with dissolve
+scene bg rue
 with dissolve
 "Ezo prit les bouteilles et sorti dehors. Elle tomba immédiatement sur Akié, autour de laquelle des petits animaux se regroupaient."
 show ezo B1 S3 Y3 at left, xflip
@@ -34,8 +41,10 @@ hide ezo
 with dissolve
 hide akie
 with dissolve
-"Akié ouvrit le sac et commença à distribuer les petits morceaux de pain. Il y avait un peu de tout autour d’elle, des écureuils, des oiseaux, des chatons, un petit chiot. Les animaux sont souvent incontrôlables mais Akié dégageait une aura de douceur et parvenait à calmer les animaux."
-"Ezo avait un peu plus de mal, elle était plus rustre. Quand elle s’approchait d’un animal, elle avait du mal à ce qu’il s’approche, et généralement ils préféraient fuir. Pour y remédier, elle essayait toutes les techniques possibles ; elle se mettait à quatre pattes, avec un petit morceau de pain au bout des doigts, et s’approchait centimètre par centimètre d’un écureuil, qui s’enfuya au dernier moment."
+"Akié ouvrit le sac et commença à distribuer les petits morceaux de pain. Il y avait un peu de tout autour d’elle, des écureuils, des oiseaux, des chatons, un petit chiot."
+"Les animaux sont souvent incontrôlables mais Akié dégageait une aura de douceur et parvenait à calmer les animaux."
+"Ezo avait un peu plus de mal, elle était plus rustre. Quand elle s’approchait d’un animal, elle avait du mal à ce qu’il s’approche, et généralement ils préféraient fuir."
+"Pour y remédier, elle essayait toutes les techniques possibles ; elle se mettait à quatre pattes, avec un petit morceau de pain au bout des doigts, et s’approchait centimètre par centimètre d’un écureuil, qui s’enfuya au dernier moment."
 "Dépitée, elle se retourna pour voir ce que faisait Akié, et elle la vit aux prises avec un chaton particulièrement retord. Celui-ci feulait et ne voulait pas se laisser approcher."
 show akie B5 S2 Y2 at right
 with dissolve
@@ -106,7 +115,8 @@ with dissolve
 hide akie
 with dissolve
 "Comme Ezo suivait Akié, elle se retrouvait aussi fatalement au centre de l’attention joviale qui se concentrait autour de sa camarade. Les gens qui parlaient à Akié finissaient aussi par lui parler à elle. Et elle n’aimait pas trop ça."
-"Elle avait peu de relation sociales, consécutif à son statut de militaire qui faisait que… ceux qu’elle connaissait, c’était soit des soudards, soit des ennemis. Donc elle n’était pas vraiment habituée à parler aux gens de manière amical, ou faire des sourires. Elle se collait à Akié et se contentait de dodeliner de la tête."
+"Elle avait peu de relation sociales, consécutif à son statut de militaire qui faisait que… ceux qu’elle connaissait, c’était soit des soudards, soit des ennemis."
+"Donc elle n’était pas vraiment habituée à parler aux gens de manière amical, ou faire des sourires. Elle se collait à Akié et se contentait de dodeliner de la tête."
 "Une petite grand-mère s’approcha d’Akié, et voyant Ezo à son bras, lui demanda si c’était là son petit copain."
 show ezo B6 S2 Y8 R1 at left, xflip
 with dissolve
@@ -152,12 +162,12 @@ clateau "Akié est sociable en plus, elle aura une bonne influence sur toi !"
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Oui, d’ailleurs…"
-show ezo B2 S3 Y4 at left, xflip
+show ezo B8 S3 Y8 at left, xflip
 with dissolve
 ezo "Attends voir ! C’est quoi cette discussion !? Ça te regarde pas !"
 hide ezo
 with dissolve
-hide akie
+hide clateau
 with dissolve
 "Habituellement, Ezo n’est pas du genre à partager ses sentiments. Pendant qu’elle montait dans sa chambre, elle rougissait en pensant que ce petit moment d’euphorie l’avait poussé à en parler avec Clateau."
 "Ce n’était pas qu’elle détestait ça, mais elle avait encore du mal à l’accepter."
@@ -219,10 +229,10 @@ clateau "Euh, non…"
 show yoshino B2 S1 Y3 at right
 with dissolve
 yoshino "Ah, j’aime mieux ça…"
-show clateau B2 S3 Y3 at right
+show clateau B2 S3 Y3 at left, xflip
 with dissolve
 clateau "J’en ai donné deux."
-show yoshino B8 -S1 Y5 at left, xflip
+show yoshino B8 -S1 Y5 at right
 with dissolve
 yoshino "Quoi ?!"
 hide clateau
@@ -301,7 +311,7 @@ hide ezo
 with dissolve
 hide akie
 with dissolve
-show sei B1 S1 Y4 at right
+show sei B1 S1 Y3 at right
 with dissolve
 sei "Ahaha, Akié, tu t’occupes vraiment beaucoup d’Ezo !"
 show yoshino B1 S1 Y1 at left, xflip
@@ -338,10 +348,13 @@ hide ezo
 with dissolve
 hide akie
 with dissolve
+"De la manière dont Akié s’adressa à Ezo, tout le monde en rigola."
 "Sauf Ezo elle-même, qui, toutes rouges, faisait des bulles dans son verre, sans rien dire. Akié avait utilisé un diminutif affectif envers elle, et c’était bien la première fois, elle était toute chamboulée."
 # fondu en noir
 "Le prochain jour de repos, Ezo arriva devant Akié avec un énorme sac de provisions. Yoshino ne l’avait pas fait à moitié."
 "Toutes les choses inutiles et bientôt périmée ou à jeter lui avait été donnée, rien n’avait été oublié."
+scene bg rue
+with dissolve
 show akie B1 S2 Y2 at right
 with dissolve
 akie "Qu’est-ce que c’est que tout ça ?"
@@ -380,11 +393,17 @@ with dissolve
 ezo "Pas encore, je vois…"
 show akie B5 S1 Y8 at right
 with dissolve
-akie "ne désespère pas ! Les animaux on besoin de temps tu sais. Moi aussi ils ne me laissaient pas les prendre au tout début. Ne t’inquiète pas."
+akie "Ne désespère pas ! Les animaux on besoin de temps tu sais. Moi aussi ils ne me laissaient pas les prendre au tout début. Ne t’inquiète pas."
+hide ezo
+with dissolve
+hide akie
+with dissolve
 "Ezo espérait vraiment qu’Akié disait vrai, car quand elle s’approchait trop brusquement, les petits chats se mettaient à feuler et à griffer, et l’empêchaient de les prendre."
 "Mais au moins maintenant elle pouvait les approcher, il y avait un progrès. Akié avait remarqué qu’Ezo était gênée de ne pas pouvoir trop les approcher."
 "Elle pensa un instant à lui en donner un qu’elle aurait prise au préalable, mais elle se ravisa, peut-être qu’Ezo le prendrait encore plus mal de voir qu’il lui faut de l’aide pour une tâche en apparence simple."
-"Le lendemain matin, pour le travail, tout le monde se changeait en cuisine. Habituellement, il arrive souvent que les membres de l’équipe portent leurs uniformes tout le temps, vu qu’il est à la fois confortable et pratique, et même si Ezo portait son uniforme quand elle sortait de chez elle, elle descendait directement dans son habit de serveuse quand elle travaillait. Mais cette fois-ci, tous les uniformes avaient été envoyé la veille au soir être lavé, et étaient revenue tôt le matin au restaurant."
+"Le lendemain matin, pour le travail, tout le monde se changeait en cuisine. Habituellement, il arrive souvent que les membres de l’équipe portent leurs uniformes tout le temps,"
+"vu qu’il est à la fois confortable et pratique, et même si Ezo portait son uniforme quand elle sortait de chez elle, elle descendait directement dans son habit de serveuse quand elle travaillait."
+"Mais cette fois-ci, tous les uniformes avaient été envoyé la veille au soir être lavé, et étaient revenue tôt le matin au restaurant."
 "Clateau avait été parqué dans la salle du bar en attendant, et les ouvertures des passe-plats avaient été bouchée en y bourrant des torchons, pour éviter tout « accident »."
 "La plus prompt à se changer fut Ran, assez étonnement. Elle que l’ont croyait embourgeoisée et précieuse, elle enfila son uniforme en un éclair."
 "Peut-être était-ce pour ne pas que les autres la voit nue trop longtemps. Ensuite, ce fut Yoshino, qui n’aimait pas trainer."
@@ -428,6 +447,8 @@ with dissolve
 show sei B6 S1 Y7 at right
 with dissolve
 sei "Psst, Akié !"
+hide sei
+with dissolve
 show akie B1 S1 Y2 at left, xflip
 with dissolve
 akie "Sei ? Pourquoi tu parles tout bas ?"
@@ -506,13 +527,10 @@ with dissolve
 "Akié se sentait un peu plus en confiance. Elle avait maintenant des sentiments contraires envers Ezo : son coté maternelle lui faisait protéger et s’occuper d’Ezo,"
 "et dans le même temps elle appréciait que ce soit elle qui la protège dans des situations comme celle-ci. Elle finit par en rire ; peut-être se posait-elle trop de questions."
 # fondu en noir
-show bg Black
-with dissolve
 "Les jours passèrent, et Akié et Ezo se retrouvèrent encore une fois à nourrir des animaux derrière le restaurant."
 show akie B4 S2 Y2 eH at right
 with dissolve
 akie "Oh, non ! Il faut faire quelque chose !"
-akie "Ezo(B5/S2/Y3/gauche) Laisse, tu vois bien qu’il est déjà mort…"
 show ezo B5 S2 Y3 at left, xflip
 with dissolve
 ezo "Laisse, tu vois bien qu’il est déjà mort…"
@@ -542,7 +560,8 @@ with dissolve
 ezo "Regarde, je suis incapable de pleurer comme toi. Je n’ai presque rien ressenti quand le chat est mort."
 show akie B2 S1 Y3 at right
 with dissolve
-akie "Je ne pense pas que tu sois insensible, Ezo. Si tu étais insensible, tu n’aurai pas fait cette tombe pour le petit chat. Si tu étais insensible, tu n’aurais pas non plus récupéré toute cette nourriture pour les animaux. Je suis sûr que pleins d’entres eux sont en vie parce que tu as prit la peine de faire ça."
+akie "Je ne pense pas que tu sois insensible, Ezo. Si tu étais insensible, tu n’aurai pas fait cette tombe pour le petit chat."
+akie "Si tu étais insensible, tu n’aurais pas non plus récupéré toute cette nourriture pour les animaux. Je suis sûr que pleins d’entres eux sont en vie parce que tu as prit la peine de faire ça."
 show ezo B5 S2 Y2 at left, xflip
 with dissolve
 ezo "Tu crois ?"

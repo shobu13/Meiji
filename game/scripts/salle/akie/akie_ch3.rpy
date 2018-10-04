@@ -213,7 +213,7 @@ menu:
         jump akie_ch4_mauvais
     " Ran, fonce leur dessus !":
         pass
-# Si « Ran fonce dessus. Sinon, lancer chapitre 4 Akié MAUVAIS
+# TODONE Si « Ran fonce dessus. Sinon, lancer chapitre 4 Akié MAUVAIS
 show ezo B5 S3 Y2 at left, xflip
 with dissolve
 ezo "Ran, fonce leur dessus !"
@@ -339,7 +339,7 @@ with dissolve
 show clateau B1 S1 Y4 at right
 with dissolve
 clateau "Toujours aussi perspicace, à ce que je vois."
-show ezo B2 S3 Y3 at left, xflip
+show ezo B2 S3 Y3: at left, xflip
 with dissolve
 ezo "C’était assez évident. Sei t’as aidé à contact des haut-gradés par l’intermédiaires de tes connaissances, ou quelque chose comme ça ?"
 hide clateau

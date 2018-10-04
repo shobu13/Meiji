@@ -115,7 +115,7 @@ with dissolve
 show tsugumi B6 S3 Y4 at right
 with dissolve
 tsugumi "C’est de belles enflures même."
-show tsugumi B6 S3 Y6 at right
+show tsugumi B6 S3 Y6:droite at center
 with dissolve
 tsugumi "À l’usine aussi, ils nous mettent une pression de dingue ! Si je pouvais, je me révolterais, et ils feraient moins les malins !"
 show ezo B1 S3 Y2 at left, xflip
@@ -279,7 +279,7 @@ menu:
     " Ne t’inquiète pas, je suis là pour toi":
         pass
     " J’ai demandé à Ran et Clateau de s’occuper de la partie administrative. On pourra vaincre ce gouvernement !":
-        jump sei_ch4_mauvais
+        pass
 # Si « ne t’inquiète pas, je suis là pour toi » sinon MAUVAIS CHAPITRE
 "Ezo fixait Sei après sa déclaration."
 "Comme elle ne répondait pas et qu’elle continuait à la fixer, Ezo commença à rougir un peu."

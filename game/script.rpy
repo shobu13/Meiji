@@ -290,6 +290,19 @@ image clateau_exp_Go = "Clateau/clateau_sweat.png"
 ###Accesoires
 image clateau_acc_Co = "Clateau/clateau_couteau.png"
 
+##Saucisse
+###corps
+image saucisse_base_base = "Saucisse/saucisseSprite.png"
+image saucisse_base_dio = "Saucisse/saucisseSpriteDio.png"
+image saucisse_base_bounce = "Saucisse/saucisse_bounce.gif"
+###Cheveux
+###habits
+###bouches
+###sourcils
+###yeux
+###Expressions
+###Accesoires
+
 layeredimage ezo:
     group cheveux2:
         attribute base default
@@ -550,6 +563,12 @@ layeredimage clateau:
     group acc:
         attribute Co
 
+layeredimage saucisse:
+    group base:
+        attribute base default
+        attribute dio
+        attribute bounce
+
 
 init:
     transform xflip:
@@ -568,6 +587,9 @@ init:
     $ tsugumi = DynamicCharacter("tsugumi_nom", color=(108, 2, 119, 255))
     $ yoshino_nom = "???"
     $ yoshino = DynamicCharacter("yoshino_nom", color=(108, 2, 119, 255))
+    $ saucisse_nom = "saucisse"
+    $ saucisse = DynamicCharacter("saucisse_nom", color=(108, 2, 199, 255))
+
     $ moment_journee = 1
     $ salle_ok = False
     $ bar_ok = False
@@ -581,6 +603,7 @@ define connards = Character("connards")
 
 # Le jeu commence ici
 label start:
+    play music "audio/VN_normal_version.ogg"
     scene bg ciel
     "Nous sommes en 1870, à Tokyo, capitale nouvellement renommée de l’Empire du Japon. Depuis peu, le pays s’ouvre aux techniques étrangères, et de nombreux occidentaux parcourent ses rues."
     "Alors que le Japon était resté sur un modèle féodal fermé, dirigé par une lignée de puissants Shogun pendant près de deux siècles, la récente guerre a permis à l’empereur de retrouver son pouvoir."

@@ -60,19 +60,19 @@ define gui.interface_text_color = '#ffffff'
 ## Polices et tailles de police ################################################
 
 ## Les polices utilisées pour le texte du jeu.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "gui/Sofia-Regular.otf"
 
 ## Les polices utilisées pour le nom des personnages.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "gui/Sofia-Regular.otf"
 
 ## Les polices utilisées pour les textes « hors du jeu ».
 define gui.interface_text_font = "gui/Sofia-Regular.otf"
 
 ## La taille normale pour les dialogues.
-define gui.text_size = 22
+define gui.text_size = 20
 
 ## La taille pour le nom des personnages.
-define gui.name_text_size = 30
+define gui.name_text_size = 25
 
 ## La taille du texte dans l’interface de jeu.
 define gui.interface_text_size = 22
@@ -124,7 +124,7 @@ define gui.namebox_height = 45
 
 ## Les bordures de la zone contenant le nom du personnage dans l’ordre suivant
 ## gauche, haut, droite, bas.
-define gui.namebox_borders = Borders(80, 5, 80, 5)
+define gui.namebox_borders = Borders(80, 5, 80, 15)
 
 ## Si « True » (vrai), l’arrière plan de zone du nom sera en mosaïque, si
 ## « False »(faux), l’arrière plan de la zone du nom sera mis à l’échelle.
@@ -134,7 +134,7 @@ define gui.namebox_tile = False
 ## L’emplacement du dialogue relatif à la zone de texte. La valeur peut être un
 ## nombre entier de pixels depuis la gauche ou le haut ou 0.5 pour le centre.
 define gui.dialogue_xpos = 268
-define gui.dialogue_ypos = 50
+define gui.dialogue_ypos = 30
 
 ## La largeur maximale en pixels de la zone de dialogue.
 define gui.dialogue_width = 744

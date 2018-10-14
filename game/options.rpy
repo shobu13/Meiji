@@ -64,7 +64,7 @@ define config.has_voice = True
 ## diffusé quand le joueur sera sur le menu principal. Ce son se poursuivra dans
 ## le jeu, jusqu’à ce qu'il soit stoppé ou qu’un autre fichier soit joué.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/VN_normal_version.ogg"
 
 
 ## Transitions #################################################################
@@ -207,7 +207,7 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
-## Set this to a string containing your Apple Developer ID Application to enable
+## Set this to a string containing your Apple Developer IDF Application to enable
 ## codesigning on the Mac. Be sure to change it to your own Apple-issued ID.
 
 # define build.mac_identity = "Developer ID Application: Guy Shy (XHTE5H7Z42)"
@@ -224,3 +224,5 @@ init python:
 ## slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+define config.mouse = { 'default' : [ ("gui/meiji_curseur_souris.png", 0, 0)] }

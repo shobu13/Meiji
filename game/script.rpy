@@ -598,6 +598,8 @@ init:
     # relations
     $relation_akie = 0
     $relation_sei = 0
+    $relation_clateau = 0
+    $relation_yoshino = 0
 
 define connards = Character("connards")
 

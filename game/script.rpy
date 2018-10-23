@@ -573,20 +573,23 @@ layeredimage saucisse:
 init:
     transform xflip:
         xzoom -1
+    transform multiple_right:
+        xalign 0.7
+
     $ ezo_nom = "Ezo"
-    $ ezo = DynamicCharacter("ezo_nom", color=(108, 2, 119, 255))
+    $ ezo = DynamicCharacter("ezo_nom", color=(166, 166, 166, 255))
     $ akie_nom = "???"
     $ akie = DynamicCharacter("akie_nom", color=(108, 2, 119, 255))
     $ clateau_nom = "???"
-    $ clateau = DynamicCharacter("clateau_nom", color=(108, 2, 119, 255))
+    $ clateau = DynamicCharacter("clateau_nom", color=(0, 153, 0, 255))
     $ ran_nom = "Ran"
-    $ ran = DynamicCharacter("ran_nom", color=(108, 2, 119, 255))
+    $ ran = DynamicCharacter("ran_nom", color=(204, 0, 153, 255))
     $ sei_nom = "Sei"
-    $ sei = DynamicCharacter("sei_nom", color=(108, 2, 119, 255))
+    $ sei = DynamicCharacter("sei_nom", color=(255, 153, 51, 255))
     $ tsugumi_nom = "Tsugumi"
-    $ tsugumi = DynamicCharacter("tsugumi_nom", color=(108, 2, 119, 255))
+    $ tsugumi = DynamicCharacter("tsugumi_nom", color=(153, 102, 0, 255))
     $ yoshino_nom = "???"
-    $ yoshino = DynamicCharacter("yoshino_nom", color=(108, 2, 119, 255))
+    $ yoshino = DynamicCharacter("yoshino_nom", color=(204, 0, 0, 255))
     $ saucisse_nom = "saucisse"
     $ saucisse = DynamicCharacter("saucisse_nom", color=(108, 2, 199, 255))
 

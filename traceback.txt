@@ -39,4 +39,4 @@ TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
  
-Sun Oct 14 16:36:51 2018
+Sun Oct 21 17:50:58 2018

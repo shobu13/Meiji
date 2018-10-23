@@ -1072,7 +1072,7 @@ yoshino "Non ! Il faut encore en ajouter. N’est-ce pas ?"
 # TODONE “Plus de crème, oui.” = point Yoshino /”Ça risque de faire gras” = point Clateau
 menu:
     " Plus de crème, oui.":
-        $ $relation_yoshino += 1
+        $relation_yoshino += 1
         show ezo B2 S3 Y4 at left, xflip
         with dissolve
         ezo "Plus de crème, oui."

@@ -196,8 +196,6 @@ menu:
         with dissolve
         ezo "Je préfère l'absinthe"
         show ran B1 S1 Y4 at right
-        ran "Oh, je suis bien contente de voir" que vous partagez mes goûts, mademoiselle Ezo."
-        show ran B1 S1 Y4 at right
         with dissolve
         ran "Oh, je suis bien contente de voir que vous partagez mes goûts, mademoiselle Ezo."
         hide ran

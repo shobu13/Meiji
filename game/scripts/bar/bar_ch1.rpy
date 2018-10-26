@@ -180,8 +180,8 @@ with dissolve
 show ezo B4 S3 Y1 at left, xflip
 with dissolve
 ezo "Euhm…"
-# TODO: [Tsugumi&Ran] “Et toi Ezo, tu préfères quoi ?”]
-# TODO: comment on fait là ? Si tu peux faire quelque chose, genre les superposer ou les mettre cote à cote
+# TODONE: [Tsugumi&Ran] “Et toi Ezo, tu préfères quoi ?”]
+# TODONE: comment on fait là ? Si tu peux faire quelque chose, genre les superposer ou les mettre cote à cote
 show tsugumi B4 S3 Y1 at right
 show ran B4 S3 Y1 behind tsugumi at right, multiple_right
 $tsugumi_nom = "Tsugumi & ran"
@@ -252,7 +252,7 @@ with dissolve
 # TODO Bruit quelconque
 show yoshino B8 Y5 at left, xflip
 with dissolve
-yoshino "zo ! Ran ! Qu’est-ce que vous foutez !? Je ne reçois plus de commandes depuis un moment ! Au travail !"
+yoshino "ezo ! Ran ! Qu’est-ce que vous foutez !? Je ne reçois plus de commandes depuis un moment ! Au travail !"
 show ran B4 S3 Y6 at right
 with dissolve
 ran "Oui…"
@@ -949,7 +949,10 @@ hide ran
 with dissolve
 hide tsugumi
 with dissolve
-# TODO fondu en noir
+# TODONE fondu en noir
+show bg Black
+with dissolve
+
 scene bg grenier
 with dissolve
 "Cette déclaration fit rire l’assemblée, qui se dispersa bien vite, fatigue et heure tardive aidant. Ezo monta dans sa chambre. En passant, elle vit Clateau, qui terminait de ranger la salle."
@@ -975,7 +978,10 @@ with dissolve
 "Dans sa chambre, Ezo marchait à taton dans la pièce maintenant noire. Elle se déshabilla à peine avant de tomber sur son lit."
 hide ezo
 with dissolve
-# TODO fondu en noir
+# TODONE fondu en noir
+show bg Black
+with dissolve
+
 scene bg grenier
 with dissolve
 "Le lendemain, en se réveillant, elle remarqua aux rayons du soleil déjà bien fort qu’elle avait beaucoup dormi. Elle ne rechignait pas à faire des grassses matinées, mais c’était bien la première fois que son horloge de soldat ne l’avait pas réveillée."
@@ -1009,7 +1015,10 @@ with dissolve
 hide ezo
 with dissolve
 "Le petit déjeuner dans l'appartement de Clateau fut silencieux. Pour échapper à cette ambiance bizarre et parce qu’elle était déjà bien en retard, Ezo attrapa un croissant et fila en salle. En le prenant, elle se fit la réflexion que décidément, Clateau n’avait jamais réussi à se faire au petit déjeuner japonais."
-# TODO fondu en noir
+# TODONE fondu en noir
+show bg Black
+with dissolve
+
 scene bg bar
 with dissolve
 "Une fois au bar, Ezo s’étonna de croiser Tsugumi."

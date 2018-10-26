@@ -603,7 +603,11 @@ init:
     $relation_sei = 0
     $relation_clateau = 0
     $relation_yoshino = 0
+    $relation_tsugumi = 0
+    $relation_ran = 0
 
+
+define dissolve = Dissolve(0.2)
 define connards = Character("connards")
 
 # Le jeu commence ici
@@ -1428,7 +1432,8 @@ label start:
             ran "Si je puis m’exprimer ainsi, oui. Même si notre douce quiétude est bien trop souvent troublée par la furie de feu qui officie à la cuisine… Je serais d’ailleurs fort contente que vous vous joigniez à moi car j’ai une grande difficultée à assurer le service seule."
             show ezo B1 S1 Y4 at left, xflip
             with dissolve
-            ezo " Tu serais moins débordée si tu dormais pas la moitié du temps !  {ici Ezo se parle à elle-même, mettre en italique}"
+            # TODO ici Ezo se parle à elle-même, mettre en italique
+            ezo "Tu serais moins débordée si tu dormais pas la moitié du temps !"
             show ezo B1 S3 Y2 at left, xflip
             with dissolve
             ezo "Eh bien, il faut que j’y réfléchisse… je vais aller voir les autres."

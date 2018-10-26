@@ -1,4 +1,4 @@
-label clateau_ch4:
+label clateau_ch4_bon:
     pass
 
 scene bg bar

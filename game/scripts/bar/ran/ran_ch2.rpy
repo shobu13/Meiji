@@ -1,6 +1,8 @@
 label ran_ch2:
     pass
-# TODO Ezo est en militaire
+# TODONE Ezo est en militaire
+show ezo Mi
+with dissolve
 scene bg grenier
 with dissolve
 "Ezo se roulait dans ses draps à la lumière tamisée du matin qui venait de passer par la lucarne. Comme l’automne arrivait, le fait que les rayons du soleil pénètrent dans le bâtiment signifiait que la matinée était déjà bien avancée."
@@ -89,7 +91,10 @@ hide ezo
 with dissolve
 hide clateau
 with dissolve
-# TODO Ezo est en serveuse
+# TODONE Ezo est en serveuse
+show ezo Se
+with dissolve
+
 scene bg rue
 with dissolve
 "Ezo était un peu déçue, mais elle n’avait pas trouvé ce qu’elle ferait de sa paye. Elle décida d’en faire usage plus tard, et se prépara plutôt à rendre visite à Ran."
@@ -140,7 +145,10 @@ with dissolve
 ezo "J’espère que je ne ferai pas tâche…"
 hide ezo
 with dissolve
-# TODO fondu en noir
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
 "La maison de Ran était une belle et grande bâtisse traditionnelle japonaise. Tout en bois, cerclé d’une promenade externe, jardin avec un étang, bâtiment orienté nord-sud…"
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
@@ -164,7 +172,10 @@ hide ezo
 with dissolve
 hide ran
 with dissolve
-# TODO fondu en noir
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
 scene bg wafu
 with dissolve
 "Ran conduisit Ezo à sa chambre. Toute la maisonnée était baignée dans une atmosphère japonaise, et elle détonnait beaucoup avec le restaurant, qui lui était construit sur un modèle occidental d’Europe de l’Ouest."
@@ -285,7 +296,10 @@ with dissolve
 hide ran
 with dissolve
 "Les filles étaient plus détendues pour la suite de leur rencontre. Comme Ran dormait beaucoup au travail, elles n’avaient pas tellement l’occasion de parler longuement. Ran se montrait très curieuse, et la sagacité d’Ezo pour répondre à ses questions les rapprochaient."
-# TODO fondu en noir
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "je vais pas devoir tarder. La prochaine fois, tu n’auras qu’à venir dans ma chambre, je te ferai un café !"
@@ -296,7 +310,10 @@ hide ezo
 with dissolve
 hide ran
 with dissolve
-# TODO fondu en noir
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
 scene bg rue
 with dissolve
 "Ezo quitta la grande demeure guillerette. L’air frais du soir des débuts d’automne la rendait un peu nostalgique, mais elle était aussi toutes joyeuse de sa première vraie interaction sociale. Elle avait même réussi à réinviter Ran !"
@@ -337,7 +354,10 @@ with dissolve
 scene bg grenier
 with dissolve
 "Dans sa chambre, Ezo se sentait à la fois fatiguée et soulagée.  Elle avait l’impression d’avoir fait un bond de géant en une seule journée. Après avoir vaguement laissé son uniforme dans un coin, elle se jeta sur lit et s’endormit rapidement."
-# TODO fondu en noir
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
 scene bg bar
 with dissolve
 "Le lendemain, Ran semblait plus active au travail qu’à l’accoutumée. Elle ne négligeait pas ses siestes pour autant, mais elle surprit l’assemblée plus d’une fois en étant éveillée à un moment où on ne l’attendait pas."
@@ -478,7 +498,10 @@ hide ezo
 with dissolve
 hide yoshino
 with dissolve
-# TODO fondu en noir
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
 show ran B6 S1 Y6 at right
 with dissolve
 ran "Merci de votre aide, mademoiselle Ezo !"
@@ -521,8 +544,14 @@ with dissolve
 hide tsugumi
 with dissolve
 "Ezo resta pensive. Elle était en train de s’intégrer au restaurant, de faire parti des habitudes de ceux qui le fréquente. Cela lui laissait une sensation bizarre, pas désagréable, une sensation d’avoir trouvé un foyer."
-# TODO fondu en noir
-# TODO Ezo est en militaire
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
+# TODONE Ezo est en militaire
+show ezo Mi
+with dissolve
+
 scene bg grenier
 with dissolve
 "Le prochain jour de repos arriva vite. Avant que Ran vienne, Ezo se préparait à la recevoir. Elle se tenait au milieu de sa chambre, les bras sur les hanches, et observait autour d’elle son environnement fait de culottes sales et de vielles bouteilles vides."
@@ -615,7 +644,10 @@ hide ezo
 with dissolve
 hide ran
 with dissolve
-# TODO fondu en noir
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
 scene bg grenier
 with dissolve
 "Ezo conduisit Ran dans sa chambre. Quant elle était militaire, elle avait eu l’habitude de vivre dans la crasse, cela ne la gênait plus. Mais là, elle espérait que cela ne dérangerait pas Ran."
@@ -718,8 +750,14 @@ hide ezo
 with dissolve
 hide ran
 with dissolve
-# TODO fondu en noir
-# TODO Ezo est en serveuse
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
+# TODONE Ezo est en serveuse
+show ezo Se
+with dissolve
+
 scene bg Bar
 with dissolve
 "Le lendemain, Tsugumi regardait Ezo et Ran avec un petit sourire narquois. Akié était à côté, et prenait sa pause."
@@ -749,3 +787,5 @@ with dissolve
 show akie B1 S1 Y7 R1 at right
 with dissolve
 akie "Oh…"
+
+jump ran_ch3

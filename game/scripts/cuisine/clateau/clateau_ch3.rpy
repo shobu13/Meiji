@@ -362,4 +362,4 @@ show ezo B4 S2 Y6 at left, xflip
 with dissolve
 ezo "Je ne sais pas si le laisser partir à la guerre n’était pas moins dangereux, finalement…"
 
-jump clateau_ch4
+jump clateau_ch4_bon

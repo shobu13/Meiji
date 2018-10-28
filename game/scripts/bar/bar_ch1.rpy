@@ -1,3 +1,14 @@
+label bar_ch1:
+    pass
+
+init:
+    image chapter = Text("{size=60}Travail au bar", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
+show chapter:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg grenier
 with dissolve
 "Au petit matin, les rayons du soleil commençaient tout juste à filtrer par la lucarne du grenier. Ezo grognait, gênée par la lumière, et se réveilla."

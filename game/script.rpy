@@ -545,6 +545,7 @@ layeredimage clateau:
         attribute S1
         attribute S2
         attribute S3
+        attribute S4
     group yeux:
         attribute Y1
         attribute Y2
@@ -1727,6 +1728,7 @@ label start:
             show clateau B1 S3 Y3 at right
             with dissolve
             clateau "Ahaha, oui ! Vous allez bien vous entendre."
+            jump cuisine_ch1
         "Le bar":
             show ezo B1 S3 Y3 at left, xflip
             with dissolve
@@ -1737,4 +1739,5 @@ label start:
             show ezo B2 S2 Y4 at left, xflip
             with dissolve
             ezo "Je ne pense pas que ce soit les clients le problème mais soit…"
+            jump bar_ch1
     # Fondu en noir

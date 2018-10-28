@@ -1,6 +1,14 @@
 label cuisine_ch1:
     pass
 
+init:
+    image chapter = Text("{size=60}Travail en cuisine", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
+show chapter:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg grenier
 with dissolve
 "Les premiers rayons du soleil matinal vinrent caresser la joue d’Ezo, recroquevillée sur son lit. Elle passa sa main près de ses yeux comme pour les chasser, et ouvrit les yeux. Il était encore tôt, mais ses habitudes militaires la faisaient se lever aux aurores. Elle se roula un peu dans ses draps, ils étaient propres et frais. Cela faisait longtemps qu’elle n’avait pas dormi dans un confort relatif ; les camps militaires sont rarement des sinécures."

@@ -2,7 +2,7 @@ label salle_ch1:
     pass
 
 init:
-    image chapter = Text("{size=60}Travail en salle", font="gui/Sofia-Regular.otf", text_align=0.5, color="#ff9900")
+    image chapter = Text("{size=60}Travail en salle", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
 show chapter:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5

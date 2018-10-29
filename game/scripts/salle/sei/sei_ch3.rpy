@@ -1,6 +1,12 @@
 label sei_ch3:
     pass
 
+show chapter_ch3:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 hide ezo
 with dissolve
 "Pendant la semaine qui suivit, Sei et Ezo continuaient de travailler de concert, mais Ezo trouvait que Sei devenait un peu plus distante."
@@ -279,7 +285,7 @@ menu:
     " Ne t’inquiète pas, je suis là pour toi":
         pass
     " J’ai demandé à Ran et Clateau de s’occuper de la partie administrative. On pourra vaincre ce gouvernement !":
-        show bg Black
+        scene bg Black
         with dissolve
         jump sei_ch4_mauvais
 # Si « ne t’inquiète pas, je suis là pour toi » sinon MAUVAIS CHAPITRE
@@ -381,6 +387,6 @@ show akie B1 S2 Y4 at right
 with dissolve
 akie "Aaaah, Ezo, ça suffit les câlins !"
 
-show bg Black
+scene bg Black
 with dissolve
 jump sei_ch4_bon

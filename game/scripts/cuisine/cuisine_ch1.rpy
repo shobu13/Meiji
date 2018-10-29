@@ -1,9 +1,7 @@
 label cuisine_ch1:
     pass
 
-init:
-    image chapter = Text("{size=60}Travail en cuisine", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
-show chapter:
+show chapter_cuisine_ch1:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve

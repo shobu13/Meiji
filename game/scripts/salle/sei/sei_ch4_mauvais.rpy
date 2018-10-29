@@ -22,6 +22,14 @@ sei "Adieu, Ezo."
 "Ezo reprit son travail au restaurant. Elle n’avait plus que quelques contacts distants avec Sei. Son travail ne lui laissait pas énormément de temps."
 "Le caractère d’Ezo se dégrada beaucoup. Elle devint plus sèche, moins aimable. Plus stricte aussi. Les nuits d’Ezo furent troublées pendant encore des années par ce soir où elle avait perdu Sei."
 
-show bg Black
+scene bg Black
+stop music fadeout 1.0
+show chapter_ch4_mauvais:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(10)
+
+scene bg Black
 with dissolve
 jump credits

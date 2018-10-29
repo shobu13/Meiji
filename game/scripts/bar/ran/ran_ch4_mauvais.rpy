@@ -25,6 +25,14 @@ with dissolve
 "Déboussolée, elle retenta plusieurs fois de faire revenir Ran sans succès. Elle finit par attirer l’attention du gouvernement sur le restaurant. Clateau ne pu le sauver qu’après beaucoup de négociation, et Ran fut mariée sans qu’ils puissent intervenir."
 "Ezo quitta le restaurant peu après, et n’y revint plus jamais."
 
-show bg Black
+scene bg Black
+stop music fadeout 1.0
+show chapter_ch4_mauvais:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(10)
+
+scene bg Black
 with dissolve
 jump credits

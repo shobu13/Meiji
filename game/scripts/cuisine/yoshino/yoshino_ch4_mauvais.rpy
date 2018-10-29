@@ -13,8 +13,7 @@ with dissolve
 scene bg chambre
 with dissolve
 # TODONE Ezo est en militaire
-show ezo Mi
-with dissolve
+$ezo_outfit = 'Mi'
 
 "Ezo retourna dans la chambre de Yoshino. Elle était prostrée dans un coin. Les poupées de la chambre, mignonne lors des moments de bonheur, étaient toutes très glauques, quand l’ambiance n’y était pas."
 show ezo B1 S1 Y2 at left, xflip
@@ -50,6 +49,14 @@ with dissolve
 yoshino "Dehors, j’ai dit ! DEHORS !"
 "Ezo tourna les talons, en laissant Yoshino dans sa chambre, seule dans la pénombre."
 
-show bg Black
+scene bg Black
+stop music fadeout 1.0
+show chapter_ch4_mauvais:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(10)
+
+scene bg Black
 with dissolve
 jump credits

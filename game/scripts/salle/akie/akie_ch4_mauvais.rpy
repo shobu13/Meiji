@@ -5,7 +5,7 @@ label akie_ch4_mauvais:
 "À mi-chemin, elle reçu sur le haut du crâne un violent coup. Le type qu’elle venait de repousser s’était relevé trop vite et venait de lui asséner un coup sur la tête avec une barre en fer."
 "La vision d’Ezo se troubla, pendant qu’elle voyait Akié s’éloigner."
 # Fondu en noir
-show bg Black
+scene bg Black
 with dissolve
 "Quand elle se réveilla, Ezo était dans sa chambre. Elle avait un bandage autour de la tête. Elle passa ses doigts dessus."
 show ezo B6 S6 Y2 at left, xflip
@@ -44,6 +44,15 @@ with dissolve
 ezo "Je vois."
 "Elle passa le reste de la semaine sans parler. Les autres aussi étaient encore sous le choc, et personne ne la dérangea."
 "Un matin, Ezo n’était plus dans sa chambre. Il n’y avait qu’une lettre, de quelques mots, qui expliquait à Clateau qu’elle retournait dans l’armée. Elle ne revint plus jamais au restaurant."
-show bg Black
+
+scene bg Black
+stop music fadeout 1.0
+show chapter_ch4_mauvais:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(10)
+
+scene bg Black
 with dissolve
 jump credits

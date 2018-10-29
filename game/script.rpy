@@ -19,6 +19,14 @@ image bg salle = "bg/bg_salle.jpg"
 image bg White = "#ffffff"
 image bg Black = '#000000'
 
+#CGs
+image cg akie = "cgs/akie_cg1.png"
+image cg clateau = "cgs/clateau_cg1.png"
+image cg ran = "cgs/ran_cg1.png"
+image cg sei = "cgs/sei_cg1.png"
+image cg tsugumi = "cgs/tsugumi_cg1.png"
+image cg yoshino = "cgs/yoshino_cg1.png"
+
 #persos
 
 ##Template
@@ -308,10 +316,13 @@ layeredimage ezo:
         attribute base default
     always:
         "ezo_base"
-    group habit:
-        attribute Mi default
-        attribute Cui
-        attribute Se
+
+    if ezo_outfit == 'Mi':
+        'ezo_habit_Mi'
+    elif ezo_outfit == 'Cui':
+        'ezo_habit_Cui'
+    elif ezo_outfit == 'Se':
+        'ezo_habit_Se'
     group yeux:
         attribute Y1
         attribute Y2
@@ -342,8 +353,8 @@ layeredimage ezo:
         attribute R3
         attribute Ge
         attribute Go
-    group acc:
-        attribute Ke default
+    if ezo_outfit == 'Mi':
+        'ezo_acc_Ke'
 
 layeredimage ran:
     always:
@@ -577,6 +588,8 @@ init:
     transform multiple_right:
         xalign 0.7
     python:
+        ezo_outfit = "Mi"
+
         ezo_nom = "Ezo"
         ezo = DynamicCharacter("ezo_nom", color=(239, 86, 86, 255))
         akie_nom = "???"
@@ -596,6 +609,18 @@ init:
 
         dissolve = Dissolve(0.2)
         connards = Character("connards")
+
+    image chapter_salle_ch1 = Text("{size=60}Travail en salle", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
+
+    image chapter_bar_ch1 = Text("{size=60}Travail au bar", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
+
+    image chapter_cuisine_ch1 = Text("{size=60}Travail en cuisine", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
+
+    image chapter_ch2 = Text("{size=60}Chapitre 2", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
+
+    image chapter_ch3 = Text("{size=60}Chapitre 3", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
+
+    image chapter_ch4_mauvais = Text("{size=60}Mauvaise fin", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
 
 # Le jeu commence ici
 label start:

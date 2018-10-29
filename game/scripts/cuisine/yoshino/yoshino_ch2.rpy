@@ -1,6 +1,12 @@
 label yoshino_ch2:
     pass
 
+show chapter_ch2:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg grenier
 with dissolve
 # TODONE Ezo en millitaire
@@ -213,8 +219,7 @@ scene bg Black
 with dissolve
 
 # TODONE Ezo est en cuistote
-show ezo Cui
-with dissolve
+$ezo_outfit = 'Cui'
 
 scene bg cuisine
 with dissolve

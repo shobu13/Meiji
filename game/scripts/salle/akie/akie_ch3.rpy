@@ -308,7 +308,7 @@ with dissolve
 hide ran
 with dissolve
 "Ezo restait pensive pendant qu’elle courait avec les autres en direction du restaurant"
-show ezo B14 S1 Y1 at left, xflip
+show ezo B4 S1 Y1 at left, xflip
 with dissolve
 ezo "Quelle chance, oui."
 hide ezo
@@ -375,6 +375,6 @@ with dissolve
 ezo "Moi aussi."
 "Akié la quitta en lui faisant un petit geste de la main tout en s’éloignant. Ezo la regardait partir. Elle savait qu’elle aimait Akié, et cet épisode rocambolesque le lui avait définitivement confirmé."
 
-show bg Black
+scene bg Black
 with dissolve
 jump akie_ch4_bon

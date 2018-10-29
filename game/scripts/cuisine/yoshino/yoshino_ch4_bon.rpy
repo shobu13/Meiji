@@ -10,6 +10,10 @@ with dissolve
 ezo "j’ai bientôt terminé le plat, tu veux venir goûter ?"
 "Yoshino se retourna, et Ezo la saisit par la bras, pour poser ses lèvres contre les siennes."
 
-show bg Black
+scene cg yoshino
+with dissolve
+with Pause(10)
+
+scene bg Black
 with dissolve
 jump credits

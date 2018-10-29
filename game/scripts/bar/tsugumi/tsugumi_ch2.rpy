@@ -1,11 +1,17 @@
 label tsugumi_ch2:
     pass
 
+show chapter_ch2:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg grenier
 with dissolve
 # TODONE Ezo est en militaire
-show ezo Mi
-with dissolve
+$ezo_outfit = 'Mi'
+
 "Les jours passèrent, et vint enfin le jour où Ezo devait retrouver Tsugumi. Elle se rendit compte en se préparant qu’elle n’avait aucun habit à part sa tunique militaire. Est-ce que ce serait acceptable ? Elle espérait que oui."
 "En fermant la porte, elle pensa qu’elle avait été très proche de Tsugumi ces derniers jours, alors même qu’elle ne voyait celle-ci qu’en coup de vent un peu tous les jours. Mais à chaque fois, elle appréciait le moment qu’elle passait avec elle en fin de journée, à discuter et à parler, elle se sentait bien avec elle."
 scene bg rue
@@ -124,8 +130,7 @@ scene bg Black
 with dissolve
 
 # TODONE Ezo est en serveuse
-show ezo Se
-with dissolve
+$ezo_outfit = 'Se'
 
 scene bg cuisine
 with dissolve

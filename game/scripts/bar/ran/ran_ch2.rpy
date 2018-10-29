@@ -1,8 +1,13 @@
 label ran_ch2:
     pass
 # TODONE Ezo est en militaire
-show ezo Mi
+$ezo_outfit = 'Mi'
+show chapter_ch2:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
 with dissolve
+with Pause(3)
+
 scene bg grenier
 with dissolve
 "Ezo se roulait dans ses draps à la lumière tamisée du matin qui venait de passer par la lucarne. Comme l’automne arrivait, le fait que les rayons du soleil pénètrent dans le bâtiment signifiait que la matinée était déjà bien avancée."
@@ -92,8 +97,7 @@ with dissolve
 hide clateau
 with dissolve
 # TODONE Ezo est en serveuse
-show ezo Se
-with dissolve
+$ezo_outfit = 'Se'
 
 scene bg rue
 with dissolve
@@ -549,8 +553,7 @@ scene bg Black
 with dissolve
 
 # TODONE Ezo est en militaire
-show ezo Mi
-with dissolve
+$ezo_outfit = 'Mi'
 
 scene bg grenier
 with dissolve
@@ -755,8 +758,7 @@ scene bg Black
 with dissolve
 
 # TODONE Ezo est en serveuse
-show ezo Se
-with dissolve
+$ezo_outfit = 'Se'
 
 scene bg Bar
 with dissolve

@@ -1,9 +1,7 @@
 label salle_ch1:
     pass
 
-init:
-    image chapter = Text("{size=60}Travail en salle", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
-show chapter:
+show chapter_salle_ch1:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
@@ -557,7 +555,7 @@ menu:
         hide ezo
         with dissolve
         # fondu en noir
-        show bg Black
+        scene bg Black
         with dissolve
         scene bg cuisine
         with dissolve

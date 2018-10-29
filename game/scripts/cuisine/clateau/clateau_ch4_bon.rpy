@@ -29,6 +29,10 @@ hide clateau
 with dissolve
 "C’était la première fois que Clateau osait le dire depuis qu’il avait voulu « adopter » Ezo. Elle lui sauta dans les bras, folle de joie."
 
-show bg Black
+scene cg clateau
+with dissolve
+with Pause(10)
+
+scene bg Black
 with dissolve
 jump credits

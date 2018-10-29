@@ -1,6 +1,12 @@
 label akie_ch2:
     pass
 
+show chapter_ch2:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg grenier
 with dissolve
 "Le lendemain matin, Ezo s’était réveillé un peu après l’aube. Elle défaisait les nœuds dans ses cheveux. Elle devait rejoindre Akié devant le restaurant."
@@ -362,7 +368,7 @@ with dissolve
 "De la manière dont Akié s’adressa à Ezo, tout le monde en rigola."
 "Sauf Ezo elle-même, qui, toutes rouges, faisait des bulles dans son verre, sans rien dire. Akié avait utilisé un diminutif affectif envers elle, et c’était bien la première fois, elle était toute chamboulée."
 # fondu en noir
-show bg Black
+scene bg Black
 with dissolve
 scene bg rue
 with dissolve
@@ -539,7 +545,7 @@ with dissolve
 "Ezo, elle marchait d’un pas sûr et cadencé, comme à l’armée. Elle se retournait de temps en temps pour sourire à Akié et lui montrer qu’elle n’avait rien à craindre."
 "Akié se sentait un peu plus en confiance. Elle avait maintenant des sentiments contraires envers Ezo : son coté maternelle lui faisait protéger et s’occuper d’Ezo,"
 "et dans le même temps elle appréciait que ce soit elle qui la protège dans des situations comme celle-ci. Elle finit par en rire ; peut-être se posait-elle trop de questions."
-show bg Black
+scene bg Black
 with dissolve
 "Les jours passèrent, et Akié et Ezo se retrouvèrent encore une fois à nourrir des animaux derrière le restaurant."
 show akie B4 S2 Y2 eH at right
@@ -590,6 +596,6 @@ with dissolve
 "Elle se contenta de lui sourire, et une fois devant le restaurant, Akié reparti chez elle."
 "Ezo, remontée sans sa chambre, s’endormi en repensant à la journée. Elle était contente d’avoir une amie, quelqu’un qui la comprenait."
 
-show bg Black
+scene bg Black
 with dissolve
 jump akie_ch3

@@ -17,6 +17,14 @@ scene bg rue
 with dissolve
 "Le soir venu, elle rentra au restaurant. Elle marchait d’un pas lourd, et elle entendait, venant du port, les tirs des soldats et les cris des ouvriers."
 
-show bg Black
+scene bg Black
+stop music fadeout 1.0
+show chapter_ch4_mauvais:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(10)
+
+scene bg Black
 with dissolve
 jump credits

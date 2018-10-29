@@ -1,6 +1,12 @@
 label clateau_ch3:
     pass
 
+show chapter_ch3:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg cuisine
 with dissolve
 "Les jours qui suivirent, Ezo profita de la nouvelle ambiance « famille » qui régnait dans l’équipe. Tout le monde était de bonne humeur."

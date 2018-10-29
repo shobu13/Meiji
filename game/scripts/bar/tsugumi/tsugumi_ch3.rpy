@@ -1,6 +1,12 @@
 label tsugumu_ch3:
     pass
 
+show chapter_ch3:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg bar
 with dissolve
 "Les jours qui suivirent leur repas aux chandelles, Tsugumi et Ezo se virent de moins en moins. Tsugumi travaillait beaucoup, et n’avait pas le temps de venir au restaurant."

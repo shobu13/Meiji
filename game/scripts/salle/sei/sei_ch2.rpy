@@ -1,6 +1,14 @@
 scene bg grenier
 with dissolve
+
+show chapter_ch2:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 # TODONE Ezo porte son uniforme militaire
+$ezo_outfit = 'Mi'
 "Au petit matin, Ezo s’était réveillée avec le soleil comme à son habitude. Ses cheveux en bataille, assise en tailleur sur son lit, elle se frottait la joue avec sa main, et cela lui donnait un petit air d’animal sauvage."
 hide ezo
 with dissolve
@@ -397,7 +405,9 @@ with dissolve
 # TODONE fondu en noir
 scene bg Black
 with dissolve
-# TODO Ezo est en milli
+# TODONE Ezo est en milli
+$ezo_outfit = 'Mi'
+
 scene bg wafu
 with dissolve
 "À la fin de la semaine, Ezo eut de nouveau un jour de repos, et retourna chez Sei. Ensemble, elles pratiquèrent le français. Elles avaient été un petit peu optimiste dans leurs prévisions : non seulement apprendre une nouvelle langue était très dur, et en plus, Ezo avait surestimé ses capacités d’enseignement, car c’était là aussi une chose difficile."
@@ -445,6 +455,8 @@ hide sei
 with dissolve
 # Fondu en noir
 # TODONE Ezo est en serveuse
+$ezo_outfit = 'Se'
+
 "Ezo et Sei passèrent ainsi les jours, s’entraidant dans leur quête de connaissance. Et dans le restaurant, elle formaient toujours un bon duo."
 "Un matin, elles se changeaient toutes dans la cuisine, avant de prendre leur service. Ezo arrivait souvent déjà changée, puisqu’elle habitait au-dessus, mais cette fois-là elle se changea avec les autres. Elle avait fait laver son uniforme par Clateau et elle venait de le récupérer."
 show sei B6 S2 Y8 R3 at right
@@ -577,7 +589,7 @@ with dissolve
 hide ran
 with dissolve
 "Ezo et Ran commencèrent à parler de littérature, d’auteurs, et Tsugumi était petit à petit mise hors de la discussion, si bien qu’à la fin elle se concentra uniquement sur ses pintes de bières."
-show tsugumi (B1 S1 Y2 at right
+show tsugumi B1 S1 Y2 at right
 with dissolve
 tsugumi "Pfff, tout cela est bien trop compliqué pour moi ! Allez, ressers moi en une, Ran !"
 show tsugumi B1 S1 Y1 at right

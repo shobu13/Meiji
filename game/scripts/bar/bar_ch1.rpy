@@ -1,9 +1,7 @@
 label bar_ch1:
     pass
 
-init:
-    image chapter = Text("{size=60}Travail au bar", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
-show chapter:
+show chapter_bar_ch1:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
@@ -961,7 +959,7 @@ with dissolve
 hide tsugumi
 with dissolve
 # TODONE fondu en noir
-show bg Black
+scene bg Black
 with dissolve
 
 scene bg grenier
@@ -990,7 +988,7 @@ with dissolve
 hide ezo
 with dissolve
 # TODONE fondu en noir
-show bg Black
+scene bg Black
 with dissolve
 
 scene bg grenier
@@ -1027,7 +1025,7 @@ hide ezo
 with dissolve
 "Le petit déjeuner dans l'appartement de Clateau fut silencieux. Pour échapper à cette ambiance bizarre et parce qu’elle était déjà bien en retard, Ezo attrapa un croissant et fila en salle. En le prenant, elle se fit la réflexion que décidément, Clateau n’avait jamais réussi à se faire au petit déjeuner japonais."
 # TODONE fondu en noir
-show bg Black
+scene bg Black
 with dissolve
 
 scene bg bar

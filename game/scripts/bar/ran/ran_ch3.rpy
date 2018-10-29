@@ -1,11 +1,17 @@
 label ran_ch3:
     pass
 
+show chapter_ch3:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg bar
 with dissolve
 # TODONE Ezo est en serveuse
-show ezo Se
-with dissolve
+$ezo_outfit = 'Se'
+
 "Tout semblait aller pour le mieux pour Ran et Ezo. Leur petit duo faisait son effet parmi les clients."
 "Au bout de deux semaines, Ran commença subitement à prendre de nombreux congés. On pensait au départ que c’était relatif à son caractère. Depuis l’arrivée d’Ezo, elle s’était mise à travailler comme quatre."
 "Enfin, au final elle travaillait à peine comme une serveuse normale, mais comparé à sa capacité de travail habituelle, elle en faisait quatre fois plus."
@@ -176,8 +182,7 @@ scene bg Black
 with dissolve
 
 # TODONE Ezo est en militaire
-show ezo Mi
-with dissolve
+$ezo_outfit = 'Mi'
 
 scene bg rue
 with dissolve

@@ -2,8 +2,7 @@ label yoshino_ch3:
     pass
 
 # TODONE Ezo est encore en cuistot
-show ezo Cui
-with dissolve
+$ezo_outfit = 'Cui'
 
 scene bg cuisine
 with dissolve

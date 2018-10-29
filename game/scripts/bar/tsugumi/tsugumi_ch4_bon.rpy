@@ -30,6 +30,10 @@ with dissolve
 tsugumi "Oui…"
 "Tsugumi et Ezo se mirent face à face. Ezo avançait à petit pas, et c’est finalement Tsugumi qui se lança. Elle prit la main d’Ezo pour l’attirer à elle, et posa ses lèvres sur celle d’Ezo."
 
-show bg Black
+scene cg tsugumi
+with dissolve
+with Pause(10)
+
+scene bg Black
 with dissolve
 jump credits

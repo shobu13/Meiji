@@ -1,10 +1,17 @@
 label clateau_ch2:
     pass
 
+show chapter_ch2:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
+
 scene bg grenier
 with dissolve
 # TODONE Ezo est en militaire
-show ezo Mi
+$ezo_outfit = 'Mi'
+
 "Au petit matin, Ezo se prélassait dans son lit alors que le soleil était déjà levé. Aujourd’hui était un jour de repos, et elle allait passer la journée avec Clateau pour voir un peu la ville."
 "Sur le dos et fixant le plafond, elle pensait que ce devait être la première fois qu’elle faisait une sortie de civile."
 "D’aussi loin qu’elle se souvenait, elle avait toujours été en train d’aider sur un navire, ou de se battre, et ce dès qu’elle avait eu l’âge de tenir un fusil."

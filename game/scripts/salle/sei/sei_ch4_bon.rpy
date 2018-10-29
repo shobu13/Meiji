@@ -10,6 +10,10 @@ play music "audio/VN_theme_ending_version.ogg" loop fadeout 1.0 fadein 1.0
 "Elle l’attendait. Elles firent quelques poèmes, et quand le soleil commença à se coucher, Ezo fut subjuguée par la beauté de la scène. Émerveillée, elle vit Sei se placer devant elle."
 "Elle prit une grande inspiration, et posa ses lèvres contre celle d’Ezo."
 
+scene cg sei
+with dissolve
+with Pause(10)
+
 show bg Black
 with dissolve
 jump credits

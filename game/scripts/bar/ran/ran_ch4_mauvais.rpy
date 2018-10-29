@@ -24,3 +24,7 @@ scene bg port
 with dissolve
 "Déboussolée, elle retenta plusieurs fois de faire revenir Ran sans succès. Elle finit par attirer l’attention du gouvernement sur le restaurant. Clateau ne pu le sauver qu’après beaucoup de négociation, et Ran fut mariée sans qu’ils puissent intervenir."
 "Ezo quitta le restaurant peu après, et n’y revint plus jamais."
+
+show bg Black
+with dissolve
+jump credits

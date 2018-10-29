@@ -1,42 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After loading the script.
-TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+While running game code:
+  File "game/script.rpy", line 579, in script
+    python:
+  File "game/script.rpy", line 597, in <module>
+    moment_journee
+NameError: name 'moment_journee' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "E:\renpy-7.1.0-sdk\renpy\bootstrap.py", line 313, in bootstrap
-    renpy.main.main()
-  File "E:\renpy-7.1.0-sdk\renpy\main.py", line 415, in main
-    if renpy.parser.report_parse_errors():
-  File "E:\renpy-7.1.0-sdk\renpy\parser.py", line 2783, in report_parse_errors
-    renpy.display.error.report_parse_errors(full_text, error_fn)
-  File "E:\renpy-7.1.0-sdk\renpy\display\error.py", line 187, in report_parse_errors
-    error_fn=error_fn,
-  File "E:\renpy-7.1.0-sdk\renpy\game.py", line 281, in invoke_in_new_context
-    return callable(*args, **kwargs)
-  File "E:\renpy-7.1.0-sdk\renpy\display\error.py", line 45, in call_exception_screen
-    return renpy.ui.interact(mouse="screen", type="screen", suppress_overlay=True, suppress_underlay=True)
-  File "E:\renpy-7.1.0-sdk\renpy\ui.py", line 289, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\renpy-7.1.0-sdk\renpy\display\core.py", line 2662, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "E:\renpy-7.1.0-sdk\renpy\display\core.py", line 3340, in interact_core
-    self.quit_event()
-  File "E:\renpy-7.1.0-sdk\renpy\display\core.py", line 2366, in quit_event
-    renpy.exports.take_screenshot()
-  File "E:\renpy-7.1.0-sdk\renpy\exports.py", line 1573, in take_screenshot
-    renpy.game.interface.take_screenshot(scale, background=background)
-  File "E:\renpy-7.1.0-sdk\renpy\display\core.py", line 2112, in take_screenshot
-    surf = renpy.display.scale.smoothscale(surf, scale)
-  File "E:\renpy-7.1.0-sdk\renpy\display\scale.py", line 95, in real_smoothscale
-    dest = pgrender.surface_unscaled(size, src)
-  File "E:\renpy-7.1.0-sdk\renpy\display\pgrender.py", line 118, in surface
-    surf = Surface((width + 4, height + 4), 0, sample)
-TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+  File "game/script.rpy", line 579, in script
+    python:
+  File "C:\renpy\renpy\ast.py", line 882, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\renpy\renpy\python.py", line 1913, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 597, in <module>
+    moment_journee
+NameError: name 'moment_journee' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
- 
-Sat Oct 27 18:44:43 2018
+Meiji 1.0
+Sun Oct 28 22:58:56 2018

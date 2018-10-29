@@ -576,44 +576,45 @@ init:
         xzoom -1
     transform multiple_right:
         xalign 0.7
+    python:
+        ezo_nom = "Ezo"
+        ezo = DynamicCharacter("ezo_nom", color=(239, 86, 86, 255))
+        akie_nom = "???"
+        akie = DynamicCharacter("akie_nom", color=(108, 184, 110, 255))
+        clateau_nom = "???"
+        clateau = DynamicCharacter("clateau_nom", color=(171, 168, 166, 255))
+        ran_nom = "Ran"
+        ran = DynamicCharacter("ran_nom", color=(105, 139, 211, 255))
+        sei_nom = "Sei"
+        sei = DynamicCharacter("sei_nom", color=(249, 177, 93, 255))
+        tsugumi_nom = "Tsugumi"
+        tsugumi = DynamicCharacter("tsugumi_nom", color=(189, 130, 82, 255))
+        yoshino_nom = "???"
+        yoshino = DynamicCharacter("yoshino_nom", color=(225, 109, 57, 255))
+        saucisse_nom = "saucisse"
+        saucisse = DynamicCharacter("saucisse_nom", color=(108, 2, 199, 255))
 
-    $ ezo_nom = "Ezo"
-    $ ezo = DynamicCharacter("ezo_nom", color=(239, 86, 86, 255))
-    $ akie_nom = "???"
-    $ akie = DynamicCharacter("akie_nom", color=(108, 184, 110, 255))
-    $ clateau_nom = "???"
-    $ clateau = DynamicCharacter("clateau_nom", color=(171, 168, 166, 255))
-    $ ran_nom = "Ran"
-    $ ran = DynamicCharacter("ran_nom", color=(105, 139, 211, 255))
-    $ sei_nom = "Sei"
-    $ sei = DynamicCharacter("sei_nom", color=(249, 177, 93, 255))
-    $ tsugumi_nom = "Tsugumi"
-    $ tsugumi = DynamicCharacter("tsugumi_nom", color=(189, 130, 82, 255))
-    $ yoshino_nom = "???"
-    $ yoshino = DynamicCharacter("yoshino_nom", color=(225, 109, 57, 255))
-    $ saucisse_nom = "saucisse"
-    $ saucisse = DynamicCharacter("saucisse_nom", color=(108, 2, 199, 255))
-
-    $ moment_journee = 1
-    $ salle_ok = False
-    $ bar_ok = False
-    $ cuisine_ok = False
-
-    # relations
-    $relation_akie = 0
-    $relation_sei = 0
-    $relation_clateau = 0
-    $relation_yoshino = 0
-    $relation_tsugumi = 0
-    $relation_ran = 0
-
-
-define dissolve = Dissolve(0.2)
-define connards = Character("connards")
+        dissolve = Dissolve(0.2)
+        connards = Character("connards")
 
 # Le jeu commence ici
 label start:
+    python:
+        moment_journee = 1
+        salle_ok = False
+        bar_ok = False
+        cuisine_ok = False
+
+        # relations
+        relation_akie = 0
+        relation_sei = 0
+        relation_clateau = 0
+        relation_yoshino = 0
+        relation_tsugumi = 0
+        relation_ran = 0
+
     play music "audio/VN_normal_version.ogg"
+    
     scene bg ciel
     "Nous sommes en 1870, à Tokyo, capitale nouvellement renommée de l’Empire du Japon. Depuis peu, le pays s’ouvre aux techniques étrangères, et de nombreux occidentaux parcourent ses rues."
     "Alors que le Japon était resté sur un modèle féodal fermé, dirigé par une lignée de puissants Shogun pendant près de deux siècles, la récente guerre a permis à l’empereur de retrouver son pouvoir."
@@ -997,7 +998,7 @@ label start:
             "Elle lui jeta son oreiller à la figure. Bien que l’oreiller en lui-même ne soit pas spécialement lourd, la force démesurée avec laquelle elle l’avait lancé fit basculer Clateau hors de la pièce."
             show ezo B8 S1 Y2 at left, xflip
             with dissolve
-            ezo "Ça va pas non ! On ne rentre pas dans la chambre d’une fille comme ça !"
+            ezo "Ça va pas non ! On ne rentre pas dans la chambre d’une fille comme ça !"
             show clateau B1 S2 Y1 at right
             with dissolve
             clateau "D’accord, d’accord ! Mais… Tu peux te préparer ? Je vais te présenter aux autres, elles attendent en bas."
@@ -1119,8 +1120,6 @@ label start:
     with dissolve
     hide ran
     with dissolve
-    label test:
-        pass
     menu:
         " Cuisine":
             scene bg Black
@@ -1218,8 +1217,10 @@ label start:
                 clateau "Allons allons, ce n’est pas bien grave."
         show ezo B1 S3 Y2 at left, xflip
         with dissolve
-        ezo "Il faudrait que j’aille voir les autres aussi, pour me faire une idée."
+        ezo "{i}Il faudrait que j’aille voir les autres aussi, pour me faire une idée.{/i}"
         # à elle-même
+        label test:
+            pass
         hide yoshino
         with dissolve
         hide clateau
@@ -1433,8 +1434,8 @@ label start:
             ran "Si je puis m’exprimer ainsi, oui. Même si notre douce quiétude est bien trop souvent troublée par la furie de feu qui officie à la cuisine… Je serais d’ailleurs fort contente que vous vous joigniez à moi car j’ai une grande difficultée à assurer le service seule."
             show ezo B1 S1 Y4 at left, xflip
             with dissolve
-            # TODO ici Ezo se parle à elle-même, mettre en italique
-            ezo "Tu serais moins débordée si tu dormais pas la moitié du temps !"
+            # TODONE ici Ezo se parle à elle-même, mettre en italique
+            ezo "{i}Tu serais moins débordée si tu dormais pas la moitié du temps !{/i}"
             show ezo B1 S3 Y2 at left, xflip
             with dissolve
             ezo "Eh bien, il faut que j’y réfléchisse… je vais aller voir les autres."
@@ -1708,6 +1709,9 @@ label start:
             show clateau B1 S3 Y4 at right
             with dissolve
             clateau "Je vais te laisser. À demain."
+            scene bg Black
+            with dissolve
+
             jump salle_ch1
         "La cuisine":
             show ezo B2 S3 Y3 at left, xflip
@@ -1728,6 +1732,9 @@ label start:
             show clateau B1 S3 Y3 at right
             with dissolve
             clateau "Ahaha, oui ! Vous allez bien vous entendre."
+            scene bg Black
+            with dissolve
+
             jump cuisine_ch1
         "Le bar":
             show ezo B1 S3 Y3 at left, xflip
@@ -1739,5 +1746,8 @@ label start:
             show ezo B2 S2 Y4 at left, xflip
             with dissolve
             ezo "Je ne pense pas que ce soit les clients le problème mais soit…"
+            scene bg Black
+            with dissolve
+
             jump bar_ch1
     # Fondu en noir

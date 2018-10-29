@@ -18,13 +18,13 @@ with dissolve
 ezo "Aaaah, il va falloir que je me lève. Commençons cette nouvelle vie sur de bonnes bases, soldat !"
 scene bg Black
 with dissolve
-# TODONE Ezo porte son uniforme de militaire
+
 "Motivée, elle enfila son uniforme, et sortit de sa chambre, descendant les escaliers deux à deux et arriva en cuisine."
 scene bg cuisine
-show ezo Mi B3 S1 Y1
-with dissolve
+
 "Assez étonnamment, toute l’équipe était déjà présente, pour accueillir Ezo."
-show ezo B1 S3 Y2 at right
+# TODONE Ezo porte son uniforme de militaire
+show ezo Mi B1 S3 Y2 at right
 with dissolve
 ezo "Vous êtes déjà tous là !? "
 show akie B1 S1 Y1 at left, xflip
@@ -183,7 +183,8 @@ with dissolve
 "Son style second empire en plein milieu de la capitale nipponne l’avait rapidement fait connaître de la bourgeoise locale."
 "Après plusieurs décennies de fermeture du pays, nombreux étaient ceux qui venaient ici pour goûter à leur morceau « d’occident »."
 "Et ce, sans pour autant effectuer le long, coûteux, et dangereux voyage,jusqu’à Londres ou Paris, qui était, lui, réservé aux plus riches, ou tout du moins, aux plus aventureux."
-"Ezo, qui ne savait pas trop quoi faire, commença par prendre les plats que donnait Yoshino pour les transférer à Sei et Akié. Elle fut assez étonnée par l’habileté de ses camarades. Alors qu’Ezo avait du mal à maintenir les plats dans les faire tomber, Akié, et même Sei, arrivaient à en prendre plusieurs à la fois et à les maintenir en équilibre."
+"Ezo, qui ne savait pas trop quoi faire, commença par prendre les plats que donnait Yoshino pour les transférer à Sei et Akié. Elle fut assez étonnée par l’habileté de ses camarades."
+"Alors qu’Ezo avait du mal à maintenir les plats dans les faire tomber, Akié, et même Sei, arrivaient à en prendre plusieurs à la fois et à les maintenir en équilibre."
 show ezo B4 S3 Y2 at left, xflip
 with dissolve
 ezo "Impressionnant…"
@@ -234,6 +235,8 @@ yoshino "Certainement pas ! Au travail !"
 hide clateau
 with dissolve
 hide yoshino
+with dissolve
+scene bg salle
 with dissolve
 "De leur côté, Sei et Akié firent cesser l’accueil à Ezo pour arrêter le massacre."
 show akie B3 S2 Y4 Go at right
@@ -548,7 +551,7 @@ menu:
         # Si “se coucher”
         scene bg grenier
         with dissolve
-        "Ezo partit se coucher, et finalement elle ne mit pas longtemps avant de s’endormir. Mais elle se réveilla bientôt."
+        "Ezo partit se coucher, et finalement elle ne mit pas longtemps avant de s’endormir. Mais elle se réveilla très tôt."
         show ezo B6 S2 Y3 at left, xflip
         with dissolve
         ezo "Puisque je suis levée, autant descendre…"
@@ -707,7 +710,7 @@ menu:
         "En s’agitant, Ezo fit rappliquer Yoshino !"
         show akie B4 S2 Y8 at right
         with dissolve
-        akie "Ah ! Yoshino ! Je peux t’expliquer"
+        akie "Ah ! Yoshino ! Je peux t’expliquer !"
         "Yoshino ne jetta qu’un regard en coin à Akié."
         show yoshino B4 S1 Y1 at left, xflip
         with dissolve

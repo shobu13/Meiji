@@ -4,6 +4,13 @@ label yoshino_ch3:
 # TODONE Ezo est encore en cuistot
 $ezo_outfit = 'Cui'
 
+scene bg Black
+with dissolve
+show chapter_ch3:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
 scene bg cuisine
 with dissolve
 "Ezo pensait que Yoshino et elle étaient maintenant devenues de bonnes amies après l’épisode du gâteau."

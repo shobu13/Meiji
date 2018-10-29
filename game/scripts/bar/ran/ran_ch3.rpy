@@ -1,6 +1,8 @@
 label ran_ch3:
     pass
 
+scene bg Black
+with dissolve
 show chapter_ch3:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5

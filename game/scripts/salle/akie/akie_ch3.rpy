@@ -1,6 +1,13 @@
 label akie_ch3:
     pass
 
+scene bg Black
+with dissolve
+show chapter_ch3:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+with Pause(3)
 "Après leur entrevue et la mise à nue d’Ezo sur son passé et ses craintes, Ezo et Akié devinrent encore plus fusionnelle."
 "Elles faisaient tous ensemble, et même les clients étaient habitués à les voir ensemble."
 "Un matin, elle ne se présenta pas au travail."

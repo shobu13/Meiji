@@ -1,6 +1,8 @@
 label clateau_ch2:
     pass
 
+scene bg Black
+with dissolve
 show chapter_ch2:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5

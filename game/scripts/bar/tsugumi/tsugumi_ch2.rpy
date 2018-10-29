@@ -1,6 +1,10 @@
 label tsugumi_ch2:
     pass
 
+scene bg Black
+with dissolve
+scene bg Black
+with dissolve
 show chapter_ch2:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
@@ -52,7 +56,8 @@ with dissolve
 "Sur une petite estrade improvisée, des ouvriers se succédèrent pour faire des déclarations. Il était encore peut-être trop tôt pour parler de révolution sociale au Japon, mais déjà les nouvelles usines modernes qui poussaient comme des champignons provoquaient le mécontentement des nouveaux ouvriers sous-payés."
 "Bien évidemment dans le tas, il y avait aussi un certain nombre de nostalgiques du Shogun. Ça, Tsugumi aimait moins, elle assistait à ces réunions pour améliorer ses conditions de vie, mais n’en touchait pas grand-chose niveau politique."
 "Ezo, par contre, s’y plaisait assez, car ayant pris le parti du Shogun avec les autres membres du corps expéditionnaire français, elle était contente de voir des gens penser comme elle."
-"Mais elle fit plus la grimace lorsque l’un des intervenant fustigea les débuts de l’impérialisme montant au Japon, et surtout celui des puissances européennes. Ezo avait été traînée sur les champs de bataille par les légionnaires qu’elle accompagnait, et elle avait déjà participé, plus ou moins activement en fonction de son âge, à plusieurs invasions."
+"Mais elle fit plus la grimace lorsque l’un des intervenant fustigea les débuts de l’impérialisme montant au Japon, et surtout celui des puissances européennes."
+"Ezo avait été traînée sur les champs de bataille par les légionnaires qu’elle accompagnait, et elle avait déjà participé, plus ou moins activement en fonction de son âge, à plusieurs invasions."
 "Et Clateau avait fait ses classes militaires lors d’une campagne de « pacification » de l’Algérie. Le sujet la concernait particulièrement."
 "Le rassemblement ne dura pas très longtemps. Après tout, ce n’était pas permis, et pour éviter d’attirer l’attention, on ne pouvait pas le faire durer indéfiniment."
 "En rentrant, Tsugumi aperçut qu’Ezo était plus sombre que d’habitude."

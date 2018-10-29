@@ -10,7 +10,7 @@ with Pause(3)
 scene bg grenier
 with dissolve
 "Au petit matin, les rayons du soleil commençaient tout juste à filtrer par la lucarne du grenier. Ezo grognait, gênée par la lumière, et se réveilla."
-hide ezo
+show ezo Y1 B6 S3 eH
 with dissolve
 ezo "Gnnn… Il est encore tôt. Mais c’est l’heure de bosser !"
 "Elle se réveilla et descendit au premier étage, dans l’appartement de Clateau. Il était déjà descendu et avait juste laissé le petit-déjeuner sur la table. Ezo s’empressa d’avaler un croissant et de descendre aussi."
@@ -29,7 +29,7 @@ with dissolve
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Bonjour à vous deux. Où sont les autres ?"
-show clateau B1 S1 Y14 at right
+show clateau B1 S1 Y4 at right
 with dissolve
 clateau "Akié et Sei sont déjà en salle. Ran t’attends au bar, je l’ai prévenue que tu allais la rejoindre."
 show ezo B2 S3 Y2 at left, xflip
@@ -46,7 +46,7 @@ ezo "Ça m’enchante pas mais je suppose que je n’ai pas le choix…"
 show yoshino B2 S1 Y4 at right
 with dissolve
 yoshino "Contente que tu l’ai compris. Mais attends deux secondes."
-# bruit de porte genre CLAC
+"La porte claqua dans un bruit fracassant."
 hide clateau
 with dissolve
 clateau "Hm ? Yoshino, tu as refermé la porte de la réserve."
@@ -72,8 +72,7 @@ clateau "Yoshino ? Tu vas rouvrir la porte hein."
 scene bg Black
 with dissolve
 # TODONE Ezo porte son uniforme de serveuse
-show ezo Se
-with dissolve
+$ ezo_outfit = "Se"
 scene bg bar
 with dissolve
 "Ezo avait passé l’uniforme de serveuse du restaurant et s’était rendue au bar. En arrivant, elle trouva Ran, devant son bar, un chiffon à la main, en train de nettoyer le plan de travail."
@@ -97,6 +96,7 @@ with dissolve
 ran "Alors comme ça, vous avez choisis le bar n’est-ce pas ? Vous aurais-je tapé dans l’oeil ?"
 menu:
     "Je préfère travailler en charmante compagnie, oui.":
+        $relation_ran += 1
         show ezo B1 S3 Y4 at left, xflip
         with dissolve
         ezo "Je préfère travailler en charmante compagnie, oui."
@@ -104,6 +104,7 @@ menu:
         with dissolve
         ran "Oh, vous m'embarrassez ! Voilà que ma taquinerie se retourne contre moi"
     "Je préfère surtout être en contact avec les ouvriers.":
+        $relation_tsugumi += 1
         show ezo B1 S3 Y4 at left, xflip
         with dissolve
         ezo "Je préfère surtout être en contact avec les ouvriers."
@@ -115,7 +116,7 @@ with dissolve
 ezo "En tout cas, je m’en remet à toi."
 show ran B1 S1 Y4 at right
 with dissolve
-ran "Moi de même, mademoiselle Ezo.J’espère que nous nous entendrons bien."
+ran "Moi de même, mademoiselle Ezo. J’espère que nous nous entendrons bien."
 hide ezo
 with dissolve
 hide ran
@@ -131,7 +132,8 @@ hide ezo
 with dissolve
 hide ran
 with dissolve
-"La matinée se passa sans trop de mal. Les rares clients ne commandaient pas grand-chose. C’était une bonne chose pour Ezo, qui put prendre ses marques petit à petit dans son nouvel environnement. Ran se trouvait assez attentionnée à son encontre, et lui expliquait en détail tout ce qu’il fallait savoir sur le fonctionnement du bar."
+"La matinée se passa sans trop de mal. Les rares clients ne commandaient pas grand-chose. C’était une bonne chose pour Ezo, qui put prendre ses marques petit à petit dans son nouvel environnement."
+"Ran se trouvait assez attentionnée à son encontre, et lui expliquait en détail tout ce qu’il fallait savoir sur le fonctionnement du bar."
 "Alors que midi approchait, Ezo regarda les étagères derrière Ran. Elles montaient presque jusqu’au plafond et était remplies de bouteilles. Ce mur de verre donnait presque le vertige, et on espérait que les planches furent bien fixée quand on se trouvait juste en dessous."
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
@@ -197,10 +199,12 @@ $tsugumi_nom = "Tsugumi & ran"
 tsugumi "Et toi Ezo, tu préfères quoi ?"
 $tsugumi_nom = "Tsugumi"
 hide tsugumi
+hide akie
 with dissolve
 
 menu:
     "Je préfère l'absinthe":
+        $relation_ran += 1
         show ezo B1 S1 Y2 at left, xflip
         with dissolve
         ezo "Je préfère l'absinthe"
@@ -213,6 +217,7 @@ menu:
         with dissolve
         tsugumi "Eh bien je boirai ma bière toute seule alors !"
     " J’aime bien la bière":
+        $relation_tsugumi += 1
         show ezo B1 S1 Y2 at left, xflip
         with dissolve
         ezo "J’aime bien la bière"
@@ -223,6 +228,9 @@ menu:
         with dissolve
         ran "Hum, mademoiselle Ezo, vous me décevez."
         "Après la discussion, Ran resta immobile devant son robinet à bière, mais cette fois-ci elle ne somnolait pas, elle arborait juste une tête grognon."
+
+hide tsugumi
+with dissolve
 show yoshino B5 S1 Y1 at right
 with dissolve
 yoshino "La commande est prête !"
@@ -258,7 +266,6 @@ hide tsugumi
 with dissolve
 hide ezo
 with dissolve
-# TODO Bruit quelconque
 show yoshino B8 Y5 at left, xflip
 with dissolve
 yoshino "ezo ! Ran ! Qu’est-ce que vous foutez !? Je ne reçois plus de commandes depuis un moment ! Au travail !"
@@ -274,10 +281,12 @@ hide yoshino
 with dissolve
 menu:
     "C’était sympa de parler ensemble, faudra qu’on remette ça ! Je te laisse, faut que je reprenne le taff.":
+        $relation_tsugumi += 1
         show ezo B1 S3 Y4 at left, xflip
         with dissolve
         ezo "C’était sympa de parler ensemble, faudra qu’on remette ça ! Je te laisse, faut que je reprenne le taff."
     "Argh, je dois y aller sous peine de me faire tailler en pièce par Yoshino ! Bye !":
+        $relation_tsugumi -= 1
         show ezo B2 S3 Y2 at left, xflip
         with dissolve
         ezo "Argh, je dois y aller sous peine de me faire tailler en pièce par Yoshino ! Bye !"
@@ -318,21 +327,22 @@ with dissolve
 ran "Eh bien… mon père a choisi de se ranger assez vite du côté de l’empereur."
 menu:
     " Il a eu raison. C’était peine perdue de toute manière.":
+        $relation_ran += 1
         show ezo B1 S1 Y2 at left, xflip
         with dissolve
-        ezo "Il a eu raison.  C’était peine perdue de toute manière."
-        ezo "### Ran(B4/S3/Y3) C’est triste, mais c’était en effet la meilleure décision possible."
-        show ran B4 S3 Y3 at center
+        ezo "Il a eu raison. C’était peine perdue de toute manière."
+        show ran B4 S3 Y3 at right
         with dissolve
         ran "C’est triste, mais c’était en effet la meilleure décision possible."
     "Ah ? C’est à cause de gens comme lui qu’on a perdu la guerre.":
+        $relation_ran -= 1
         show ezo B1 S1 Y2 at left, xflip
         with dissolve
         ezo "Ah ? C’est à cause de gens comme lui qu’on a perdu la guerre."
         show ran B4 S3 Y3 at right
         with dissolve
         ran "Je suis désolée pour vous, mais la guerre aurait été perdue de toute manière, nous n’avions pas le choix."
-show ran B1 SS1 Y2 at right
+show ran B1 S1 Y2 at right
 with dissolve
 ran "Mais vous semblez plutôt jeune pour avoir participé à la guerre. Pourquoi vous être enrôlée ? Venir de l’étranger juste pour la guerre, voilà un étrange voyage…"
 show ezo B4 S2 Y4 at left, xflip
@@ -378,7 +388,6 @@ ran "Mais enfin, voyons, nul besoin de s’énerver ainsi, mademoiselle Yoshino�
 show yoshino B4 S2 Y1 at left, xflip
 with dissolve
 yoshino "Justement, ce serait bien que tu lui files un coup de main… Laisse-la préparer un peu les alcools et prends le relais au service."
-yoshino "Ran(B5/S1/Y2/droite) Mais vous n’y pensez pas ! Une enfant, si jeune, manipuler les bouteilles !"
 show ran B5 S1 Y2 at right
 with dissolve
 ran "Mais vous n’y pensez pas ! Une enfant, si jeune, manipuler les bouteilles !"
@@ -425,7 +434,7 @@ hide ran
 with dissolve
 show yoshino B2 S2 Y3 at right
 with dissolve
-yoshino "*Il est vieux."
+yoshino "Il est vieux."
 hide yoshino
 with dissolve
 show ran B2 S1 Y4 at right
@@ -515,7 +524,9 @@ ran "Ah bon ? Je ne puis dire que le patron soit quelqu’un de caractère, mais
 show ezo B2 S2 Y2 at left, xflip
 with dissolve
 ezo "Je vois…"
-"Ezo s’assit sur une chaise, et repensa un peu à Clateau pendant la guerre. C’était un petit lieutenant d’artillerie. Il n’était pas très bon, ni très mauvais, et se contentait de remplir ses ordres comme on le lui demandait. Quand elle lui parlait, elle se souvenait qu’il était souvent pessimiste sur le cours des choses, le déroulement des batailles. Mais il était vif d’esprit, et quand la situation l’exigeait, il parvenait à sortir son bataillon des plus mauvais coups. Ezo avait toujours pensé que ce défaitisme arboré était la marque de son expérience en tant que soldat."
+"Ezo s’assit sur une chaise, et repensa un peu à Clateau pendant la guerre. C’était un petit lieutenant d’artillerie. Il n’était pas très bon, ni très mauvais, et se contentait de remplir ses ordres comme on le lui demandait."
+"Quand elle lui parlait, elle se souvenait qu’il était souvent pessimiste sur le cours des choses, le déroulement des batailles. Mais il était vif d’esprit, et quand la situation l’exigeait, il parvenait à sortir son bataillon des plus mauvais coups."
+"Ezo avait toujours pensé que ce défaitisme arboré était la marque de son expérience en tant que soldat."
 show ezo B2 S2 Y2 at left, xflip
 with dissolve
 ezo "Au final, la guerre, c’était juste pas son truc…"
@@ -593,7 +604,6 @@ with dissolve
 show ezo B3 S3 Y2 at left, xflip
 with dissolve
 ezo "Un livre de poésie, hein ?"
-ezo "Sei(B2/S1/Y1/droite) Oui, en effet. J’adore la littérature."
 show sei B2 S1 Y1 at right
 with dissolve
 sei "Oui, en effet. J’adore la littérature."
@@ -695,17 +705,19 @@ with dissolve
 tsugumi "T’en prendras bien une avec moi ? Pour fêter ton premier jour dans la Gargotte de Clateau !"
 menu:
     "boire":
-        show ezo B1 S3 Y4 at center
+        $relation_tsugumi += 1
+        show ezo B1 S3 Y4 at left, xflip
         with dissolve
         ezo "Ouais, allez. Mais je te préviens, j’ai une bonne descente !"
-        show tsugumi B1 S1 Y2 at center
+        show tsugumi B1 S1 Y2 at right
         with dissolve
         tsugumi "Pas autant que moi, tu verras !"
     " ne pas boire":
-        show ezo B1 S1 Y2 at center
+        $relation_tsugumi -= 1
+        show ezo B1 S1 Y2 at left, xflip
         with dissolve
         ezo "Je ne bois jamais pendant le service !"
-        show tsugumi B2 S1 Y4 at center
+        show tsugumi B2 S1 Y4 at right
         with dissolve
         tsugumi "Pff, t’es trop rigide, toi…"
 "Ezo et Tsugumi discutaient toutes les deux alors que Ran restait plantée comme un piquet au milieu de la salle."
@@ -778,7 +790,8 @@ hide ezo
 with dissolve
 hide tsugumi
 with dissolve
-"Les discussions et le brouhaha reprirent de plus belle. On voyait les allers et venues de ceux qui s’arrêtaient manger au restaurant. Le soir commençait à tomber et de plus en plus de gens rentraient chez eux. Le bar tout comme le restaurant se vidaient petit à petit. Finalement, Tsugumi resta la seule dans le bar. L’équipe allait bientôt terminer son service, et Akié et Sei vinrent au bar aussi, alors que le restaurant venait de fermer."
+"Les discussions et le brouhaha reprirent de plus belle. On voyait les allers et venues de ceux qui s’arrêtaient manger au restaurant. Le soir commençait à tomber et de plus en plus de gens rentraient chez eux."
+"Le bar tout comme le restaurant se vidaient petit à petit. Finalement, Tsugumi resta la seule dans le bar. L’équipe allait bientôt terminer son service, et Akié et Sei vinrent au bar aussi, alors que le restaurant venait de fermer."
 show akie B1 S1 Y2 at right
 with dissolve
 akie "Pfiou, c’était bien crevant !"
@@ -857,6 +870,7 @@ with dissolve
 tsugumi "Bah… On a bien un syndicat, mais c’est difficile de faire bouger les choses. C’est pour ça que je te disais que tu avais de la chance d’avoir des camarades pour te soutenir."
 menu:
     "C’est parce que j’ai eu une bonne collègue que ça s’est bien passé":
+        $relation_ran += 1
         show ezo B1 S3 Y4 at left, xflip
         with dissolve
         ezo "C’est parce que j’ai eu une bonne collègue que ça s’est bien passé."
@@ -866,6 +880,7 @@ menu:
         with dissolve
         ran "Con… Contente d’avoir pu vous être utile."
     "Tu sais, j’ai aussi une très bonne clientèle":
+        $relation_tsugumi += 1
         show ezo B1 S3 Y4 at left, xflip
         with dissolve
         ezo "Tu sais, j’ai aussi une très bonne clientèle"
@@ -931,7 +946,9 @@ with dissolve
 akie "Héhé…"
 hide akie
 with dissolve
-show sei B1 S1 Y at right
+hide yoshino
+with dissolve
+show sei B1 S1 Y1 at right
 with dissolve
 sei "On ferait mieux de rentrer ensemble, Yoshino. Avec toi il ne nous arrivera rien."
 hide yoshino
@@ -939,25 +956,27 @@ with dissolve
 hide sei
 with dissolve
 # Si point tsugumi>point Ran
-show tsugumi B3 S1 Y1 at right
-with dissolve
-tsugumi "Si c’est une question de protection, je pense qu’Ezo aussi pourrait très bien le faire, non ?"
-show akie B2 S1 Y4 at left, xflip
-with dissolve
-akie "Je peux confirmer qu’elle est très forte, oui !"
-# Si point Ran>point Tsugumi
-show ran B1 S1 Y2 at right
-with dissolve
-ran "Si c’était mademoiselle Ezo qui m’accompagnait, je me sentirais en sécurité."
-show akie B2 S1 Y4 at left, xflip
-with dissolve
-akie "Ça, je peux te l’assurer !"
-hide akie
-with dissolve
-hide ran
-with dissolve
-hide tsugumi
-with dissolve
+if relation_tsugumi > relation_ran:
+    show tsugumi B3 S1 Y1 at right
+    with dissolve
+    tsugumi "Si c’est une question de protection, je pense qu’Ezo aussi pourrait très bien le faire, non ?"
+    show akie B2 S1 Y4 at left, xflip
+    with dissolve
+    akie "Je peux confirmer qu’elle est très forte, oui !"
+else:
+    # Si point Ran>point Tsugumi
+    show ran B1 S1 Y2 at right
+    with dissolve
+    ran "Si c’était mademoiselle Ezo qui m’accompagnait, je me sentirais en sécurité."
+    show akie B2 S1 Y4 at left, xflip
+    with dissolve
+    akie "Ça, je peux te l’assurer !"
+    hide akie
+    with dissolve
+    hide ran
+    with dissolve
+    hide tsugumi
+    with dissolve
 # TODONE fondu en noir
 scene bg Black
 with dissolve
@@ -1152,29 +1171,32 @@ hide tsugumi
 with dissolve
 "La fin de journée se passa comme d’habitude. Ran et Ezo travaillèrent, ou en tout cas essayèrent. Le soir, Tsugumi revint, un peu plus tôt que d’habitude."
 # Si les points tsugumi>points Ran
-show tsugumi B4 S1 Y1 at right
-with dissolve
-tsugumi "Dit Ezo, ça te dirait de venir à notre fameuse réunion syndicale ? Tu m’avais l’air intéressée."
-hide tsugumi
-with dissolve
-menu:
-    " Oui, pour sûr !":
-        show ezo B2 S3 Y4 at left, xflip
-        with dissolve
-        ezo "Oui, pour sûr !"
-        show tsugumi B1 S1 Y2 at right
-        with dissolve
-        tsugumi "Je savais que tu serais partante ! Elle se tiendra sur le port, pas loin de l’usine, lors de ton prochain jours de repos. Soit là à l’heure, on attendra pas les retardataires !"
-        show ezo B2 S3 Y2 at left, xflip
-        with dissolve
-        ezo "Compte sur moi !"
-    " Non, désolée.":
-        show ezo B1 S3 Y2 Go at left, xflip
-        with dissolve
-        ezo "Non, désolée. j’ai encore beaucoup de choses à faire avec ma récente arrivée."
-        show tsugumi B2 S2 Y1 at right
-        with dissolve
-        tsugumi "Oh, je vois… dommage."
+if relation_tsugumi > relation_ran:
+    show tsugumi B4 S1 Y1 at right
+    with dissolve
+    tsugumi "Dit Ezo, ça te dirait de venir à notre fameuse réunion syndicale ? Tu m’avais l’air intéressée."
+    hide tsugumi
+    with dissolve
+    $tsugumi_route = False
+    menu:
+        " Oui, pour sûr !":
+            show ezo B2 S3 Y4 at left, xflip
+            with dissolve
+            ezo "Oui, pour sûr !"
+            show tsugumi B1 S1 Y2 at right
+            with dissolve
+            tsugumi "Je savais que tu serais partante ! Elle se tiendra sur le port, pas loin de l’usine, lors de ton prochain jours de repos. Soit là à l’heure, on attendra pas les retardataires !"
+            show ezo B2 S3 Y2 at left, xflip
+            with dissolve
+            ezo "Compte sur moi !"
+            $tsugumi_route = True
+        " Non, désolée.":
+            show ezo B1 S3 Y2 Go at left, xflip
+            with dissolve
+            ezo "Non, désolée. j’ai encore beaucoup de choses à faire avec ma récente arrivée."
+            show tsugumi B2 S2 Y1 at right
+            with dissolve
+            tsugumi "Oh, je vois… dommage."
 hide tsugumi
 with dissolve
 hide ezo
@@ -1186,6 +1208,8 @@ tsugumi "Allez Ran, une bière ! Et cette fois, buvez avec moi, vous deux !"
 show ran B4 S1 Y4 at left, xflip
 with dissolve
 ran "Bon, d’accord… mais alors pas de bière ! Je vais vous faire goûter de la liqueur ; regardez cette chartreuse que j’ai chipée à Clateau… C’est plutôt rare par ici."
+hide ran
+with dissolve
 show tsugumi B4 S1 Y1 Go at left, xflip
 with dissolve
 tsugumi "Quitte à boire de l’alcool fort je préférerais du saké…"
@@ -1210,7 +1234,7 @@ ran "Euh, c’est juste pour goûter, je ne voulais pas…"
 show clateau B1 S1 Y4 at right
 with dissolve
 clateau "Ça me fait penser à la première fois où Ezo a bu de l’alcool…"
-hide ezo
+hide ran
 with dissolve
 show ezo B4 S1 Y8 at left, xflip
 with dissolve
@@ -1223,6 +1247,8 @@ with dissolve
 ezo "AAAAAH, TAIS-TOI, LOLICON !"
 "Ezo envoya son shot sur Clateau pour l'assommer."
 "Celui-ci le reçut entre les deux yeux. Pendant ce temps, Ran et Tsugumi regardaient Ezo en se retenant de rire."
+hide clateau
+with dissolve
 show ran B2 S1 Y4 at right
 with dissolve
 ran "Pfff, je ne pensais pas ça de vous, mademoiselle Ezo."
@@ -1235,6 +1261,8 @@ hide ezo
 with dissolve
 "À la fin de la journée, Tsugumi retourna chez elle."
 # Si refus Tsugumi ou point Ran>Tsugumi
+if tsugumi_route:
+    jump tsugumi_ch2
 show ran B2 S1 Y1 at right
 with dissolve
 ran "Ma chère Ezo…  Je me demandais, que diriez-vous de prendre le thé avec moi lors de notre jour de repos ?"

@@ -74,7 +74,7 @@ image ezo_yeux_Y8 = "Ezo/ezo_eye8.png"
 image ezo_exp_R1 = "Ezo/ezo_blush1.png"
 image ezo_exp_R2 = "Ezo/ezo_blush2.png"
 image ezo_exp_R3 = "Ezo/ezo_blush3.png"
-image ezo_exp_Ge = "Ezo/ezo_geh.png"
+image ezo_exp_eH = "Ezo/ezo_geh.png"
 image ezo_exp_Go = "Ezo/ezo_sweat.png"
 ###Accesoires
 image ezo_acc_Ke = "Ezo/ezo_kepi.png"
@@ -112,7 +112,7 @@ image ran_yeux_Y8 = "Ran/ran_eyes8.png"
 image ran_exp_R1 = "Ran/ran_blush1.png"
 image ran_exp_R2 = "Ran/ran_blush2.png"
 image ran_exp_R3 = "Ran/ran_blush3.png"
-image ran_exp_Ge = "Ran/ran_geh.png"
+image ran_exp_eH = "Ran/ran_geh.png"
 image ran_exp_Go = "Ran/ran_sweat.png"
 
 ##Tsugumi
@@ -145,7 +145,7 @@ image tsugumi_yeux_Y6 = "Tsugumi/tsugumi_eyes6.png"
 image tsugumi_exp_R1 = "Tsugumi/tsugumi_blush.png"
 image tsugumi_exp_R2 = "Tsugumi/tsugumi_blush2.png"
 image tsugumi_exp_R3 = "Tsugumi/tsugumi_blush3.png"
-image tsugumi_exp_Ge = "Tsugumi/tsugumi_geh.png"
+image tsugumi_exp_eH = "Tsugumi/tsugumi_geh.png"
 image tsugumi_exp_Go = "Tsugumi/tsugumi_sweat.png"
 ###Accesoires
 image tsugumi_acc_Ca = "Tsugumi/tsugumi_casquette.png"
@@ -183,7 +183,7 @@ image akie_yeux_Y8 = "Akie/akie_eyes8.png"
 image akie_exp_R1 = "Akie/akie_blush1.png"
 image akie_exp_R2 = "Akie/akie_blush2.png"
 image akie_exp_R3 = "Akie/akie_blush3.png"
-image akie_exp_Ge = "Akie/akie_geh.png"
+image akie_exp_eH = "Akie/akie_geh.png"
 image akie_exp_Go = "Akie/akie_sweat.png"
 
 ##Sei
@@ -218,7 +218,7 @@ image sei_yeux_Y7 = "Sei/sei_eyes7.png"
 image sei_exp_R1 = "Sei/sei_blush1.png"
 image sei_exp_R2 = "Sei/sei_blush2.png"
 image sei_exp_R3 = "Sei/sei_blush3.png"
-image sei_exp_Ge = "Sei/sei_geh.png"
+image sei_exp_eH = "Sei/sei_geh.png"
 image sei_exp_Go = "Sei/sei_sweat.png"
 
 ##Yoshino
@@ -254,7 +254,7 @@ image yoshino_yeux_Y8 = "Yoshino/yoshino_eyes8.png"
 image yoshino_exp_R1 = "Yoshino/yoshino_blush1.png"
 image yoshino_exp_R2 = "Yoshino/yoshino_blush2.png"
 image yoshino_exp_R3 = "Yoshino/yoshino_blush3.png"
-image yoshino_exp_Ge = "Yoshino/yoshino_geh.png"
+image yoshino_exp_eH = "Yoshino/yoshino_geh.png"
 image yoshino_exp_Go = "Yoshino/yoshino_sweat.png"
 ###Accesoires
 image yoshino_acc_Co = "Yoshino/yoshino_couteau.png"
@@ -290,10 +290,8 @@ image clateau_yeux_Y6 = "Clateau/clateau_eye6.png"
 image clateau_yeux_Y7 = "Clateau/clateau_eye7.png"
 image clateau_yeux_Y8 = "Clateau/clateau_eye8.png"
 ###Expressions
-image clateau_exp_R1 = "Clateau/clateau_blush1.png"
-image clateau_exp_R2 = "Clateau/clateau_blush2.png"
-image clateau_exp_R3 = "Clateau/clateau_blush3.png"
-image clateau_exp_Ge = "Clateau/clateau_geh.png"
+image clateau_exp_R1 = "Clateau/clateau_blush.png"
+image clateau_exp_eH = "Clateau/clateau_geh.png"
 image clateau_exp_Go = "Clateau/clateau_sweat.png"
 ###Accesoires
 image clateau_acc_Co = "Clateau/clateau_couteau.png"
@@ -351,7 +349,7 @@ layeredimage ezo:
         attribute R1
         attribute R2
         attribute R3
-        attribute Ge
+        attribute eH
         attribute Go
     if ezo_outfit == 'Mi':
         'ezo_acc_Ke'
@@ -389,7 +387,7 @@ layeredimage ran:
         attribute R1
         attribute R2
         attribute R3
-        attribute Ge
+        attribute eH
         attribute Go
 
 layeredimage tsugumi:
@@ -422,7 +420,7 @@ layeredimage tsugumi:
         attribute R1
         attribute R2
         attribute R3
-        attribute Ge
+        attribute eH
         attribute Go
     group acc:
         attribute Ca default
@@ -460,7 +458,7 @@ layeredimage akie:
         attribute R1
         attribute R2
         attribute R3
-        attribute Ge
+        attribute eH
         attribute Go
 
 layeredimage sei:
@@ -495,7 +493,7 @@ layeredimage sei:
         attribute R1
         attribute R2
         attribute R3
-        attribute Ge
+        attribute eH
         attribute Go
 
 layeredimage yoshino:
@@ -531,7 +529,7 @@ layeredimage yoshino:
         attribute R1
         attribute R2
         attribute R3
-        attribute Ge
+        attribute eH
         attribute Go
     group acc:
         attribute Co default
@@ -570,7 +568,7 @@ layeredimage clateau:
         attribute R1
         attribute R2
         attribute R3
-        attribute Ge
+        attribute eH
         attribute Go
     group acc:
         attribute Co
@@ -1522,7 +1520,7 @@ label start:
                     ran "Mademoiselle Ezo ! J’aurais cru trouver à votre encontre plus de soutien dans cette période difficile !"
                     hide ezo
                     with dissolve
-                    show yoshino B8 S3 Y1 Ge at left, xflip
+                    show yoshino B8 S3 Y1 eH at left, xflip
                     with dissolve
                     yoshino "Va bosser !"
                     hide yoshino
@@ -1532,7 +1530,7 @@ label start:
                     ezo "Ouais !"
                     hide ran
                     with dissolve
-                    show yoshino B8 Y5 -S3 -Ge at right
+                    show yoshino B8 Y5 -S3 -eH at right
                     with dissolve
                     yoshino "Et toi aussi !"
                     scene bg bar

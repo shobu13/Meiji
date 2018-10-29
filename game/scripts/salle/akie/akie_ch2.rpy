@@ -170,8 +170,14 @@ hide ezo
 with dissolve
 hide clateau
 with dissolve
+scene bg grenier
+with dissolve
 "Habituellement, Ezo n’est pas du genre à partager ses sentiments. Pendant qu’elle montait dans sa chambre, elle rougissait en pensant que ce petit moment d’euphorie l’avait poussé à en parler avec Clateau."
 "Ce n’était pas qu’elle détestait ça, mais elle avait encore du mal à l’accepter."
+scene bg Black
+with dissolve
+scene bg salle
+with dissolve
 "Le lendemain, lors du service, c’est assez logiquement Akié qui s’occupa d’Ezo. Elle était encore un peu rude et agissait encore de manière trop carrée pour une serveuse."
 "À chaque fois qu’elle répondait trop sérieusement, Akié arrivait pour désamorcer la situation et donner des conseils à Ezo. Elle était patiente avec elle, et essayait d’être la plus compréhensible possible."
 "Un moment où Ezo revenait de la réserve, elle s’était collée au mur et une belle tâche de farine faisait une auréole sur son uniforme."
@@ -300,6 +306,10 @@ with dissolve
 "Ezo était toute contente à l’idée d’annoncer à Akié qu’elle allait avoir plus de nourriture pour les chats, et plus encore fière d’annoncer qu’elle avait fait plier Yoshino."
 "Au premier abord, elle est stricte, comme pouvait l’être un sergent instructeur dans l’armée. Mais dès qu’elle était déstabilisée un peu, elle devenait tout de suite plus gentille."
 "Il fallait juste oser passer le premier front."
+scene bg Black
+with dissolve
+scene bg cuisine
+with dissolve
 "Le soir, alors que le service se terminait, Ezo et les autres se retrouvèrent toutes au bar. Akié était toujours aux petits soins avec Ezo."
 "Cette dernière se faisait servir une grande pinte de bière, pour imiter Tsugumi."
 show akie B4 S2 Y4 at right
@@ -354,10 +364,10 @@ with dissolve
 # fondu en noir
 show bg Black
 with dissolve
-"Le prochain jour de repos, Ezo arriva devant Akié avec un énorme sac de provisions. Yoshino ne l’avait pas fait à moitié."
-"Toutes les choses inutiles et bientôt périmée ou à jeter lui avait été donnée, rien n’avait été oublié."
 scene bg rue
 with dissolve
+"Le prochain jour de repos, Ezo arriva devant Akié avec un énorme sac de provisions. Yoshino ne l’avait pas fait à moitié."
+"Toutes les choses inutiles et bientôt périmée ou à jeter lui avait été donnée, rien n’avait été oublié."
 show akie B1 S2 Y2 at right
 with dissolve
 akie "Qu’est-ce que c’est que tout ça ?"
@@ -457,10 +467,10 @@ with dissolve
 akie "Sei ? Pourquoi tu parles tout bas ?"
 "Akié n’eut pas besoin de la réponse de Sei. À côté, Ezo s’était affublée de la culotte comme d’un couvre-chef, et la regardait avec ses yeux de chat."
 "Akié prit une couleur écarlate instantanément, et se dépêcha de revenir vers Ezo et Sei."
-show akie B6 S2 Y7 R2 at right
+show akie B6 S2 Y7 R2 at left, xflip
 with dissolve
 akie "Qu’est-ce que tu fais avec ça Ezo ?! Ne… ne la met pas sur ta tête !"
-show ezo B1 S1 Y2 at left, xflip
+show ezo B1 S1 Y2 at right
 with dissolve
 ezo "C’est toi qui l’a oublié !"
 hide akie

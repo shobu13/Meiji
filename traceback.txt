@@ -1,26 +1,64 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 579, in script
-    python:
-  File "game/script.rpy", line 597, in <module>
-    moment_journee
-NameError: name 'moment_journee' is not defined
+  File "game/script.rpy", line 619, in script call
+    "Nous sommes en 1870, à Tokyo, capitale nouvellement renommée de l’Empire du Japon. Depuis peu, le pays s’ouvre aux techniques étrangères, et de nombreux occidentaux parcourent ses rues."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 7, in script call
+    "Au petit matin, Ezo s’était réveillé avec le soleil comme à son habitude. Ses cheveux en bataille, assise en tailleur sur son lit, elle se frottait la joue avec sa main, et cela lui donnait un petit air d’animal sauvage."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 11, in script call
+    "Ezo passa ses mains dans ses cheveux pour les rendre moins rebelle. Elle déplissa son uniforme militaire, l’épousseta, se disant qu’elle devrait avoir l’air un peu classe face à Sei, quand même."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 7, in script call
+    "Au petit matin, Ezo s’était réveillé avec le soleil comme à son habitude. Ses cheveux en bataille, assise en tailleur sur son lit, elle se frottait la joue avec sa main, et cela lui donnait un petit air d’animal sauvage."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 34, in script
+    show tsugumi B4 S1 Y1 B1 at right
+  File "renpy/common/00layeredimage.rpy", line 724, in _choose_attributes
+    raise Exception("The attributes for {} conflict: {}".format(tag, " ".join(both)))
+Exception: The attributes for tsugumi conflict: B4 B1
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 579, in script
-    python:
-  File "C:\renpy\renpy\ast.py", line 882, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\renpy\renpy\python.py", line 1913, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/script.rpy", line 597, in <module>
-    moment_journee
-NameError: name 'moment_journee' is not defined
+  File "game/script.rpy", line 619, in script call
+    "Nous sommes en 1870, à Tokyo, capitale nouvellement renommée de l’Empire du Japon. Depuis peu, le pays s’ouvre aux techniques étrangères, et de nombreux occidentaux parcourent ses rues."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 7, in script call
+    "Au petit matin, Ezo s’était réveillé avec le soleil comme à son habitude. Ses cheveux en bataille, assise en tailleur sur son lit, elle se frottait la joue avec sa main, et cela lui donnait un petit air d’animal sauvage."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 11, in script call
+    "Ezo passa ses mains dans ses cheveux pour les rendre moins rebelle. Elle déplissa son uniforme militaire, l’épousseta, se disant qu’elle devrait avoir l’air un peu classe face à Sei, quand même."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 7, in script call
+    "Au petit matin, Ezo s’était réveillé avec le soleil comme à son habitude. Ses cheveux en bataille, assise en tailleur sur son lit, elle se frottait la joue avec sa main, et cela lui donnait un petit air d’animal sauvage."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 34, in script
+    show tsugumi B4 S1 Y1 B1 at right
+  File "C:\renpy\renpy\ast.py", line 1151, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\renpy\renpy\ast.py", line 1121, in show_imspec
+    atl=atl)
+  File "C:\renpy\renpy\exports.py", line 676, in show
+    new_what = renpy.game.context().images.apply_attributes(layer, key, name)
+  File "C:\renpy\renpy\display\image.py", line 896, in apply_attributes
+    return self.choose_image(nametag, required, optional, name)
+  File "C:\renpy\renpy\display\image.py", line 913, in choose_image
+    newattrs = ca(tag, ca_required, ca_optional)
+  File "renpy/common/00layeredimage.rpy", line 724, in _choose_attributes
+    raise Exception("The attributes for {} conflict: {}".format(tag, " ".join(both)))
+Exception: The attributes for tsugumi conflict: B4 B1
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 Meiji 1.0
-Sun Oct 28 22:58:56 2018
+Mon Oct 29 10:34:14 2018

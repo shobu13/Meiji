@@ -38,8 +38,8 @@ image ezo_cheveux_base = "Ezo/ezo_hair1.png"
 image ezo_cheveux2_base = "Ezo/ezo_hair2.png"
 ###habits
 image ezo_habit_Mi = "Ezo/ezo_clothes1.png"
-image ezo_habit_Cui = "Ezo/ezo_clothes2.png"
-image ezo_habit_Se = "Ezo/ezo_clothes3.png"
+image ezo_habit_Cui = "Ezo/ezo_clothes3.png"
+image ezo_habit_Se = "Ezo/ezo_clothes2.png"
 ###bouches
 image ezo_bouche_B1 = "Ezo/ezo_mouth1.png"
 image ezo_bouche_B2 = "Ezo/ezo_mouth2.png"
@@ -66,7 +66,7 @@ image ezo_yeux_Y8 = "Ezo/ezo_eye8.png"
 image ezo_exp_R1 = "Ezo/ezo_blush1.png"
 image ezo_exp_R2 = "Ezo/ezo_blush2.png"
 image ezo_exp_R3 = "Ezo/ezo_blush3.png"
-image ezo_exp_eH = "Ezo/ezo_geh.png"
+image ezo_exp_Ge = "Ezo/ezo_geh.png"
 image ezo_exp_Go = "Ezo/ezo_sweat.png"
 ###Accesoires
 image ezo_acc_Ke = "Ezo/ezo_kepi.png"
@@ -104,7 +104,7 @@ image ran_yeux_Y8 = "Ran/ran_eyes8.png"
 image ran_exp_R1 = "Ran/ran_blush1.png"
 image ran_exp_R2 = "Ran/ran_blush2.png"
 image ran_exp_R3 = "Ran/ran_blush3.png"
-image ran_exp_eH = "Ran/ran_geh.png"
+image ran_exp_Ge = "Ran/ran_geh.png"
 image ran_exp_Go = "Ran/ran_sweat.png"
 
 ##Tsugumi
@@ -137,7 +137,7 @@ image tsugumi_yeux_Y6 = "Tsugumi/tsugumi_eyes6.png"
 image tsugumi_exp_R1 = "Tsugumi/tsugumi_blush.png"
 image tsugumi_exp_R2 = "Tsugumi/tsugumi_blush2.png"
 image tsugumi_exp_R3 = "Tsugumi/tsugumi_blush3.png"
-image tsugumi_exp_eH = "Tsugumi/tsugumi_geh.png"
+image tsugumi_exp_Ge = "Tsugumi/tsugumi_geh.png"
 image tsugumi_exp_Go = "Tsugumi/tsugumi_sweat.png"
 ###Accesoires
 image tsugumi_acc_Ca = "Tsugumi/tsugumi_casquette.png"
@@ -175,7 +175,7 @@ image akie_yeux_Y8 = "Akie/akie_eyes8.png"
 image akie_exp_R1 = "Akie/akie_blush1.png"
 image akie_exp_R2 = "Akie/akie_blush2.png"
 image akie_exp_R3 = "Akie/akie_blush3.png"
-image akie_exp_eH = "Akie/akie_geh.png"
+image akie_exp_Ge = "Akie/akie_geh.png"
 image akie_exp_Go = "Akie/akie_sweat.png"
 
 ##Sei
@@ -210,7 +210,7 @@ image sei_yeux_Y7 = "Sei/sei_eyes7.png"
 image sei_exp_R1 = "Sei/sei_blush1.png"
 image sei_exp_R2 = "Sei/sei_blush2.png"
 image sei_exp_R3 = "Sei/sei_blush3.png"
-image sei_exp_eH = "Sei/sei_geh.png"
+image sei_exp_Ge = "Sei/sei_geh.png"
 image sei_exp_Go = "Sei/sei_sweat.png"
 
 ##Yoshino
@@ -246,7 +246,7 @@ image yoshino_yeux_Y8 = "Yoshino/yoshino_eyes8.png"
 image yoshino_exp_R1 = "Yoshino/yoshino_blush1.png"
 image yoshino_exp_R2 = "Yoshino/yoshino_blush2.png"
 image yoshino_exp_R3 = "Yoshino/yoshino_blush3.png"
-image yoshino_exp_eH = "Yoshino/yoshino_geh.png"
+image yoshino_exp_Ge = "Yoshino/yoshino_geh.png"
 image yoshino_exp_Go = "Yoshino/yoshino_sweat.png"
 ###Accesoires
 image yoshino_acc_Co = "Yoshino/yoshino_couteau.png"
@@ -285,7 +285,7 @@ image clateau_yeux_Y8 = "Clateau/clateau_eye8.png"
 image clateau_exp_R1 = "Clateau/clateau_blush1.png"
 image clateau_exp_R2 = "Clateau/clateau_blush2.png"
 image clateau_exp_R3 = "Clateau/clateau_blush3.png"
-image clateau_exp_eH = "Clateau/clateau_geh.png"
+image clateau_exp_Ge = "Clateau/clateau_geh.png"
 image clateau_exp_Go = "Clateau/clateau_sweat.png"
 ###Accesoires
 image clateau_acc_Co = "Clateau/clateau_couteau.png"
@@ -340,7 +340,7 @@ layeredimage ezo:
         attribute R1
         attribute R2
         attribute R3
-        attribute eH
+        attribute Ge
         attribute Go
     group acc:
         attribute Ke default
@@ -378,7 +378,7 @@ layeredimage ran:
         attribute R1
         attribute R2
         attribute R3
-        attribute eH
+        attribute Ge
         attribute Go
 
 layeredimage tsugumi:
@@ -411,7 +411,7 @@ layeredimage tsugumi:
         attribute R1
         attribute R2
         attribute R3
-        attribute eH
+        attribute Ge
         attribute Go
     group acc:
         attribute Ca default
@@ -449,7 +449,7 @@ layeredimage akie:
         attribute R1
         attribute R2
         attribute R3
-        attribute eH
+        attribute Ge
         attribute Go
 
 layeredimage sei:
@@ -484,7 +484,7 @@ layeredimage sei:
         attribute R1
         attribute R2
         attribute R3
-        attribute eH
+        attribute Ge
         attribute Go
 
 layeredimage yoshino:
@@ -520,7 +520,7 @@ layeredimage yoshino:
         attribute R1
         attribute R2
         attribute R3
-        attribute eH
+        attribute Ge
         attribute Go
     group acc:
         attribute Co default
@@ -559,7 +559,7 @@ layeredimage clateau:
         attribute R1
         attribute R2
         attribute R3
-        attribute eH
+        attribute Ge
         attribute Go
     group acc:
         attribute Co
@@ -614,7 +614,7 @@ label start:
         relation_ran = 0
 
     play music "audio/VN_normal_version.ogg"
-    
+
     scene bg ciel
     "Nous sommes en 1870, à Tokyo, capitale nouvellement renommée de l’Empire du Japon. Depuis peu, le pays s’ouvre aux techniques étrangères, et de nombreux occidentaux parcourent ses rues."
     "Alors que le Japon était resté sur un modèle féodal fermé, dirigé par une lignée de puissants Shogun pendant près de deux siècles, la récente guerre a permis à l’empereur de retrouver son pouvoir."
@@ -1219,8 +1219,6 @@ label start:
         with dissolve
         ezo "{i}Il faudrait que j’aille voir les autres aussi, pour me faire une idée.{/i}"
         # à elle-même
-        label test:
-            pass
         hide yoshino
         with dissolve
         hide clateau
@@ -1507,9 +1505,13 @@ label start:
                     show ezo B5 S1 Y2 at left, xflip
                     with dissolve
                     ezo "Ouais !"
+                    hide ran
+                    with dissolve
                     show yoshino B8 Y5 -S3 -Ge at right
                     with dissolve
                     yoshino "Et toi aussi !"
+                    scene bg bar
+                    with dissolve
                     "Clateau arriva derrière Yoshino et la ramena doucement en cuisine alors qu’elle allait encore invectiver à travers le passe-plat, tout en faisant un petit signe de main à Ezo et Ran pour leur dire d’essayer de gérer la situation."
             hide yoshino
             with dissolve

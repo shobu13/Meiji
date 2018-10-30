@@ -305,7 +305,7 @@ with dissolve
 show clateau B1 S1 Y3 at right
 with dissolve
 clateau "Qu’est-ce que tu fais, Ezo ? C’est fermé aujourd’hui."
-show ezo B5 Y5 at right
+show ezo B5 Y5 at left, xflip
 with dissolve
 ezo "Je sais, laisse-moi tranquille !"
 show clateau B3 S3 Y4 at right
@@ -329,7 +329,7 @@ with dissolve
 show yoshino B1 S2 Y1 at right
 with dissolve
 yoshino "Tu m’as fait venir, Ezo ? Si c’est pour me convaincre, sache que…"
-show ezo B1 S1 S3 at left, xflip
+show ezo B1 S1 Y3 at left, xflip
 with dissolve
 ezo "Non, c’est pour te montrer ce que je sais faire ! Comme t’es pas venue ces temps-ci, c’est moi qui vais m’occuper des desserts, maintenant !"
 hide ezo

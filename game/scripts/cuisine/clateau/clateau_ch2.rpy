@@ -35,7 +35,7 @@ clateau "Réveillée ?"
 show ezo B8 S1 Y8 R3 at left, xflip
 with dissolve
 ezo "Oui oui, ne rentre pas dans ma chambre !"
-show clateau B6 YS1 Y1 at right
+show clateau B6 S1 Y1 at right
 with dissolve
 clateau "Ah, déjà prête ?"
 show ezo B5 S1 Y2 R1 at left, xflip
@@ -166,11 +166,12 @@ ezo "Je ne sais pas pourquoi mais j’ai l’impression que je ne ferai que me p
 show ezo B1 S3 Y2 -Go at right
 with dissolve
 ezo "D’ailleurs, tu es seule ?"
-hide sei
-with dissolve
 show sei B3 S1 Y3 at left, xflip
 with dissolve
 sei "Non, je suis venue avec Akié. D’ailleurs, la revoilà !"
+hide ezo
+hide akie
+with dissolve
 "Akié surgit d’une petite ruelle, portant un sac de papier et avec la bouche pleine."
 show akie B1 S1 Y4 at left, xflip
 with dissolve
@@ -186,7 +187,7 @@ with dissolve
 show ezo B8 Y5 at right
 with dissolve
 ezo "Bien sûr que non !"
-hide sei
+hide ezo
 with dissolve
 show clateau B2 S3 Y4 at right
 with dissolve
@@ -276,11 +277,10 @@ ezo "Non !"
 show yoshino B4 S1 Y6 at right
 with dissolve
 yoshino "D’accord, d’accord…"
-show yoshino B3 S1 Y1 at left, xflip
-with dissolve
-yoshino "Elle s’emporte facilement mais elle en pense pas moins…"
+show yoshino B3 S1 Y1 at right
 hide ezo
 with dissolve
+yoshino "Elle s’emporte facilement mais elle en pense pas moins…"
 hide yoshino
 with dissolve
 "Un peu plus tard dans la journée, Ran rentra dans la cuisine, contrariée."
@@ -309,14 +309,12 @@ yoshino "C’est vrai, c’est flagrant !"
 show ezo B1 S3 Y4 Go at left, xflip
 with dissolve
 ezo "Allez, je ne suis pas aussi ressemblante à Clateau !"
-ezo "Yoshino(B7/S2/Y7/droite) C’est vrai, le style est légèrement plus impertinent, j’ai jamais vu autant de jurons sur une simple note de cuisine."
 show yoshino B7 S2 Y7 at right
 with dissolve
 yoshino "C’est vrai, le style est légèrement plus impertinent, j’ai jamais vu autant de jurons sur une simple note de cuisine."
 show ezo B8 S1 Y2 at left, xflip
 with dissolve
 ezo "Je ne parlais pas de ça !"
-ezo "Yoshino (caché)"
 hide yoshino
 with dissolve
 show ran B1 S1 Y2 at right
@@ -379,7 +377,7 @@ with dissolve
 show tsugumi B2 S2 Y1 Go at right
 with dissolve
 tsugumi "Je ne veux pas vous gêner non plus…"
-show ezo BB1 S1 Y2 at left, xflip
+show ezo B1 S1 Y2 at left, xflip
 with dissolve
 ezo "Tu ne me gênes pas, c’est moi qui l’ai demandé ! En plus c’est plus normal que je passe du temps avec une fille de mon âge qu’avec un vieux militaire, non ?"
 hide tsugumi
@@ -431,7 +429,6 @@ ezo "Je ne suis même plus surprise…"
 show akie B2 S1 Y1 at right
 with dissolve
 akie "Il y a un petit festival dans le quartier par là, alors…"
-akie "Akié(B1/S3/Y3/droite) Non, plus que ça, je te cherchais !"
 show akie B1 S3 Y3 at right
 with dissolve
 akie "Non, plus que ça, je te cherchais !"
@@ -456,6 +453,7 @@ akie "Arrête de faire semblant !"
 hide tsugumi
 with dissolve
 "Tsugumi, qui était restée en retrait, osa intervenir."
+hide akie
 show tsugumi B2 S2 Y1 at right
 with dissolve
 tsugumi "Je crois qu’Akié à raison."
@@ -470,7 +468,6 @@ with dissolve
 show akie B4 S2 Y2 at right
 with dissolve
 akie "Et ça se répercute sur tout le monde. Yoshino est assez mal à l’aise en cuisine quand tu décides de l’ignorer."
-akie "Ezo(B1/S2//Y1/gauche) Je…"
 show ezo B1 S2  Y1 at left, xflip
 with dissolve
 ezo "Je…"
@@ -502,7 +499,6 @@ show ezo B1 S3 Y1 at left, xflip
 with dissolve
 ezo "Mais moi… je ne mérite pas tout ça ! Je suis un soudard, un simple soldat ! Je ne veux pas vivre aux crochets de Clateau…"
 ezo "Ezo serrait le bas de sa tunique et l’entortillait de plus en plus à mesure qu’elle parlait. Les trémolos dans sa voix trahissaient son envie grandissante de pleurer."
-ezo "Ezo(B4/S2/Y3/gauche) Je ne sais pas si je peux vivre comme ça…"
 "Ezo serrait le bas de sa tunique et l’entortillait de plus en plus à mesure qu’elle parlait. Les trémolos dans sa voix trahissaient son envie grandissante de pleurer."
 show ezo B4 S2 Y3 at left, xflip
 with dissolve
@@ -566,10 +562,9 @@ clateau "j’ai rencontré Ezo quand elle fut envoyée dans mon régiment, alors
 show clateau B4 S2 Y1 at left, xflip
 with dissolve
 clateau "Personne ne s’en occupait, elle était traitée comme un meuble… Alors j’ai commencé à m’occuper d’elle."
-clateau "Yoshino(caché)"
 hide yoshino
 with dissolve
-show sei B1 S1 Y4 at right
+show sei B1 S1 Y3 at right
 with dissolve
 sei "Mais, c’était gentil de votre part, non ?"
 show clateau B4 S4 Y3 at left, xflip
@@ -616,27 +611,27 @@ with dissolve
 show akie B2 S1 Y2 at left, xflip
 with dissolve
 akie "Sei, tu as pu parler à Clateau hier ?"
-show sei B1 S1 Y4 at right
+show sei B1 S1 Y3 at right
 with dissolve
 sei "Oui, et étonnamment, Yoshino m’a bien aidé… Mais je crois qu’ils sont encore trop timides pour s’avouer leurs sentiments."
-show akie B4 S2 Y1 at right
+show akie B4 S2 Y1 at left, xflip
 with dissolve
 akie "Ou trop fier ? J’aurais cru que les Français seraient plus expressifs dans leurs sentiments…"
-show sei B2 S1 Y1 at left, xflip
+show sei B2 S1 Y1 at right
 with dissolve
 sei "Il va falloir leur donner à nouveau un petit coup de pouce !"
 "Sei se pencha sur le passe-plat qui donnait vers les cuisines, et elle interpella Yoshino."
-show sei B2 S1 Y1 at left, xflip
+show sei B2 S1 Y1 at right
 with dissolve
 sei "Yoshino, tu peux venir deux minutes ? On aurait besoin de toi ici !"
 hide akie
 with dissolve
-show yoshino B1 S1 Y1 at right
+show yoshino B1 S1 Y1 at left, xflip
 with dissolve
 yoshino "Hein ? Je suis occupé, je…"
 hide sei
 with dissolve
-show akie B1 S1 Y4 at left, xflip
+show akie B1 S1 Y4 at right
 with dissolve
 akie "Allons, ne fait pas de chichi, viens donc un peu !"
 hide akie
@@ -669,7 +664,7 @@ ezo "Mais… mais non ! je te suis vraiment reconnaissante pour tout ce que tu a
 show clateau B4 S3 Y3 at right
 with dissolve
 clateau "Mais je n’ai pourtant pas sorti de là alors que j’aurais dû !"
-show ezo B1 S2 Y2gauche at center
+show ezo B1 S2 Y2 at left, xflip
 with dissolve
 ezo "Non, c’était ma décision d’y rester. J’avais peu de la vie civile. Et après, j’avais peur d’être un fardeau pour toi, de vivre juste à tes crochets. Je suis désolée de t’avoir mis à l’écart les jours passés."
 hide ezo

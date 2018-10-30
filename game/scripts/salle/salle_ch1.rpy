@@ -22,7 +22,8 @@ scene bg cuisine
 
 "Assez étonnamment, toute l’équipe était déjà présente, pour accueillir Ezo."
 # TODONE Ezo porte son uniforme de militaire
-show ezo Mi B1 S3 Y2 at right
+$ezo_outfit = 'Mi'
+show ezo B1 S3 Y2 at right
 with dissolve
 ezo "Vous êtes déjà tous là !? "
 show akie B1 S1 Y1 at left, xflip
@@ -182,7 +183,7 @@ with dissolve
 "Et ce, sans pour autant effectuer le long, coûteux, et dangereux voyage,jusqu’à Londres ou Paris, qui était, lui, réservé aux plus riches, ou tout du moins, aux plus aventureux."
 "Ezo, qui ne savait pas trop quoi faire, commença par prendre les plats que donnait Yoshino pour les transférer à Sei et Akié. Elle fut assez étonnée par l’habileté de ses camarades."
 "Alors qu’Ezo avait du mal à maintenir les plats dans les faire tomber, Akié, et même Sei, arrivaient à en prendre plusieurs à la fois et à les maintenir en équilibre."
-show ezo Se B4 S3 Y2 at left, xflip
+show ezo B4 S3 Y2 at left, xflip
 with dissolve
 ezo "Impressionnant…"
 show sei B1 S1 Y1 at right
@@ -193,7 +194,7 @@ with dissolve
 show akie B3 S1 Y4 at right
 with dissolve
 akie "Mais oui, je suis sûr que t’y t’en sortira. Et surtout, le service est une chose, mais il y a plus important !"
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Plus important ?"
 show akie B2 S1 Y2 at right
@@ -208,7 +209,7 @@ show akie B1 S1 Y4 at right
 with dissolve
 akie "Et voilà ! Allez, à toi, maintenant !"
 "Akié poussa Ezo vers un autre client qui venait d’arriver. Surprise, Ezo n’était pas préparée et se mit à bafouiller."
-show ezo Se B3 S3 Y1 R3 at left, xflip
+show ezo B3 S3 Y1 R3 at left, xflip
 with dissolve
 ezo "Ah… B-Bonjour ! Bienvenue chez nous."
 hide ezo
@@ -244,7 +245,7 @@ with dissolve
 show sei B3 S2 Y1 Go at right
 with dissolve
 sei "On sent que tu fais des efforts, en tout cas."
-show ezo Se B4 S2 Y2 at left, xflip
+show ezo B4 S2 Y2 at left, xflip
 with dissolve
 ezo "C’est… pas facile."
 hide sei
@@ -262,29 +263,29 @@ with dissolve
 # TODONE : “Une stratégie ?” =point Sei/ “Être soi-même ?”=point Akié
 menu:
     " Une stratégie ? Je crois que je vois quoi faire !":
-        show ezo Se B2 S1 Y2 at left, xflip
+        show ezo B2 S1 Y2 at left, xflip
         with dissolve
         ezo "Une stratégie ? Je crois que je vois quoi faire !"
         $relation_sei += 1
     " Être soi-même ? Je vais essayer !":
-        show ezo Se B2 S1 Y2 at left, xflip
+        show ezo B2 S1 Y2 at left, xflip
         with dissolve
         ezo "Être soi-même ? Je vais essayer !"
         $relation_akie += 1
 hide ezo
 with dissolve
 "Ezo reparti motivée vers les clients qui arrivaient. Cette fois-ci, elle se mit au garde à vous, droite comme un i, et salua les clients."
-show ezo Se B1 S1 Y2 at left, xflip
+show ezo B1 S1 Y2 at left, xflip
 with dissolve
 ezo "Bienvenue ici, chef ! Veuillez me laisser vous conduire à votre siège, chef !"
 hide ezo
 with dissolve
 "Elle marcha au pas jusqu’à une table, fit s’assoir les clients. Puis se remit droite en bout de table, toujours au garde-à-vous."
-show ezo Se B1 S1 Y2 at left, xflip
+show ezo B1 S1 Y2 at left, xflip
 with dissolve
 ezo "Prête à recevoir vos ordres, chef ! Quelle est votre commande ?"
 "Les clients désabusés répondirent quelque chose d’évasif, et Ezo revint vers Akié et Sei, contente de sa performance."
-show ezo Se B2 S3 Y2 at left, xflip
+show ezo B2 S3 Y2 at left, xflip
 with dissolve
 ezo "Alors ?"
 show akie B2 S2 Y4 Go at right
@@ -322,7 +323,7 @@ with dissolve
 "Ezo ne savait plus où donner de la tête dans ce ballet infini de plat et de client qui allaient de venaient dans la salle. Yoshino, qui menait d’une main de fer le restaurant, ne manquait pas de recadrer le personnel quand celui-ci se relâchait."
 "La plupart du temps, c’était Ran qui en faisait les frais, puisqu’elle avait cette fâcheuse habitude de dormir debout pendant son service."
 "Mais cela arrivait aussi que ce soit Sei, trop maladroite, ou Akié, trop familière avec un client qui se prenaient une remontrance. Parfois même, c’était Clateau qui se faisait sermonner."
-show ezo Se B5 S1 Y8 at left, xflip
+show ezo B5 S1 Y8 at left, xflip
 with dissolve
 ezo "Elle est pire qu’un instructeur militaire !"
 show akie B1 S1 Y2 at right
@@ -411,13 +412,13 @@ menu:
 show sei B1 S1 Y1 at right
 with dissolve
 sei "Merci de ton aide. D’ailleurs, tu sais parler d’autres langues ?"
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Comme j’ai pas mal voyagé, j’ai quelques notions dans plusieurs d’entre elles, mais c’est tout."
 show sei B1 S1 Y3 at right
 with dissolve
 sei "C’est vraiment super ça !"
-show ezo Se B4 S3 Y1 at left, xflip
+show ezo B4 S3 Y1 at left, xflip
 with dissolve
 ezo "…"
 hide ezo
@@ -431,13 +432,13 @@ with dissolve
 show ran B1 S1 Y4 at right
 with dissolve
 ran "Alors, pas trop dur, cette première journée ?"
-show ezo Se B1 S3 Y1 at left, xflip
+show ezo B1 S3 Y1 at left, xflip
 with dissolve
 ezo "Disons qu’il se passe beaucoup de choses…"
 show ran B1 S1 Y2 at right
 with dissolve
 ran "Prenez donc du repos pendant votre pause."
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "D’ailleurs, tu la prends quand ta pause, toi ?"
 hide ran
@@ -446,25 +447,25 @@ show tsugumi B1 S1 Y1 at right
 with dissolve
 tsugumi "Elle est toujours en pause, elle !"
 "Tsugumi venait de faire irruption dans le bar, souriant de toutes ses dents."
-show ezo Se B1 S3 Y4 at left, xflip
+show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "Ah, te revoilà, toi. T’es pas au travail ?"
 show tsugumi B1 S1 Y1 at right
 with dissolve
 tsugumi "J’ai terminé plus tôt aujourd’hui !"
-show ezo Se B1 S3 Y4 at left, xflip
+show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "Tu peux pas vraiment critiquer Ran, alors !"
 show tsugumi B1 S1 Y2 at right
 with dissolve
 tsugumi "Ahaha, c’est pas faux ! Et toi, tu travailles au bar maintenant ?"
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Non, comme serveuse en salle."
 show tsugumi B2 S1 Y1 at right
 with dissolve
 tsugumi "Serveuse en salle ? Bouahaha, rien que de t’imaginer servir les clients ça me fend la poire !"
-show ezo Se B5 S1 Y2 at left, xflip
+show ezo B5 S1 Y2 at left, xflip
 with dissolve
 ezo "Hé !"
 hide tsugumi
@@ -472,10 +473,10 @@ with dissolve
 show ran B1 S1 Y1 at right
 with dissolve
 ran "Voyons, mademoiselle Tsugumi ! Je suis sûr que mademoiselle Ezo fait de son mieux…"
-show ezo Se B4 S2 Y6 at left, xflip
+show ezo B4 S2 Y6 at left, xflip
 with dissolve
 ezo "Comment je dois le prendre ?"
-show ezo Se B2 S3 Y1 at left, xflip
+show ezo B2 S3 Y1 at left, xflip
 with dissolve
 ezo "Bon, je vais retourner bosser, moi…"
 hide ezo
@@ -517,31 +518,31 @@ with dissolve
 show clateau B1 S1 Y4 at right
 with dissolve
 clateau "Alors, comment s’est passé ta journée ?"
-show ezo Se B2 S3 Y4 at left, xflip
+show ezo B2 S3 Y4 at left, xflip
 with dissolve
 ezo "On peut dire que ça s’est bien passé."
 show clateau B1 S1 Y1 at right
 with dissolve
 clateau "Tu t’habitues au métier ?"
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "C’est encore un peu dur, mais ça va aller."
 show clateau B1 S1 Y4 at right
 with dissolve
 clateau "Bien. Si jamais tu as besoin de quoi que ce soit, dit-le moi."
-show ezo Se B1 S3 Y4 at left, xflip
+show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "Merci, mais je suis plutôt bien entourée."
 scene bg grenier
 with dissolve
 "Ezo se retrouva dans sa chambre. Le jour commençait à tomber et la pièce mal éclairée se retrouvait dans la pénombre."
-show ezo Se B4 S3 Y1 at left, xflip
+show ezo B4 S3 Y1 at left, xflip
 with dissolve
 ezo "Je n’ai pas sommeil…"
 # TODONE “Je dois dormir”=point Sei/ “Bah, pas la peine”= point Akié
 menu:
     " Je dois dormir quand même, sinon demain je n’aurais pas les yeux en face des trous.":
-        show ezo Se B2 S3 Y2 at left, xflip
+        show ezo B2 S3 Y2 at left, xflip
         with dissolve
         ezo "Je dois dormir quand même, sinon demain je n’aurais pas les yeux en face des trous."
         $relation_sei += 1
@@ -549,7 +550,7 @@ menu:
         scene bg grenier
         with dissolve
         "Ezo partit se coucher, et finalement elle ne mit pas longtemps avant de s’endormir. Mais elle se réveilla très tôt."
-        show ezo Se B6 S2 Y3 at left, xflip
+        show ezo B6 S2 Y3 at left, xflip
         with dissolve
         ezo "Puisque je suis levée, autant descendre…"
         hide ezo
@@ -560,7 +561,7 @@ menu:
         scene bg cuisine
         with dissolve
         "Dans la cuisine encore vide, elle entendit un bruit dans la remise."
-        show ezo Se B1 S1 Y1 at left, xflip
+        show ezo B1 S1 Y1 at left, xflip
         with dissolve
         ezo "Tiens ? on essayera de nous piquer nos réserves ?"
         hide ezo
@@ -569,32 +570,32 @@ menu:
         show sei B1 S1 Y3 at right
         with dissolve
         sei "Ezo ? Tu es déjà levée ?"
-        show ezo Se B2 S3 Y1 at left, xflip
+        show ezo B2 S3 Y1 at left, xflip
         with dissolve
         ezo "Bah oui… et toi qu’est-ce que tu fais ?"
         show sei B1 S1 Y1 at right
         with dissolve
         sei "Je devais aller faire des courses, donc je suis venu plus tôt, mais j’ai du mal à tout ramener, les livreurs ont tout déposés devant l’entrée, il y en a beaucoup."
         "Ezo passa la tête pour voir tout un tas de caisses empilées dans la ruelle."
-        show ezo Se B1 S3 Y1 at left, xflip
+        show ezo B1 S3 Y1 at left, xflip
         with dissolve
         ezo "C’est toi qui t’occupes de tout ça ?"
         show sei B2 S1 Y1 at right
         with dissolve
         sei "Oui, si Yoshino s’occupe des cuisines, moi je m’occupe souvent des comptes, notamment. Et il m’arrive de gérer ça quand Clateau est occupé."
-        show ezo Se B3 S3 Y4 at left, xflip
+        show ezo B3 S3 Y4 at left, xflip
         with dissolve
         ezo "Je ne savais pas que tu en faisais autant ! Moi qui pensais que tu étais juste un personnage cliché de fille maladroite…"
         show sei B1 S3 Y3 at right
         with dissolve
         sei "Hé ! C’est pas gentil de dire ça !"
-        show ezo Se B2 S3 Y2 at left, xflip
+        show ezo B2 S3 Y2 at left, xflip
         with dissolve
         ezo "Mais je suis vraiment impressionnée par ce que tu fais !"
         show sei B1 S1 Y1 at right
         with dissolve
         sei "…"
-        show ezo Se B1 S3 Y2 at left, xflip
+        show ezo B1 S3 Y2 at left, xflip
         with dissolve
         ezo "Je vais t’aider à décharger les caisses restantes ! Je ne suis pas aussi douée pour compter et faire des commandes, mais pour la force brute, laisse-moi m’en occuper !"
         hide ezo
@@ -606,7 +607,7 @@ menu:
         "Une fois cela fait, il était déjà l’heure d’aller travailler."
         # Fin des Si
     " Bah, pas la peine de se forcer. Je vais aller faire un tour.":
-        show ezo Se B2 S3 Y2 at left, xflip
+        show ezo B2 S3 Y2 at left, xflip
         with dissolve
         ezo "Bah, pas la peine de se forcer. Je vais aller faire un tour."
         $relation_akie += 1
@@ -619,23 +620,23 @@ menu:
         "et voir les ombres des occupants qu’on devinait derrière une porte coulissante mal fermée."
         "Elle fit le tour du restaurant, et quand elle prit la petite ruelle sur le côté, elle y vit Akié. Elle portait un gros sac en papier, et quelques gamelles en bois qu’elle venait de laver."
         "Et autour d’Akié, encore une bande de petites frappes autour d’elle. Ceux-ci semblaient passablement éméchées."
-        show ezo Se B4 S2 Y6 at left, xflip
+        show ezo B4 S2 Y6 at left, xflip
         with dissolve
         ezo "Ma parole elle les attires…"
         "Ezo soupira, et vint à la rencontre des loubards. Elle savait comment s’y prendre, et n’engagea même pas la conversation. Après deux mandales et un croche-pied, ils prirent la fuite."
-        show ezo Se B4 S2 Y6 at left, xflip
+        show ezo B4 S2 Y6 at left, xflip
         with dissolve
         ezo "Merde, c’était presque trop facile."
         show akie B6 S2 Y2 at right
         with dissolve
         akie "Oh, merci Ezo ! Cette bande de lourds ne voulait plus me lâcher."
-        show ezo Se B1 S3 Y2 at left, xflip
+        show ezo B1 S3 Y2 at left, xflip
         with dissolve
         ezo "De rien… mais qu’est-ce que tu fais dehors à cette heure ?"
         show akie B1 S1 Y4 at right
         with dissolve
         akie "Je venais récupérer la nourriture que le restaurant allait jeter, pour la donner aux animaux que je recueille !"
-        show ezo Se B2 S1 Y3 at left, xflip
+        show ezo B2 S1 Y3 at left, xflip
         with dissolve
         ezo "Heureusement que j’étais là… Tu ne pouvais pas le récupérer plus tôt ?"
         show akie B1 S1 Y4 at right
@@ -674,19 +675,19 @@ with dissolve
 "Ezo s’arrêta net en faisant la moue. Elle passa dans la réserve, prit son sac, et remarqua que la porte vers l’extérieur était entrouverte. Elle se mit le menton entre le pouce et l’index et fit une tête qui lui donnait l’air de réfléchir."
 scene bg rue
 with dissolve
-show ezo Se B4 S1 Y1 at left, xflip
+show ezo B4 S1 Y1 at left, xflip
 with dissolve
 ezo "Voyons, Akié aussi était parti prendre un truc deux minutes avant, alors…"
 hide ezo
 with dissolve
 "En sortant, elle vit ce qu’elle s’attendait à voir : Akié nourrissant les animaux du quartier."
-show ezo Se B5 S1 Y2 at left, xflip
+show ezo B5 S1 Y2 at left, xflip
 with dissolve
 ezo "Ah ! je m’en doutais !"
 show akie B5 S1 Y7 at right
 with dissolve
 akie "E-Ezo ? Je croyais que tu étais en salle à t’occuper de ton progrès…"
-show ezo Se B5 S1 Y2 at left, xflip
+show ezo B5 S1 Y2 at left, xflip
 with dissolve
 ezo "Yoshino m’a envoyé chercher de la farine. Qu’est-ce que tu fais ?"
 show akie B1 S1 Y1 at right
@@ -700,7 +701,7 @@ with dissolve
 menu:
     " Mais Yoshino avait dit de ne pas piquer dans le garde-manger !":
         $relation_akie -= 1
-        show ezo Se B5 S1 Y2 at left, xflip
+        show ezo B5 S1 Y2 at left, xflip
         with dissolve
         ezo "Mais Yoshino avait dit de ne pas piquer dans le garde-manger !"
         hide ezo
@@ -724,7 +725,7 @@ menu:
         hide yoshino
         with dissolve
         "Ezo et Akié restèrent interdite devant la réaction de Yoshino, qui retourna en cuisine juste après."
-        show ezo Se B1 S3 Y2 at left, xflip
+        show ezo B1 S3 Y2 at left, xflip
         with dissolve
         ezo "Bah tiens, ça alors !"
         show akie B2 S1 Y4 at right
@@ -732,7 +733,7 @@ menu:
         akie "Yoshino est plutôt gentille en fait, tu sais !"
     " Ne fais pas trop de bruit, tu va attirer Yoshino":
         $relation_akie += 1
-        show ezo Se B1 S3 Y2 at left, xflip
+        show ezo B1 S3 Y2 at left, xflip
         with dissolve
         ezo "Ne fais pas trop de bruit, tu vas attirer Yoshino."
         hide ezo
@@ -752,14 +753,14 @@ with dissolve
 # “Tiens, je”= point Sei/ “C’est quoi ?”= moins un point Sei
 menu:
     " Tiens, je connais ça, c’est le Manyôshû !":
-        show ezo Se B1 S3 Y4 at left, xflip
+        show ezo B1 S3 Y4 at left, xflip
         with dissolve
         ezo "Tiens, je connais ça, c’est le Manyôshû !"
         show sei B1 S1 Y1 at right
         with dissolve
         sei "Oh, tu connais ce recueil ? Que c’est étonnant, pour une étrangère."
         "Ezo bomba le torse, fière de sa connaissance."
-        show ezo Se B1 S3 Y2 at left, xflip
+        show ezo B1 S3 Y2 at left, xflip
         with dissolve
         ezo "Oui, tu sais, quand j’étais à Hokkaidô, les soldats qui m’ont renommé « Ezo » pour mon nationalisme pro-shogun zélé m’on aussi fait découvrir quelques trucs… dont le Manyôshû."
         hide ezo
@@ -768,13 +769,13 @@ menu:
         with dissolve
         "Sei, qui restait assez sérieuse, paru s’illuminer tout d’un coup et commença à bombarder Ezo sur sa culture poétique."
     " C’est quoi ?":
-        show ezo Se B1 S3 Y2 at left, xflip
+        show ezo B1 S3 Y2 at left, xflip
         with dissolve
         ezo "C’est quoi ? Le Manyôshû ?"
         show sei B1 S1 Y3 at right
         with dissolve
         sei "Oh, oui, tu connais ?"
-        show ezo Se B4 S2 Y1 at left, xflip
+        show ezo B4 S2 Y1 at left, xflip
         with dissolve
         ezo "Moui, mais bon… C’est pas très utile. Je préfère plutôt apprendre à me défendre."
         show sei B4 S2 Y1 at right
@@ -805,7 +806,7 @@ with dissolve
 yoshino "Ne t’en mêle pas Sei !"
 hide sei
 with dissolve
-show ezo Se B1 S1 Y2 at left, xflip
+show ezo B1 S1 Y2 at left, xflip
 with dissolve
 ezo "Euh…"
 show yoshino B8 Y5 at right
@@ -815,10 +816,10 @@ yoshino "Quoi ?!"
 menu:
     " Lâche-nous un peu ! Si tu n’étais pas tout le temps en train de crier, je suis sûr que Sei serait moins stressée !":
         $relation_sei += 1
-        show ezo Se Se B5 S1 Y1 at left, xflip
+        show ezo Se B5 S1 Y1 at left, xflip
         with dissolve
         ezo "Lâche-nous un peu ! Si tu n’étais pas tout le temps en train de crier, je suis sûr que Sei serait moins stressée !"
-        show ezo Se B5 S1 Y1 at left, xflip
+        show ezo B5 S1 Y1 at left, xflip
         with dissolve
         ezo "La dernière fois, c’est parce que tu l’as interpellé violemment, qu’elle a lâché les assiettes !"
         show yoshino B1 S2 Y1 Go at right
@@ -826,7 +827,7 @@ menu:
         yoshino "Oui, bon…"
     " T’es trop strict ! Akié est juste enthousiaste, ça dérange rarement les clients !":
         $relation_akie += 1
-        show ezo Se  B5 S1 Y1 at left, xflip
+        show ezo  B5 S1 Y1 at left, xflip
         with dissolve
         ezo "T’es trop strict ! Akié est juste enthousiaste, ça dérange rarement les clients !"
         show yoshino B4 S2 Y2 at right
@@ -845,7 +846,7 @@ with dissolve
 show akie B2 S1 Y4 at right
 with dissolve
 akie "Eh bah, ma petite Ezo ! T’es pas grande mais tu sais te défendre !"
-show ezo Se  B4 S1 Y4 at left, xflip
+show ezo  B4 S1 Y4 at left, xflip
 with dissolve
 ezo "Hmpf, si je vous avais laissé vous faire engueuler, j’aurais été la prochaine sur la liste, alors…"
 hide akie
@@ -860,13 +861,13 @@ if relation_sei > relation_akie:
     show sei B2 S1 Y1 at right
     with dissolve
     sei "Ezo… Je me demandais… tu n’as rien à faire, pour nos prochains jours de repos ?"
-    show ezo Se  B1 S3 Y2 at left, xflip
+    show ezo  B1 S3 Y2 at left, xflip
     with dissolve
     ezo "Non, rien."
     show sei B2 S1 Y1 at right
     with dissolve
     sei "Je me disais… tu voudrais venir chez moi ? J’aimerai… que tu me parles un peu de tes voyages."
-    show ezo Se  B2 S3 Y4 at left, xflip
+    show ezo  B2 S3 Y4 at left, xflip
     with dissolve
     ezo "Ah ? Pourquoi pas."
     "Sei remis un papier blanc plié en quatre, en expliquant qu’il s’agissait de son adresse, et d’un plan, pour ne pas qu’Ezo se perde."
@@ -882,13 +883,13 @@ else:
     show akie B1 S1 Y2 at right
     with dissolve
     akie "Dit, dit, ma petite Ezo ! Tu fais quoi pour notre prochain jour de repos ?"
-    show ezo Se  B1 S3 Y2 at left, xflip
+    show ezo  B1 S3 Y2 at left, xflip
     with dissolve
     ezo "Hein ? Bah, rien."
     show akie B1 S1 Y4 at right
     with dissolve
     akie "Tu voudrais bien venir avec moi nourrir les petits animaux ? Il m’a semblé que ça te plaisait, à toi aussi."
-    show ezo Se  B2 S3 Y1 at left, xflip
+    show ezo  B2 S3 Y1 at left, xflip
     with dissolve
     ezo "Ah, bah… pourquoi pas…"
     show akie B1 S1 Y4 at right

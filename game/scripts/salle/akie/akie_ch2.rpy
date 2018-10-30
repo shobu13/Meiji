@@ -422,6 +422,11 @@ with dissolve
 "Ezo espérait vraiment qu’Akié disait vrai, car quand elle s’approchait trop brusquement, les petits chats se mettaient à feuler et à griffer, et l’empêchaient de les prendre."
 "Mais au moins maintenant elle pouvait les approcher, il y avait un progrès. Akié avait remarqué qu’Ezo était gênée de ne pas pouvoir trop les approcher."
 "Elle pensa un instant à lui en donner un qu’elle aurait prise au préalable, mais elle se ravisa, peut-être qu’Ezo le prendrait encore plus mal de voir qu’il lui faut de l’aide pour une tâche en apparence simple."
+
+scene bg Black
+with dissolve
+scene bg cuisine
+with dissolve
 "Le lendemain matin, pour le travail, tout le monde se changeait en cuisine. Habituellement, il arrive souvent que les membres de l’équipe portent leurs uniformes tout le temps,"
 "vu qu’il est à la fois confortable et pratique, et même si Ezo portait son uniforme quand elle sortait de chez elle, elle descendait directement dans son habit de serveuse quand elle travaillait."
 "Mais cette fois-ci, tous les uniformes avaient été envoyé la veille au soir être lavé, et étaient revenue tôt le matin au restaurant."
@@ -450,7 +455,7 @@ with dissolve
 "Ezo regarda la culotte. Au dos était brodé « Akié »."
 show ezo B4 S2 Y6 at left, xflip
 with dissolve
-ezo "Pourquoi y’a son nom sur ces culottes ? Elle a peur qu’on lui pique ?"
+ezo "Pourquoi y’a son nom sur ses culottes ? Elle a peur qu’on lui pique ?"
 show sei B7 S1 Y6 at right
 with dissolve
 sei "Là n’est pas le problème, si sa culotte est ici, alors…"
@@ -470,6 +475,8 @@ with dissolve
 sei "Psst, Akié !"
 hide sei
 with dissolve
+scene bg salle
+with dissolve
 show akie B1 S1 Y2 at left, xflip
 with dissolve
 akie "Sei ? Pourquoi tu parles tout bas ?"
@@ -478,6 +485,8 @@ akie "Sei ? Pourquoi tu parles tout bas ?"
 show akie B6 S2 Y7 R2 at left, xflip
 with dissolve
 akie "Qu’est-ce que tu fais avec ça Ezo ?! Ne… ne la met pas sur ta tête !"
+scene bg cuisine
+with dissolve
 show ezo B1 S1 Y2 at right
 with dissolve
 ezo "C’est toi qui l’a oublié !"
@@ -503,8 +512,8 @@ show ran B5 S1 Y4 at right
 with dissolve
 ran "Désolée, mademoiselle Ezo !"
 hide ezo
-with dissolve
 hide ran
+scene bg bar
 with dissolve
 "Après ce léger incident, la journée se déroula sans trop de problèmes, jusqu’au soir. Un des clients du bar de Ran avait un peu trop bu, et faisait des histoires."
 "Akié intervint à la recousse, mais elle fut elle aussi empêtré face à ce client gênant. Finalement, le malotru fut éconduit sèchement par Ezo, alors qu’Akié et Ran était désemparées."
@@ -539,7 +548,6 @@ show ezo B2 S3 Y4 at left, xflip
 with dissolve
 ezo "Ne t’inquiète pas, au soir la ville est calme, ça ne me pose pas de problèmes. Et je vois bien que t’as peur du noir !"
 hide akie
-with dissolve
 hide ezo
 with dissolve
 "Akié se laissa raccompagner par Ezo. Elles marchaient dans la rue, seulement faiblement éclairé par le crépuscule et les quelques lampions qui étaient ça et là accrochés aux portes des maisons."
@@ -548,6 +556,8 @@ with dissolve
 "Akié se sentait un peu plus en confiance. Elle avait maintenant des sentiments contraires envers Ezo : son coté maternelle lui faisait protéger et s’occuper d’Ezo,"
 "et dans le même temps elle appréciait que ce soit elle qui la protège dans des situations comme celle-ci. Elle finit par en rire ; peut-être se posait-elle trop de questions."
 scene bg Black
+with dissolve
+scene bg rue
 with dissolve
 "Les jours passèrent, et Akié et Ezo se retrouvèrent encore une fois à nourrir des animaux derrière le restaurant."
 show akie B4 S2 Y2 eH at right
@@ -591,8 +601,8 @@ show akie B1 S1 Y4 at right
 with dissolve
 akie "Mais oui !"
 hide ezo
-with dissolve
 hide akie
+scene bg grenier
 with dissolve
 "Akié caressa la tête d’Ezo. Celle-ci, rassurée, ne protesta pas contre le fait d’être traitée comme une enfant, pour une fois."
 "Elle se contenta de lui sourire, et une fois devant le restaurant, Akié reparti chez elle."

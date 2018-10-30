@@ -1,11 +1,15 @@
 label clateau_ch3:
     pass
 
+scene bg Black
+with dissolve
 show chapter_ch3:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
 $renpy.pause(3, hard='True')
+
+$ ezo_outfit = 'Cui'
 
 scene bg cuisine
 with dissolve
@@ -52,7 +56,7 @@ show ran B4 S2 Y6 at left, xflip
 with dissolve
 ran "Finalement, heureusement que Clateau et Ezo sont ici, je n’aime pas m’imaginer que vous auriez pu y participer !"
 hide ezo
-with dissolve
+hide ran
 show yoshino B1 S1 Y2 at left, xflip
 with dissolve
 yoshino "ici ou ailleurs… Ils sont venus au Japon pour une guerre... Ça touche tout le monde."
@@ -135,8 +139,7 @@ show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "En tout cas merci, je vais préparer ça !"
 hide ezo
-with dissolve
-hide akiezo
+hide akie
 with dissolve
 "Ezo était quand même fière d’avoir une bonne idée de cadeau à offrir à Clateau."
 "Il l’avait accompagné depuis plusieurs années et avait veillé sur elle pendant longtemps ; elle voulait vraiment le remercier."
@@ -348,7 +351,6 @@ tsugumi "Si j’avais su qu’elle était la situation, j’aurai au moins accom
 show ran B4 S3 Y4 Go at left, xflip
 with dissolve
 ran "Vous avez quand même prit 6 verres…"
-ran "Ran(caché)"
 hide ran
 with dissolve
 hide tsugumi
@@ -360,11 +362,11 @@ clateau "Désolé de vous avoir fait peur, tout le monde. Me revoilà !"
 show yoshino B8 Y5 at left, xflip
 with dissolve
 yoshino "Des excuses ne suffiront pas ! Tu vas voir ce que tu vas voir !"
-yoshino "Clateau(B6/S2/Y6/droite) Waaah !"
 show clateau B6 S2 Y6 at right
 with dissolve
 clateau "Waaah !"
 show ezo B4 S2 Y6 at left, xflip
+hide yoshino
 with dissolve
 ezo "Je ne sais pas si le laisser partir à la guerre n’était pas moins dangereux, finalement…"
 

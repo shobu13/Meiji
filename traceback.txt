@@ -1,13 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'Akie/akie_blush1.png'>:
+While running game code:
   File "game/script.rpy", line 642, in script call
     "Nous sommes en 1870, à Tokyo, capitale nouvellement renommée de l’Empire du Japon. Depuis peu, le pays s’ouvre aux techniques étrangères, et de nombreux occidentaux parcourent ses rues."
   File "renpy/common/00console.rpy", line 765, in script call
     python in _console:
-  File "game/scripts/bar/ran/ran_ch2.rpy", line 791, in script
-    with dissolve
-IOError: Couldn't find file 'Akie/akie_blush1.png'.
+  File "renpy/common/00console.rpy", line 769, in script call
+    return
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/cuisine/cuisine_ch1.rpy", line 1121, in script call
+    "Une fois le premier sorbet terminé, les premiers clients commencèrent à arriver en masse. Le matin était assez chargé, car les bourgeois et les occidentaux de passages avaient prit l’habitude d’y prendre le petit-déjeuner. Heureusement, cela ne durait pas longtemps puisqu’il leur fallait partir rapidement au travail."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 50, in script
+    show tsugumi B4 S1 Y1 B1 at right
+  File "renpy/common/00layeredimage.rpy", line 724, in _choose_attributes
+    raise Exception("The attributes for {} conflict: {}".format(tag, " ".join(both)))
+Exception: The attributes for tsugumi conflict: B4 B1
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -16,67 +26,31 @@ Full traceback:
     "Nous sommes en 1870, à Tokyo, capitale nouvellement renommée de l’Empire du Japon. Depuis peu, le pays s’ouvre aux techniques étrangères, et de nombreux occidentaux parcourent ses rues."
   File "renpy/common/00console.rpy", line 765, in script call
     python in _console:
-  File "game/scripts/bar/ran/ran_ch2.rpy", line 791, in script
-    with dissolve
-  File "C:\renpy\renpy\ast.py", line 1357, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\renpy\renpy\exports.py", line 1455, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\renpy\renpy\display\core.py", line 2217, in do_with
-    clear=clear)
-  File "C:\renpy\renpy\display\core.py", line 2662, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\renpy\renpy\display\core.py", line 3148, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\renpy\renpy\display\core.py", line 2065, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 487, in renpy.display.render.render_screen
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "C:\renpy\renpy\display\layout.py", line 719, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "C:\renpy\renpy\display\transition.py", line 361, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "C:\renpy\renpy\display\layout.py", line 719, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "C:\renpy\renpy\display\layout.py", line 719, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "C:\renpy\renpy\display\image.py", line 497, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\renpy\renpy\display\image.py", line 306, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "C:\renpy\renpy\display\layout.py", line 719, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "C:\renpy\renpy\display\image.py", line 497, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\renpy\renpy\display\image.py", line 306, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 147, in renpy.display.render.render
-  File "render.pyx", line 235, in renpy.display.render.render
-  File "C:\renpy\renpy\display\im.py", line 580, in render
-    return cache.get(self, render=True)
-  File "C:\renpy\renpy\display\im.py", line 266, in get
-    surf = image.load()
-  File "C:\renpy\renpy\display\im.py", line 625, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "C:\renpy\renpy\loader.py", line 576, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'Akie/akie_blush1.png'.
+  File "renpy/common/00console.rpy", line 769, in script call
+    return
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/cuisine/cuisine_ch1.rpy", line 1121, in script call
+    "Une fois le premier sorbet terminé, les premiers clients commencèrent à arriver en masse. Le matin était assez chargé, car les bourgeois et les occidentaux de passages avaient prit l’habitude d’y prendre le petit-déjeuner. Heureusement, cela ne durait pas longtemps puisqu’il leur fallait partir rapidement au travail."
+  File "renpy/common/00console.rpy", line 765, in script call
+    python in _console:
+  File "game/scripts/salle/sei/sei_ch2.rpy", line 50, in script
+    show tsugumi B4 S1 Y1 B1 at right
+  File "C:\renpy\renpy\ast.py", line 1151, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\renpy\renpy\ast.py", line 1121, in show_imspec
+    atl=atl)
+  File "C:\renpy\renpy\exports.py", line 676, in show
+    new_what = renpy.game.context().images.apply_attributes(layer, key, name)
+  File "C:\renpy\renpy\display\image.py", line 896, in apply_attributes
+    return self.choose_image(nametag, required, optional, name)
+  File "C:\renpy\renpy\display\image.py", line 913, in choose_image
+    newattrs = ca(tag, ca_required, ca_optional)
+  File "renpy/common/00layeredimage.rpy", line 724, in _choose_attributes
+    raise Exception("The attributes for {} conflict: {}".format(tag, " ".join(both)))
+Exception: The attributes for tsugumi conflict: B4 B1
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 Meiji 1.0
-Mon Oct 29 22:34:11 2018
+Tue Oct 30 11:48:58 2018

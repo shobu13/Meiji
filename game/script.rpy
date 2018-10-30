@@ -416,14 +416,14 @@ layeredimage tsugumi:
         attribute Y4
         attribute Y5
         attribute Y6
+    group acc:
+        attribute Ca default
     group exp:
         attribute R1
         attribute R2
         attribute R3
         attribute eH
         attribute Go
-    group acc:
-        attribute Ca default
 
 layeredimage akie:
     always:

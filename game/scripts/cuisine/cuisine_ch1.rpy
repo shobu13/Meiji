@@ -1130,7 +1130,7 @@ with dissolve
 show yoshino B1 S1 Y1 at right
 with dissolve
 yoshino "Voilà ce que c’est d’arriver en plein milieu d’une semaine."
-hide clateau
+hide yoshino
 with dissolve
 show clateau B1 S1 Y4 at right
 with dissolve
@@ -1138,6 +1138,8 @@ clateau "Mais tu as bien travaillé pendant ces deux jours !"
 # TODONE : Le choix des si, se fait en fonction du nombre de points de chaque persos
 # Si Yoshino
 if relation_yoshino > relation_clateau:
+    scene bg cuisine
+    with dissolve
     "Pendant qu’Ezo rangeait les casseroles qu’elle venait de nettoyer, Yoshino se rapprocha discrètement d’Ezo."
     show yoshino B1 S1 Y2 at right
     with dissolve

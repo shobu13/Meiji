@@ -1,9 +1,6 @@
 label sei_ch2:
     pass
 
-scene bg grenier
-with dissolve
-
 scene bg Black
 with dissolve
 show chapter_ch2:
@@ -11,6 +8,9 @@ show chapter_ch2:
     xanchor 0.5 xpos 0.5
 with dissolve
 $renpy.pause(3, hard='True')
+
+scene bg grenier
+with dissolveO
 
 # TODONE Ezo porte son uniforme militaire
 $ezo_outfit = 'Mi'
@@ -44,10 +44,10 @@ with dissolve
 scene bg rue
 with dissolve
 "Quand elle sortit du restaurant, il faisait encore frais, même si le soleil était déjà levé depuis quelques minutes. En marchant dans les petites ruelles qui la conduisaient chez Sei, elle tomba au détour d’un croisement sur Tsugumi, qui manqua de la renverser."
-show ezo B1 Mi Y5 at left, xflip
+show ezo B1 Y5 at left, xflip
 with dissolve
 ezo "Fais attention quand tu marches, abrutie !"
-show tsugumi B4 S1 Y1 B1 at right
+show tsugumi B4 S1 Y1 at right
 with dissolve
 tsugumi "Oh, Ezo, bonjour ! Qu’est-ce que tu fais ici ?"
 show ezo B1 S2 Y2 at left, xflip
@@ -416,7 +416,7 @@ $ezo_outfit = 'Mi'
 scene bg wafu
 with dissolve
 "À la fin de la semaine, Ezo eut de nouveau un jour de repos, et retourna chez Sei. Ensemble, elles pratiquèrent le français. Elles avaient été un petit peu optimiste dans leurs prévisions : non seulement apprendre une nouvelle langue était très dur, et en plus, Ezo avait surestimé ses capacités d’enseignement, car c’était là aussi une chose difficile."
-show ezo Mi B1 S3 Y4 at left, xflip
+show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "Tu retiens vite le vocabulaire ! Maintenant, voyons la conjugaison… pour te dire je suis pas bien sûre de la connaître moi non plus donc j’ai apporté un livre de grammaire…"
 show sei B5 S1 Y1 at right
@@ -467,7 +467,7 @@ $ezo_outfit = 'Se'
 show sei B6 S2 Y8 R3 at right
 with dissolve
 sei "E-Ezo, je savais que les françaises étaient _à la mode_ mais c’est très osé."
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Pardon ?"
 hide ezo
@@ -475,14 +475,14 @@ with dissolve
 hide sei
 with dissolve
 "À la vue de la culotte que lui montra Sei, Ezo se mit à rougir."
-show ezo Se B8 S3 Y7 R3 at left, xflip
+show ezo B8 S3 Y7 R3 at left, xflip
 with dissolve
 ezo "M-m-mais, ce n’est pas à moi !"
 show sei B6 S2 Y8 R3 at right
 with dissolve
 sei "Mais à qui est-ce alors ? Tout le monde a fini de se changer !"
 "Ezo prit la culotte, la retourna, et put voir, cousu sur l’arrière, la mention « Akié »"
-show ezo Se B7 S2 Y8 at left, xflip
+show ezo B7 S2 Y8 at left, xflip
 with dissolve
 ezo "Elle a peur qu’on la lui vole ou quoi ? Pourquoi y’a son nom sur ses culottes ?"
 show sei B6 S2 Y6 at right
@@ -494,7 +494,7 @@ hide sei
 with dissolve
 "Sei et Ezo regardèrent furtivement dans la salle. Akié y était toute pimpante, comme à son habitude, et virevoltait dans la salle en apportant les plats."
 "À chaque fois qu’elle faisait un mouvement un peu brusque, ou qu’elle se baissait, Akié et Ezo se mordaient la lèvre, espérant que sa jupe ne vole pas trop haut."
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Va falloir lui dire…"
 show sei B4 S1 Y1 Go at right
@@ -519,7 +519,7 @@ with dissolve
 show akie B6 S2 Y7 R2 at right
 with dissolve
 akie "Q-q-qu’est-ce que tu fais avec ma culotte Ezo ?"
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Elle est plutôt confortable."
 hide ezo
@@ -566,13 +566,13 @@ with dissolve
 scene bg bar
 with dissolve
 "Le soir, Ezo et Sei prirent un petit moment de détente au bar de Ran. Ezo avait amené de petites fiches en carton où elle avait noté les kanji qu’elle ne connaissait pas. Sei, de son côté, avait emporté un des livres d’Ezo et déchiffrait la langue mot par mot. Tsugumi, la petite ouvrière, les regardait avec sa pinte avec des gros yeux ronds."
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Qu’est-ce qu’il y a ?"
 show tsugumi B2 S2 Y1 at right
 with dissolve
 tsugumi "C’est-à-dire que… vous êtes bien studieuses…"
-show ezo Se B1 S3 Y2 at left, xflip
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Tu vois si rarement que ça des gens lire ? Ah, attends, déjà, est-ce que tu sais ce que c’est qu’un livre ?"
 show tsugumi B1 S3 Y1 at right
@@ -586,7 +586,7 @@ with dissolve
 show ran B1 S1 Y1 at right
 with dissolve
 ran "C’est bien gentil à vous, mademoiselle Tsugumi, mais je suis loin d’être au niveau de mademoiselle Sei pour la mémoire ou de mademoiselle Ezo pour ce qui est de l’apprentissage."
-show ezo Se B2 S2 Y1 at left, xflip
+show ezo B2 S2 Y1 at left, xflip
 with dissolve
 ezo "Tu restes quand même plus érudite que moi !"
 hide ezo
@@ -600,7 +600,7 @@ tsugumi "Pfff, tout cela est bien trop compliqué pour moi ! Allez, ressers moi 
 show tsugumi B1 S1 Y1 at right
 with dissolve
 tsugumi "Enfin, je suis quand même toujours aussi étonnée de se revirement, Ezo. En te voyant arriver la première fois, j’ai vraiment cru que tu serai une camarade de boisson, avec ton uniforme militaire crasseux et tes manières bourrues. Jamais j’aurais imaginé que tu étudierais la poésie avec Sei !"
-show ezo Se B4 S3 Y1 at left, xflip
+show ezo B4 S3 Y1 at left, xflip
 with dissolve
 ezo "C’est pas faux… je fais un peu tâche."
 hide tsugumi
@@ -613,7 +613,7 @@ with dissolve
 "Ezo lui répondit par un sourire, mais elle pensait au fond d’elle-même que Tsugumi avait peut-être raison : ce n’était pas vraiment sa place."
 "Quelques jours plus tard, un midi, Sei fut confrontée à un des nombreux clients occidentaux qui, pour certains et parfois pour beaucoup, ne parlaient pas japonais."
 "Ezo se préparait à aller aider Sei en fâcheuse posture, quand elle vit que Sei se débrouillait plutôt bien. On la voyait hésitante, mais elle réussit à guider le client jusqu’à une table et à prendre sa commande."
-show ezo Se B1 S3 Y4 at left, xflip
+show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "C’est super Sei, tu as réussi à lui parler !"
 show sei B3 S1 Y3 at right

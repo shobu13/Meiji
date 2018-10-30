@@ -69,7 +69,7 @@ with dissolve
 "Ezo arriva devant la maison de Yoshino. C’était un bâtiment en bois, comme beaucoup d’autres dans la ville, de style traditionnel."
 "Il était un peu délabré, et une partie ne semblait pas occupée depuis quelques temps. Néanmoins, elle avait encore une certaine tenue et était assez large."
 "Devant la porte et ne sachant pas trop comment entrer, Ezo piétinait sur place. La porte s’ouvrit brusquement."
-show yoshino B S1 Y2 at right
+show yoshino B1 S1 Y2 at right
 with dissolve
 yoshino "Bah alors ?"
 show ezo B6 S3 Y7 at left, xflip
@@ -97,9 +97,9 @@ with dissolve
 show ezo B1 S3 Y7 at left, xflip
 with dissolve
 ezo "Ouah, je ne m’y attendais pas !"
-show yoshino 2 S1 Y4 at right
+show yoshino B2 S1 Y4 at right
 with dissolve
-yoshino "C’est ma collection"
+yoshino "C’est ma collection."
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Vraiment impressionnant, il y en a pour tous les goûts."
@@ -224,7 +224,8 @@ $ezo_outfit = 'Cui'
 
 scene bg cuisine
 with dissolve
-"Le lendemain, le travail reprit de plus belle. Ezo se débrouillait déjà un peu mieux avec les couteaux, et elle apportait régulièrement son aide dans les plats que les autres préparaient. Elle n’avait pas encore le niveau pour faire ses propres réalisations mais au moins elle pouvait aider sans problèmes Yoshino dans ses gâteaux."
+"Le lendemain, le travail reprit de plus belle. Ezo se débrouillait déjà un peu mieux avec les couteaux, et elle apportait régulièrement son aide dans les plats que les autres préparaient."
+"Elle n’avait pas encore le niveau pour faire ses propres réalisations mais au moins elle pouvait aider sans problèmes Yoshino dans ses gâteaux."
 "En revanche, ce qu’Ezo savait bien faire, c’était sermonner les autres. En prenant exemple sur Yoshino, elle arrivait à recadrer tous les écarts que pouvaient faire ses collègues."
 show clateau B1 S3 Y4 at right
 with dissolve
@@ -241,6 +242,7 @@ ran "Adieu, mes siestes matinales…"
 hide ezo
 with dissolve
 hide ran
+hide clateau
 with dissolve
 # Fondu en noir
 show yoshino B1 S2 Y1 at right
@@ -262,7 +264,7 @@ show yoshino B1 S1 Y2 at right
 with dissolve
 yoshino "Qu’est-ce qu’elle fait ?"
 "Ezo revint après quelques instants."
-show ezo 1 S3 Y4 at left, xflip
+show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "C’est bon, tu peux venir !"
 show yoshino B1 S2 Y4 Go at right
@@ -291,7 +293,6 @@ with dissolve
 show akie B1 S2 Y4 at right
 with dissolve
 akie "J’avais peur que ça se passe mal…"
-akie "Akié(caché)"
 hide akie
 with dissolve
 show yoshino B1 S1 Y3 -R2 at right
@@ -334,6 +335,8 @@ show yoshino B5 S2 Y6 R1 at right
 with dissolve
 yoshino "Quoi ? Je tiens bien l’alcool, tu sais."
 hide yoshino
+with dissolve
+hide ran
 with dissolve
 "Et elle avait raison, après une dizaine de chopes, elle tenait encore debout."
 show ezo B7 S3 Y8 at left, xflip
@@ -380,10 +383,10 @@ clateau "Tu voulais à ce point imiter Yoshino ?"
 show ezo B5 S2 Y2 at left, xflip
 with dissolve
 ezo "Mais elle est super forte tu sais ! Et mignonne aussi parfois…"
-show clateau B1 S1 Y4 at left, xflip
+show clateau B1 S1 Y4 at right
 with dissolve
 clateau "En tout cas, tu l’aimes bien !"
-show ezo B1 S3 Y4 at right
+show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "Oui, ça me fait vraiment plaisir d’avoir une amie… et je suis aussi contente que tu sois là… j’ai un peu l’impression d’avoir retrouvé quelque chose…"
 hide ezo
@@ -490,6 +493,8 @@ with dissolve
 show yoshino B2 S1 Y4 Go at right
 with dissolve
 yoshino "Qu’est-ce qu’il y a ? Tu veux encore te vanter et faire la blague que ton parfait était « parfait » ?"
+hide yoshino Go
+with dissolve
 show ezo B5 S2 Y8 R1 at left, xflip
 with dissolve
 ezo "N… non ! enfin !"
@@ -505,7 +510,7 @@ yoshino "S’occuper des nouveaux, ça fait parti de mon travail, c’est rien."
 show ezo B2 S3 Y1 R3 at left, xflip
 with dissolve
 ezo "Non, je te jure… Avec Clateau vous m’avez beaucoup aidée, j’ai l’impression d’avoir trouvé une famille."
-show yoshino B4 S21 Y1 R1 at right
+show yoshino B4 S2 Y1 R1 at right
 with dissolve
 yoshino "Eh bien… de rien…"
 show ezo B1 S1 Y8 R3 at left, xflip
@@ -515,6 +520,8 @@ ezo "Yoshino, je te considère quasiment comme ma grande sœur !"
 show yoshino B1 S1 Y2 at right
 with dissolve
 yoshino "Bon, allez, on se reconcentre. Le travail est bientôt terminé."
+hide yoshino
+with dissolve
 "Yoshino prit ses couteaux, concentrée, et retourna travailler."
 show ezo B1 S2 Y2 at left, xflip
 with dissolve
@@ -550,7 +557,7 @@ akie "Je n’irais pas jusque-là… mais tu t’es déjà bien améliorée."
 show ezo B2 S3 Y4 at left, xflip
 with dissolve
 ezo "Héhé, tout ça c’est grâce à Yoshino !"
-hide ran
+hide akie
 with dissolve
 show ran B1 S1 Y4 at right
 with dissolve
@@ -566,7 +573,7 @@ ezo "Oui, c’est vrai que par ma présence impressionnante elle a commencé à 
 show akie B1 S2 Y4 Go at right
 with dissolve
 akie "Je ne parlais pas vraiment de ça…"
-hide ezo
+hide akie
 with dissolve
 show ran B1 S1 Y2 at right
 with dissolve
@@ -579,7 +586,7 @@ with dissolve
 show akie B4 S1 Y2 at right
 with dissolve
 akie "Je me demandais quand est-ce qu’elle trouverait une amie…"
-show ezo B1 S2Y2 at left, xflip
+show ezo B1 S2 Y2 at left, xflip
 with dissolve
 ezo "Tsugumi m’a dit ça aussi, mais elle est si solitaire que ça Yoshino ?"
 show akie B4 S2 Y2 at right
@@ -765,7 +772,7 @@ with dissolve
 scene bg cuisine
 with dissolve
 "Ezo avait beau chercher dans ses souvenirs Yoshino mangeait finalement assez peu avec elle. Un comble pour une cuisinière."
-"Yoshino faisait beaucoup de choses au restaurant."
+"Yoshino faisait beaucoup de choses au restaurant, et n'avait pas beaucoup de temps pour elle. Elle ne s'était jamais vraiment cuisiné quelque chose pour elle-même."
 "Des fois, elle et Ezo mangeaient des plats que les clients avaient refusé ou des provisions qui allaient commencer à périmer."
 "Sinon Clateau préparait un repas pour les employés, et il faisait tourner les recettes en fonction des goûts de chacun."
 "Mais Ezo ne se souvenait pas que Yoshino ait déjà mangé avec les autres. À chaque fois, elle profitait de la pause repas pour aiguiser ses couteaux, ou pour commencer à préparer les plats du soir."
@@ -824,7 +831,7 @@ ezo "Mais je ne sais toujours pas ses goûts !"
 show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "Ah, désolé, comme tu n’as pas beaucoup de présence je t’ai pris pour un chat…"
-show clateau B3 S3 Y at right
+show clateau B3 S3 Y7 at right
 with dissolve
 clateau "Eh bien merci…"
 show ezo B1 S3 Y2 at left, xflip
@@ -851,7 +858,7 @@ ezo "Ah, tais-toi ! Alors, qu’est-ce qu’elle aime ?"
 show clateau B3 S2 Y3 at right
 with dissolve
 clateau "Hm… À bien réfléchir, je me souviens qu’elle m’a dit apprécier la castella, sa mère lui en faisait quand elle était petite."
-show ezo B1 S2 Y7 at left, xflip
+show ezo B1 S2 Y7 -R2 at left, xflip
 with dissolve
 ezo "C’est pas un village dans le Lot ?"
 show clateau B7 S4 Y5 at right
@@ -877,6 +884,8 @@ with dissolve
 scene bg Black
 with dissolve
 
+scene bg cuisine
+with dissolve
 "La recette obtenue, Ezo passa ses soirées à rester dans la cuisine du restaurant, une fois que tout le monde était parti, à essayer de réaliser le gâteau."
 "Elle avait acheté à Clateau ses ingrédients. Clateau lui avait proposé de lui laisser utiliser les ingrédients du restaurant, mais Ezo avait refusé. Elle tenait à faire tout elle-même."
 "Ce n’est qu’au bout de plusieurs jours qu’elle réussit à obtenir des résultats corrects. Un jour, à la pause midi, elle demanda à Yoshino si elles pouvaient manger ensemble."

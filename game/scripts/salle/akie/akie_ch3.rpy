@@ -8,6 +8,9 @@ show chapter_ch3:
     xanchor 0.5 xpos 0.5
 with dissolve
 $renpy.pause(3, hard='True')
+
+scene bg salle
+with dissolve
 "Après leur entrevue et la mise à nue d’Ezo sur son passé et ses craintes, Ezo et Akié devinrent encore plus fusionnelle."
 "Elles faisaient tous ensemble, et même les clients étaient habitués à les voir ensemble."
 "Un matin, elle ne se présenta pas au travail."
@@ -59,6 +62,12 @@ hide ezo
 with dissolve
 hide yoshino
 with dissolve
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
+scene bg rue
+with dissolve
 "Pour se changer les idées, Ezo prit le sac de pain sec et la bouteille de lait que lui avait donné Yoshino et alla nourrir les chats qui attendaient à l’arrière du restaurant."
 "Elle essaya d’en saisir un, mais encore une fois, elle n’y parvint pas. Elle se retourna par habitude."
 show ezo B2 S3 Y4 Go at left, xflip
@@ -66,6 +75,14 @@ with dissolve
 ezo "C’est pas encore ça, Akié…"
 hide ezo
 with dissolve
+"Mais il n’y avait personne. Elle se mordit la lèvre inférieure, et rentra au restaurant."
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
+scene bg bar
+with dissolve
+"Au bar, elle y croisa Tsugumi, venu en urgence, alors qu’on était pas encore midi."
 show tsugumi B1 S1 Y1 at right
 with dissolve
 tsugumi "Dites ! J’ai vu Akié !"
@@ -128,6 +145,13 @@ clateau "Bien, tout le monde, rendez-vous devant le restaurant en fin de journé
 hide clateau
 with dissolve
 "Il avait parlé haut et fort, et avec une intonation qui lui ressemblait peu, mais il sentait le besoin de motiver tout le monde. Si Ezo avait l’intention de partir dès maintenant, Ran et Sei semblaient plus apeuré par le sort d’Akié et ne savaient pas trop quoi faire."
+# TODONE fondu en noir et Ezo porte son uniforme militaire
+scene bg Black
+with dissolve
+
+$ezo_outfit = 'Mi'
+"Ils partirent tous se préparer. Ezo renfila son uniforme militaire, et elle fut la première arrivée."
+"Tout le monde était remonté, notamment Ran, qui arriva en armure complète de samouraï. Elle bougeait avec peine, et on l’entendait à peine, si bien qu’elle dû la retirer avant de pouvoir commencer à participer."
 show yoshino B4 S2 Y6 Go at right
 with dissolve
 yoshino "Je peux savoir ce que c’est que tout ça ?"
@@ -167,11 +191,19 @@ with dissolve
 hide clateau
 with dissolve
 "Clateau y avait mit les formes et le ton pour que l’intensité ne paraisse pas trop dramatique, mais il portait dans sa voix une expérience qui ne trompait pas ; on sentait bien qu’il avait un passé militaire fourni, et qu’il avait passé la journée à collecter des informations et longuement pensé au plan."
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
+scene bg port
+with dissolve
 "Ils se mirent tous en route, vers le port. Comme Clateau l’avait prévu, il y avait un gros navire en bois, assez décrépit, qui attendait sur le port, et assez peu de marins pour le garder. Tsugumi, Ran, Yoshino et Ezo se cachaient derrière des barriques en bois."
 show tsugumi B3 S1 Y1 at right
 with dissolve
+label test:
+    pass
 tsugumi "Clateau avait raison, y’a presque personne."
-show ran B4 S4 Y4 at left, xflip
+show ran B4 S3 Y4 at left, xflip
 with dissolve
 ran "Ils sont peut-être en train de prendre leur goûter ! C’est notre chance d’attaquer !"
 hide tsugumi
@@ -315,10 +347,16 @@ with dissolve
 hide ran
 with dissolve
 "Ezo restait pensive pendant qu’elle courait avec les autres en direction du restaurant"
-show ezo B4 S1 Y1 at left, xflip
+show ezo B14 S1 Y1 at left, xflip
 with dissolve
 ezo "Quelle chance, oui."
 hide ezo
+with dissolve
+# TODONE fondu en noir
+scene bg Black
+with dissolve
+
+scene bg bar
 with dissolve
 "Une fois de retour, elles y trouvèrent Clateau et Sei, en train de les attendre."
 show sei B2 S1 Y1 at right

@@ -46,7 +46,7 @@ tsugumi "Je te trouve très mignonne, avec cet air mi-gêné, mi-autoritaire, ç
 hide tsugumi
 with dissolve
 "Tsugumi avait dit cela innocemment, mais Ezo était devenu toute rouge, et ses cheveux argentés contrastaient avec l’écarlate de son visage. En voyant Ezo se mettre dans ses états, Tsugumi réalisa ce qu’elle venait de dire, et détourna le regard à son tour."
-show tsugumi B5 S2 Y5 at left, xflip
+show tsugumi B5 S2 Y5 at right
 with dissolve
 tsugumi "Ahem, ça va bientôt commencer."
 hide tsugumi
@@ -145,7 +145,8 @@ with dissolve
 yoshino "Bah, qu’est-ce qu’elle a ?"
 show ran B1 S1 Y1 at right
 with dissolve
-ran "Mademoiselle Yoshino, je pense savoir le fin mot de l’affaire. Figurez-vous qu’hier, ayant remarqué que j’avais oublié quelque babiole, j’ai rebroussé chemin pour aller le chercher. Et en rentrant dans la réserve, j’ai surpris monsieur Clateau faire une remontrance à mademoiselle Ezo sur sa récente sortie avec mademoiselle Tsugumi. Et mademoiselle Ezo l’a très mal pris."
+ran "Mademoiselle Yoshino, je pense savoir le fin mot de l’affaire. Figurez-vous qu’hier, ayant remarqué que j’avais oublié quelque babiole, j’ai rebroussé chemin pour aller le chercher."
+"Et en rentrant dans la réserve, j’ai surpris monsieur Clateau faire une remontrance à mademoiselle Ezo sur sa récente sortie avec mademoiselle Tsugumi. Et mademoiselle Ezo l’a très mal pris."
 show yoshino B1 S1 Y1 at left, xflip
 with dissolve
 yoshino "Je vois, ça va pas être facile à régler."
@@ -209,7 +210,7 @@ tsugumi "Mais non ! Et je ne dis pas que tu devrais suivre ce qu’il dit, juste
 show ezo B8 S1 Y5 at left, xflip
 with dissolve
 ezo "Il n’avait qu’à pas me dire ça !"
-show tsugumi B5 S2 Y5 at right
+show tsugumi B2 S2 Y1 at right
 with dissolve
 tsugumi "Écoute, je pense que tu as de la chance qu’il s’inquiète pour toi. C’est rare par les temps qui courent, ne perds pas ça."
 "Tsugumi regardait Ezo avec des yeux tristes. Elle n’aimait pas que les gens se fâchent entre eux, et le fait qu’elle soit la cause de la dispute semblait lui peser."
@@ -390,7 +391,8 @@ hide tsugumi
 with dissolve
 hide ezo
 with dissolve
-"Tsugumi entra dans la chambre d’Ezo. C’était une petite pièce située directement sous le toit du restaurant. Le plancher grinçait quand on marchait dessus. L’habitation était en style occidental et était donc assez récente, et Ezo se demandait souvent comment Clateau avait réussi à faire pour que tout craque et ait l’air vieux."
+"Tsugumi entra dans la chambre d’Ezo. C’était une petite pièce située directement sous le toit du restaurant. Le plancher grinçait quand on marchait dessus."
+"L’habitation était en style occidental et était donc assez récente, et Ezo se demandait souvent comment Clateau avait réussi à faire pour que tout craque et ait l’air vieux."
 show tsugumi B3 S1 Y1 at right
 with dissolve
 tsugumi "Elle est assez dépouillée ta chambre. On dirait la mienne."

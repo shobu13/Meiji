@@ -302,7 +302,7 @@ with dissolve
 hide ran
 with dissolve
 "Ran serrait ses petits poings, tout en arborant une belle bosse sur le front, consécutive à son coup de tête. En les voyant tous réunis, Akié en avait les larmes aux yeux."
-show akie BB2 S1 Y4 at right
+show akie B2 S1 Y4 at right
 with dissolve
 akie "Merci à tous !"
 show yoshino B1 S1 Y1 at left, xflip
@@ -347,7 +347,7 @@ with dissolve
 hide ran
 with dissolve
 "Ezo restait pensive pendant qu’elle courait avec les autres en direction du restaurant"
-show ezo B14 S1 Y1 at left, xflip
+show ezo B1 S1 Y1 at left, xflip
 with dissolve
 ezo "Quelle chance, oui."
 hide ezo

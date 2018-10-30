@@ -36,4 +36,4 @@ init:
     # image cred = Text(credits_s, text_align=0.5)
     image theend = Text("{size=80}Fin !",
      font="gui/Sofia-Regular.otf", text_align=0.5, color="#ff9900")
-    image thanks = Text("{size=80}Merci d'avoir jouer\n\n\n\n{size=20}connard",font="gui/Sofia-Regular.otf", text_align=0.5, color="#ff9900")
+    image thanks = Text("{size=80}Merci d'avoir jouer",font="gui/Sofia-Regular.otf", text_align=0.5, color="#ff9900")

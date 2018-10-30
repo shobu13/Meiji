@@ -33,7 +33,7 @@ with dissolve
 show ezo B2 S3 Y2 at left, xflip
 with dissolve
 ezo "Yoshino, on mange ensemble aujourd’hui aussi ?"
-show yoshino 5 S1 Y1 at right
+show yoshino B5 S1 Y1 at right
 with dissolve
 yoshino "Non ! J’ai du travail, et toi aussi d’ailleurs, cette cuisine n’est pas un lieu de copinage."
 show ezo B1 S1 Y2 at left, xflip

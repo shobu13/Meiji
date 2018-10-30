@@ -126,8 +126,11 @@ yoshino "Tu fais la forte, mais Clateau te réveille les matins. Et tu as besoin
 show ezo B4 S2 Y1 at left, xflip
 with dissolve
 ezo "Oui mais tu sais, moi, je suis militaire, j’ai fait des tas de choses ignobles. Je peux plus vraiment prétendre être naïve."
+label test:
+    pass
+
 "Le regard de Yoshino s’assombrit."
-show yoshino B1 S1 Y at right
+show yoshino B1 S1 Y1 at right
 with dissolve
 yoshino "Moi aussi tu sais, je ne suis pas aussi droite que tu le penses."
 show ezo B1 S2 Y2 at left, xflip

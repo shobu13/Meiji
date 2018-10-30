@@ -498,7 +498,6 @@ ezo "Et ensuite, quand la guerre fut terminée… Il m’a proposé de venir dan
 show ezo B1 S3 Y1 at left, xflip
 with dissolve
 ezo "Mais moi… je ne mérite pas tout ça ! Je suis un soudard, un simple soldat ! Je ne veux pas vivre aux crochets de Clateau…"
-ezo "Ezo serrait le bas de sa tunique et l’entortillait de plus en plus à mesure qu’elle parlait. Les trémolos dans sa voix trahissaient son envie grandissante de pleurer."
 "Ezo serrait le bas de sa tunique et l’entortillait de plus en plus à mesure qu’elle parlait. Les trémolos dans sa voix trahissaient son envie grandissante de pleurer."
 show ezo B4 S2 Y3 at left, xflip
 with dissolve
@@ -750,7 +749,7 @@ with dissolve
 show yoshino B1 S1 Y1 at left, xflip
 with dissolve
 yoshino "Si Clateau est devenu son père d’adoption, alors nous on est un peu sa famille, non ?"
-show tsugumi BB1 S1 Y2 at right
+show tsugumi B1 S1 Y2 at right
 with dissolve
 tsugumi "Oh, oui ! Ezo, je serais ta grande sœur !"
 "Akié regardant longuement la poitrine de Tsugumi."

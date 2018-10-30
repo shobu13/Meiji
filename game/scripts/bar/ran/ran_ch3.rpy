@@ -136,7 +136,8 @@ ezo "Mais ça me regarde !"
 show ezo B1 S3 Y1 R2 at left, xflip
 with dissolve
 ezo "Ran et moi… on… on était assez proche quand même. J’ai le droit de savoir ce qui se passe !"
-show yoshino BB4 S2 Y1 at right
+show yoshino B4 S2 Y1 at right
+hide ezo R2
 with dissolve
 yoshino "On va avoir du mal à te le cacher plus longtemps, mais je te préviens, ce sera difficile."
 show ezo B1 S2 Y2 at left, xflip
@@ -321,10 +322,6 @@ clateau "Je sais que Yoshini t’as rembarré un peu sèchement, mais elle avait
 show ezo B5 S1 Y2 at left, xflip
 with dissolve
 ezo "Attends ! J’ai quelque chose de sérieux. Mais pour ça, je vais avoir besoin de toi."
-hide ezo
-with dissolve
-hide clateau
-with dissolve
 show ezo B4 S3 Y1 at left, xflip
 with dissolve
 ezo "Je… je pense qu’on peut s’en tirer grâce à tes contacts dans l’armé et le gouvernement. En échange de techniques militaires, le gouvernement devrait pouvoir donner des garanties au père de Ran sans avoir à faire le mariage."
@@ -388,7 +385,7 @@ ran "Mais tout cela n’est que pure supposition. Si cela échouait, vous vous r
 menu:
     " Qu’importe tout ça ! Ran, qu’est-ce que tu veux, toi ? Je suis là, je te protégerai. Parfois, il faut savoir être spontané.":
         pass
-    " Il y a peu de chance que ça rate. Et, si jamais tu devais quitter ta maison, tu pourrais":
+    " Il y a peu de chance que ça rate. Et, si jamais tu devais quitter ta maison, tu pourrais vivre avec moi, dans le restaurant…":
         jump ran_ch4_mauvais
 show ezo B1 S1 Y3 at left, xflip
 with dissolve
@@ -397,7 +394,6 @@ show ran B1 S1 Y1 at right
 with dissolve
 ran "Je…"
 hide ezo
-with dissolve
 hide ran
 with dissolve
 "Ran se souvint qu’elle avait commencé à travailler au restaurant pour pouvoir découvrir de nouveaux horizons."
@@ -405,7 +401,11 @@ with dissolve
 show ran B6 S3 Y8 at right
 with dissolve
 ran "Allons-y !"
+hide ran
+with dissolve
 "Ran passa devant Ezo, lui prenant la main au passage. Elles sortirent toutes les deux de la chambre."
+scene bg rue
+with dissolve
 "Elles marchèrent un peu avant de s’arrêter."
 show ezo B1 S3 Y4 at left, xflip
 with dissolve

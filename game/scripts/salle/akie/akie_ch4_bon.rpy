@@ -1,6 +1,8 @@
 label akie_ch4_bon:
     pass
 
+scene bg rue
+with dissolve
 play music "audio/VN_theme_ending_version.ogg" loop fadeout 1.0 fadein 1.0
 "Les jours et les semaines passèrent. La relation d’Akié et Ezo était à son paroxysme, et elles passaient le plus clair de leur temps ensemble, à nourrir les chats du restaurant."
 "Ezo essayait par ailleurs de saisir un des chats sans qu’il ne s’enfuît. Après y être allé petit à petit, elle réussis à les caresser longuement, il ne manque presque plus rien avant qu’elle n’eut la possibilité de les prendre réellement."

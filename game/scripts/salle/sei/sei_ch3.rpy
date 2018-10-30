@@ -9,6 +9,8 @@ show chapter_ch3:
 with dissolve
 $renpy.pause(3, hard='True')
 
+scene bg salle
+with Dissolve(1)
 hide ezo
 with dissolve
 "Pendant la semaine qui suivit, Sei et Ezo continuaient de travailler de concert, mais Ezo trouvait que Sei devenait un peu plus distante."
@@ -288,7 +290,7 @@ menu:
         pass
     " J’ai demandé à Ran et Clateau de s’occuper de la partie administrative. On pourra vaincre ce gouvernement !":
         scene bg Black
-        with dissolve
+        with Dissolve(1)
         jump sei_ch4_mauvais
 # Si « ne t’inquiète pas, je suis là pour toi » sinon MAUVAIS CHAPITRE
 "Ezo fixait Sei après sa déclaration."
@@ -319,6 +321,10 @@ ezo "Je pense… que ça ira."
 hide ezo
 with dissolve
 hide clateau
+with dissolve
+scene bg Black
+with Dissolve(1)
+scene bg salle
 with dissolve
 "Le lendemain, Ezo fut levée aux premières lueurs du jour, enfila son uniforme, et descendit les marches avec un stress qu’elle n’avait encore jamais éprouvé."
 "Une fois dans la salle, elle vit Akié en train de dresser les tables, seule."
@@ -371,9 +377,13 @@ show ezo B5 S3 Y2 at left, xflip
 with dissolve
 ezo "Oui, désolée !"
 "Avant de retourner au travail, Ran prit le bras d’Ezo et Sei et leur montra un papier jaune."
+hide akie
+with dissolve
 show ran B5 S1 Y3 at right
 with dissolve
 ran "Voilà la notification de la démission de mademoiselle Sei. Vous êtes tranquille, maintenant."
+hide ran
+with dissolve
 show sei B1 S1 Y3 at right
 with dissolve
 sei "Oh, Ran, grand merci ! Tu as fait tellement vite !"

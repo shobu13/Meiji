@@ -23,7 +23,7 @@ ezo "Yoshino ! Je… Nous avons besoin de toi, revient !"
 show yoshino B4 S2 Y1 at right
 with dissolve
 yoshino "Qu’est-ce que tu fais ici ? Tu vas finir comme moi."
-show ezo B1 S3 Y at left, xflip
+show ezo B1 S3 Y1 at left, xflip
 with dissolve
 ezo "Devenir comme toi, ça ne me fait pas peur ! Alors reviens. Tout le monde t’attend."
 show yoshino B5 S1 Y1 at right

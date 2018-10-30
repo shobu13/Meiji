@@ -180,7 +180,7 @@ with dissolve
 scene bg Black
 with dissolve
 
-scene bg chambre
+scene bg wafu
 with dissolve
 "Ran conduisit Ezo à sa chambre. Toute la maisonnée était baignée dans une atmosphère japonaise, et elle détonnait beaucoup avec le restaurant, qui lui était construit sur un modèle occidental d’Europe de l’Ouest."
 "C’était la première fois qu’Ezo s’y retrouvait confronté directement. Quand elle se trouvait sur l’île dont elle porte le nom, finalement, elle n’avait été que dans des fortins ou des navires occidentaux."
@@ -390,7 +390,7 @@ show ezo B1 S1 Y3 at left, xflip
 with dissolve
 ezo "On a plus de points communs que tu ne le crois !"
 "Tsugumi se redressa pour fixer un long moment Ezo et Ran. Son regard visait précisément leurs bustes."
-show ezo B6 S2 Y6 R2 at left, xflip
+show ezo B6 S2 Y8 R3 at left, xflip
 with dissolve
 ezo "Ah ! Je sais à quoi tu penses ! C’est petit de ta part !"
 show tsugumi B4 S1 Y1 at right
@@ -504,7 +504,7 @@ with dissolve
 # TODONE fondu en noir
 scene bg Black
 with dissolve
-scene bg salle
+scene bg bar
 with dissolve
 
 show ran B6 S1 Y6 at right

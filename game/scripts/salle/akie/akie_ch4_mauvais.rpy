@@ -7,8 +7,11 @@ label akie_ch4_mauvais:
 # Fondu en noir
 scene bg Black
 with dissolve
+scene bg grenier
+with dissolve
+
 "Quand elle se réveilla, Ezo était dans sa chambre. Elle avait un bandage autour de la tête. Elle passa ses doigts dessus."
-show ezo B6 S6 Y2 at left, xflip
+show ezo B6 S3 Y2 at left, xflip
 with dissolve
 ezo "Mais qu’est-ce qui s’est passé ?"
 hide ezo

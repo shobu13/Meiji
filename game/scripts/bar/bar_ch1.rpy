@@ -13,6 +13,8 @@ with dissolve
 show ezo Y1 B6 S3 eH
 with dissolve
 ezo "Gnnn… Il est encore tôt. Mais c’est l’heure de bosser !"
+hide ezo
+with dissolve
 "Elle se réveilla et descendit au premier étage, dans l’appartement de Clateau. Il était déjà descendu et avait juste laissé le petit-déjeuner sur la table. Ezo s’empressa d’avaler un croissant et de descendre aussi."
 scene bg cuisine
 with dissolve
@@ -44,6 +46,7 @@ show ezo B1 S3 Y3 at left, xflip
 with dissolve
 ezo "Ça m’enchante pas mais je suppose que je n’ai pas le choix…"
 show yoshino B2 S1 Y4 at right
+hide ezo
 with dissolve
 yoshino "Contente que tu l’ai compris. Mais attends deux secondes."
 "La porte claqua dans un bruit fracassant."
@@ -199,9 +202,8 @@ $tsugumi_nom = "Tsugumi & ran"
 tsugumi "Et toi Ezo, tu préfères quoi ?"
 $tsugumi_nom = "Tsugumi"
 hide tsugumi
-hide akie
+hide ran
 with dissolve
-
 menu:
     "Je préfère l'absinthe":
         $relation_ran += 1
@@ -259,6 +261,11 @@ show ezo B2 S1 Y1 at left, xflip
 with dissolve
 ezo "Dans l’armée, oui… enfin quelque chose comme ça."
 "La réponse évasive d’Ezo laissa Tsugumi dubitative, mais elle n’y prêta pas vraiment attention. Elles parlèrent ensuite de choses et d’autres pendant plusieurs minutes."
+scene bg Black
+with Dissolve(1)
+scene bg salle
+with dissolve
+
 show tsugumi B1 S1 Y2 R2 at right
 with dissolve
 tsugumi "Donc, je disais, rien ne vaut un barbecue…"
@@ -268,7 +275,7 @@ hide ezo
 with dissolve
 show yoshino B8 Y5 at left, xflip
 with dissolve
-yoshino "ezo ! Ran ! Qu’est-ce que vous foutez !? Je ne reçois plus de commandes depuis un moment ! Au travail !"
+yoshino "Ezo ! Ran ! Qu’est-ce que vous foutez !? Je ne reçois plus de commandes depuis un moment ! Au travail !"
 show ran B4 S3 Y6 at right
 with dissolve
 ran "Oui…"
@@ -287,7 +294,7 @@ menu:
         ezo "C’était sympa de parler ensemble, faudra qu’on remette ça ! Je te laisse, faut que je reprenne le taff."
     "Argh, je dois y aller sous peine de me faire tailler en pièce par Yoshino ! Bye !":
         $relation_tsugumi -= 1
-        show ezo B2 S3 Y2 at left, xflip
+        show ezo B6 S3 Y8 at left, xflip
         with dissolve
         ezo "Argh, je dois y aller sous peine de me faire tailler en pièce par Yoshino ! Bye !"
 show tsugumi B1 S1 Y1 at right
@@ -302,9 +309,9 @@ ran "je pense que le plus dur est passé."
 show ezo B1 S1 Y2 at left, xflip
 with dissolve
 ezo "C’était pas très compliqué, et on serait allé plus vite si tu t’endormais pas toute les cinq minutes."
-show ran B3S1 Y2 at right
+show ran B3 S1 Y2 at right
 with dissolve
-ran "héhéhé…"
+ran "Héhéhé…"
 hide ran
 with dissolve
 hide ezo
@@ -354,7 +361,9 @@ with dissolve
 hide ran
 with dissolve
 "Vers dix-huit heures, les premiers clients revinrent enfin. Le calme s’estompa peu à peu, et le bar était à nouveau plein."
-"C’est à ce moment qu’Ezo découvrit qu’il était en fait plutôt populaire, vu la masse de personne s’y pressant. En plus de proposer des prix abordables pour les ouvriers et les travailleurs, les spécialités étrangères attiraient aussi beaucoup de clients plus aisés, et aux heures de pointes la salle devenait rapidement bondée. Le coup de feu de de midi n’était qu’un avant-goût avant celui du soir. Que ce soit derrière le comptoir ou entre les tables, Ezo se démenait pour récupérer les commandes, les porter à Yoshino, et ensuite les redistribuer aux clients sans se tromper."
+
+"C’est à ce moment qu’Ezo découvrit qu’il était en fait plutôt populaire, vu la masse de personne s’y pressant. En plus de proposer des prix abordables pour les ouvriers et les travailleurs, les spécialités étrangères attiraient aussi beaucoup de clients plus aisés, et aux heures de pointes la salle devenait rapidement bondée."
+"Le coup de feu de de midi n’était qu’un avant-goût avant celui du soir. Que ce soit derrière le comptoir ou entre les tables, Ezo se démenait pour récupérer les commandes, les porter à Yoshino, et ensuite les redistribuer aux clients sans se tromper."
 show yoshino B5 S1 Y2 at right
 with dissolve
 yoshino "Voilà les deux cafés, pour la 18 !"
@@ -393,7 +402,7 @@ with dissolve
 ran "Mais vous n’y pensez pas ! Une enfant, si jeune, manipuler les bouteilles !"
 hide ran
 with dissolve
-show yoshino B4 S2 Y1 Go at right
+show yoshino B4 S2 Y1 Go at xflip, right
 with dissolve
 yoshino "Mouais, t’as pas forcément tort…"
 show ezo B7 Y5 at left, xflip
@@ -862,6 +871,8 @@ ezo "Si c’était moi, je les aurai déjà remis à leur place."
 show tsugumi B1 S1 Y1 Go at right
 with dissolve
 tsugumi "Je n’ai pas cette force, et je ne suis pas militaire, on ne peut pas faire ce qu’on veut."
+hide tsugumi Go
+with dissolve
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Donc il n’y a rien que tu puisses faire ?"
@@ -906,16 +917,17 @@ clateau "La guerre ne se termine jamais, regarde."
 show ezo B1 S1 Y2 at left, xflip
 with dissolve
 ezo "Un journal français ? Ça faisait un moment que j’en avais pas vu un."
-show clateau B1 S1 Y1 at right
+show clateau B3 S1 Y1 at right
 with dissolve
 clateau "Les nouvelles ne sont pas très réjouissante. La France et la Prusse viennent de rentrer en guerre l’une contre l’autre."
 show ezo B4 S1 Y2 at left, xflip
 with dissolve
 ezo "Encore une…"
 hide ezo
+hide clateau
 with dissolve
 "Ezo se colla aux étagères de bouteilles du bar et se mit à penser. Depuis toute petite elle n’avait fait que suivre les armées en campagne, et c’était jusqu’alors son seul moyen de survivre."
-show tsugumi B2 S1 Y1 at right
+show tsugumi B2 S1 Y1 at left, xflip
 with dissolve
 tsugumi "J’ai peut-être parlé un peu vite tout à l’heure. Ça m’a l’air d’être dur de votre coté aussi. Entre être prise dans les combats, et ma condition actuelle, je préfère largement la deuxième option."
 show clateau B1 S1 Y1 at right
@@ -932,10 +944,11 @@ with dissolve
 show yoshino B1 S1 Y1 at right
 with dissolve
 yoshino "Il est tard, il serait l’heure de rentrer chez nous."
-show sei B1 S1 Y1 at center
+show sei B1 S1 Y1 at left, xflip
 with dissolve
 sei "Oui, mieux vaut ne pas partir trop tard, la nuit tombe vite et les ruelles sont dangereuses."
 show akie B1 S1 Y2 at left, xflip
+hide sei
 with dissolve
 akie "Tu stresses trop, y’a pas de problème !"
 show yoshino B1 S1 Y4 Go at right
@@ -1102,6 +1115,7 @@ show ran B5 S1 Y2 at right
 with dissolve
 ran "Ne vous inquiétez pas, mademoiselle Ezo ! Je suis pleine de ressources, et je suis bien consciente que notre statut n’a rien d’éternel."
 hide ran
+hide ezo
 with dissolve
 "Ezo n’eut pas trop le temps de réfléchir aux déclarations de Ran. Le midi arrivait et les clients avec. Plus habituée à son poste, le travail fut moins difficile pour Ezo. Et elle savait aussi comment s’y prendre pour réveiller Ran quand elle piquait du nez."
 "Puis, Tsugumi revint."
@@ -1210,9 +1224,10 @@ with dissolve
 ran "Bon, d’accord… mais alors pas de bière ! Je vais vous faire goûter de la liqueur ; regardez cette chartreuse que j’ai chipée à Clateau… C’est plutôt rare par ici."
 hide ran
 with dissolve
-show tsugumi B4 S1 Y1 Go at left, xflip
+show tsugumi B4 S1 Y1 Go at right
 with dissolve
 tsugumi "Quitte à boire de l’alcool fort je préférerais du saké…"
+hide tsugumi
 show ran B5 S1 Y2 at right
 with dissolve
 ran "Allons, mademoiselle Tsugumi ! C’est l’occasion de découvrir une nouvelle saveur ! Cela ne vous intéresse-t-il donc pas !"

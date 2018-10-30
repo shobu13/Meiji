@@ -427,6 +427,7 @@ scene bg Black
 with dissolve
 scene bg cuisine
 with dissolve
+$ezo_outfit = 'Se'
 "Le lendemain matin, pour le travail, tout le monde se changeait en cuisine. Habituellement, il arrive souvent que les membres de l’équipe portent leurs uniformes tout le temps,"
 "vu qu’il est à la fois confortable et pratique, et même si Ezo portait son uniforme quand elle sortait de chez elle, elle descendait directement dans son habit de serveuse quand elle travaillait."
 "Mais cette fois-ci, tous les uniformes avaient été envoyé la veille au soir être lavé, et étaient revenue tôt le matin au restaurant."

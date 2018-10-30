@@ -173,7 +173,7 @@ with dissolve
 clateau "Ahahah… ce n’est rien…"
 #  TODONE : Mettre son habit de serveuse à Ezo
 # fondu en noir
-scene bg black
+scene bg Black
 with dissolve
 scene bg salle
 with dissolve
@@ -816,7 +816,7 @@ yoshino "Quoi ?!"
 menu:
     " Lâche-nous un peu ! Si tu n’étais pas tout le temps en train de crier, je suis sûr que Sei serait moins stressée !":
         $relation_sei += 1
-        show ezo Se B5 S1 Y1 at left, xflip
+        show ezo B5 S1 Y1 at left, xflip
         with dissolve
         ezo "Lâche-nous un peu ! Si tu n’étais pas tout le temps en train de crier, je suis sûr que Sei serait moins stressée !"
         show ezo B5 S1 Y1 at left, xflip

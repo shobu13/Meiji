@@ -7,7 +7,7 @@ While running game code:
     python hide:
   File "renpy/common/00keymap.rpy", line 430, in _execute_python_hide
     renpy.save("_reload-1", "reload save game")
-RuntimeError: maximum recursion depth exceeded while pickling an object
+RuntimeError: maximum recursion depth exceeded while calling a Python object
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -26,9 +26,9 @@ Full traceback:
     dump((roots, renpy.game.log), logf)
   File "C:\renpy\renpy\loadsave.py", line 48, in dump
     cPickle.dump(o, f, cPickle.HIGHEST_PROTOCOL)
-RuntimeError: maximum recursion depth exceeded while pickling an object
+RuntimeError: maximum recursion depth exceeded while calling a Python object
 
 Windows-8-6.2.9200
 Ren'Py 7.1.0.882
 Meiji 1.0
-Tue Oct 30 15:46:45 2018
+Tue Oct 30 17:21:34 2018

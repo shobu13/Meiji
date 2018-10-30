@@ -10,7 +10,7 @@ with dissolve
 $renpy.pause(3, hard='True')
 
 scene bg grenier
-with dissolveO
+with dissolve
 
 # TODONE Ezo porte son uniforme militaire
 $ezo_outfit = 'Mi'
@@ -98,7 +98,7 @@ ezo "Rien, je suis juste rentrée dans Tsugumi…"
 show sei B2 S2 Y5 at right
 with dissolve
 sei "…"
-show ezo B1 S3 Y at left, xflip
+show ezo B1 S3 Y1 at left, xflip
 with dissolve
 ezo "Non, je veux dire, elle m’a percuté, et je suis tombée."
 show sei B5 S2 Y1 at right
@@ -109,7 +109,7 @@ with dissolve
 hide sei
 with dissolve
 "Sei prit son mouchoir, et voulut retirer la terre de la tunique d’Ezo. En se penchant, et avec son habituelle maladresse, elle se marcha sur les pieds, et tomba sur Ezo, qui elle aussi, tomba à la renverse."
-show sei B6 S2 Y8 at right
+show sei B6 S2 Y7 at right
 with dissolve
 sei "D-désolée, je n’ai pas fait exprès, je…"
 show ezo B2 S3 Y4 at left, xflip
@@ -165,19 +165,19 @@ sei "Oh, merci beaucoup Ezo ! J’ai hâte de les lire !"
 show ezo B4 S3 Y1 at left, xflip
 with dissolve
 ezo "Quoi ? Ça… ne te plait pas ?"
-show sei B6 S2 Y8 at right
+show sei B6 S2 Y7 at right
 with dissolve
 sei "Non, ce n’est pas ça, mais… je ne sais pas le lire !"
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Ah bon ?"
-show sei B6 S2 Y8 at right
+show sei B6 S2 Y7 at right
 with dissolve
 sei "Bien sûr que non ! D’ailleurs Ezo, tu maîtrises combien de langues ?"
 show ezo B1 S2 Y1 at left, xflip
 with dissolve
 ezo "Euh, je n’ai jamais compté. Quatre ou cinq, je ne sais plus. J’ai appris l’allemand, comme de nombreux légionnaires le sont… je connais aussi un peu la langue des Viêt, depuis que j’ai été en Cochinchine."
-show sei B6 S2 Y8 at right
+show sei B6 S2 Y7 at right
 with dissolve
 sei "C’est impressionnant ! Mais moi… je ne connais rien de tout ça…"
 show ezo B5 S1 Y3 at left, xflip
@@ -217,7 +217,7 @@ with dissolve
 show clateau B1 S3 Y4 at right
 with dissolve
 clateau "Alors, tout s’est bien passé ?"
-show ezo B8 S1 Y8 at left, xflip
+show ezo B8 S1 Y7 at left, xflip
 with dissolve
 ezo "Qu’est-ce que tu fiches caché ici !? Espèce de pervers !"
 show clateau B6 S3 Y6 at right
@@ -273,13 +273,13 @@ with dissolve
 "Cela ne manqua pas : juste devant les deux clients, Sei bascula en avant, et les deux tasses de cafés partirent en l’air."
 "Au même moment, Ezo, qui se tenait prête, rattrapa Sei d’une main. De l’autre, elle réceptionna d’un geste agile les deux cafés volants."
 "La prouesse technique qu’elle venait de réaliser lui valut même quelques applaudissements dans la salle."
-show sei B6 S2 Y8 R3 at right
+show sei B6 S2 Y7 R3 at right
 with dissolve
 sei "Aaaah, je suis désolée ! Vraiment désolée !"
 show ezo B2 S3 Y4 Go at left, xflip
 with dissolve
 ezo "Heureusement que je suis là, hein ! J’ai senti le coup venir, et comme c’est déjà arrivé que tu trébuches sur du vide quand on était chez toi, j’ai pris les devants."
-show sei B6 S2 Y8 R3 at right
+show sei B6 S2 Y7 R3 at right
 with dissolve
 sei "Encore merci !"
 hide sei
@@ -293,6 +293,9 @@ hide akie
 with dissolve
 # TODONE fondu en noir
 scene bg Black
+with Dissolve(1)
+
+scene bg salle
 with dissolve
 "Un peu après dans la journée, les clients commençaient à arriver, et Ezo avait du mal à préparer les additions."
 show ezo B6 S3 Y2 at left, xflip
@@ -336,6 +339,9 @@ with dissolve
 "Ezo était habituellement assez vive dans ses déclarations, mais quand on en venait à des sujets comme les relations sociales, elle pouvait avoir du mal à exprimer ses sentiments. Bien qu’elle soit très heureuse que Sei et elles soient fusionnelles au travail, elle avait du mal à l’admettre de vive voix."
 # TODONE fondu en noir
 scene bg Black
+with Dissolve(1)
+
+scene bg salle
 with dissolve
 "Le soir, Ezo débarrassait les tables quand elle remarqua un petit carnet sur une des chaises. Elle le porta à Akié."
 show ezo B1 S3 Y2 at left, xflip
@@ -422,7 +428,7 @@ ezo "Tu retiens vite le vocabulaire ! Maintenant, voyons la conjugaison… pour 
 show sei B5 S1 Y1 at right
 with dissolve
 sei "C’est si dur que ça ?"
-show ezo B7 S2 Y8 at left, xflip
+show ezo B7 S2 Y7 at left, xflip
 with dissolve
 ezo "Oui !"
 hide ezo
@@ -434,7 +440,7 @@ with dissolve
 "Et cela amusait Sei de la voir faire autant d’efforts, prostrée sur son livre, essayant de se donner des airs d’instructeur."
 "Lors de la séance, un autre constat apparut : Sei avait du mal à prononcer le « r » et le « l » séparément, et Ezo avait aussi du mal à lui expliquer comment faire."
 " Au bout d’une heure, Sei finit par prononcer les « r » de manière roulée, et croyant avoir réussi, elle se retourna vers Ezo, toute fière, alors que cette dernière se retenait juste de rire. Sei gonfla ses joues."
-show sei B6 S2 Y8 at right
+show sei B6 S2 Y7 at right
 with dissolve
 sei "Ah, Ezo, tu ne m’aides pas ! C’est difficile, ne te moque pas de moi !"
 show ezo B1 S3 Y4 at left, xflip
@@ -445,10 +451,10 @@ with dissolve
 hide sei
 with dissolve
 "Sei ne garda pas longtemps sa moue désapprobatrice et se mit à rire, elle aussi."
-show sei B6 S2 Y8 at right
+show sei B6 S2 Y7 at right
 with dissolve
 sei "Bien, maintenant, c’est l’heure d’apprendre des kanji, Ezo !"
-show ezo B5 S1 Y8 at left, xflip
+show ezo B5 S1 Y7 at left, xflip
 with dissolve
 ezo "Aaaaah !"
 show sei B3 S3 Y5 at right
@@ -459,12 +465,18 @@ with dissolve
 hide sei
 with dissolve
 # Fondu en noir
+scene bg Black
+with Dissolve(1)
 # TODONE Ezo est en serveuse
 $ezo_outfit = 'Se'
 
 "Ezo et Sei passèrent ainsi les jours, s’entraidant dans leur quête de connaissance. Et dans le restaurant, elle formaient toujours un bon duo."
+
+scene bg cuisine
+with dissolve
+
 "Un matin, elles se changeaient toutes dans la cuisine, avant de prendre leur service. Ezo arrivait souvent déjà changée, puisqu’elle habitait au-dessus, mais cette fois-là elle se changea avec les autres. Elle avait fait laver son uniforme par Clateau et elle venait de le récupérer."
-show sei B6 S2 Y8 R3 at right
+show sei B6 S2 Y7 R3 at right
 with dissolve
 sei "E-Ezo, je savais que les françaises étaient _à la mode_ mais c’est très osé."
 show ezo B1 S3 Y2 at left, xflip
@@ -478,11 +490,11 @@ with dissolve
 show ezo B8 S3 Y7 R3 at left, xflip
 with dissolve
 ezo "M-m-mais, ce n’est pas à moi !"
-show sei B6 S2 Y8 R3 at right
+show sei B6 S2 Y7 R3 at right
 with dissolve
 sei "Mais à qui est-ce alors ? Tout le monde a fini de se changer !"
 "Ezo prit la culotte, la retourna, et put voir, cousu sur l’arrière, la mention « Akié »"
-show ezo B7 S2 Y8 at left, xflip
+show ezo B7 S2 Y7 at left, xflip
 with dissolve
 ezo "Elle a peur qu’on la lui vole ou quoi ? Pourquoi y’a son nom sur ses culottes ?"
 show sei B6 S2 Y6 at right
@@ -505,7 +517,7 @@ with dissolve
 hide sei
 with dissolve
 "Sei se mit sur le pas de la porte, et appela Akié d’une toute petite voix."
-show sei B6 S2 Y8 R2 at right
+show sei B6 S2 Y7 R2 at right
 with dissolve
 sei "Akié, Akiéééé !"
 show akie B1 S1 Y2 at left, xflip
@@ -524,7 +536,7 @@ with dissolve
 ezo "Elle est plutôt confortable."
 hide ezo
 with dissolve
-show sei B6 S2 Y8 R2 at left, xflip
+show sei B6 S2 Y7 R2 at left, xflip
 with dissolve
 sei "Non Akié, ce n’est pas le problème, je veux dire… Si elle est là, c’est que…"
 hide akie
@@ -638,7 +650,8 @@ with dissolve
 "Dans la baie de Tokyo, les navires allaient et venaient, alors même que le crépuscule s’approchait. On voyait au loin de petits bateaux de pécheur rentrer d’une longue et dure journée de travail."
 "On remarquait facilement les navires marchands, tant japonais qu’étrangers, qui chargeaient et déchargeaient sans discontinuer des marchandises diverses. Et enfin, des navires blindés, lents et gros, qui se faisaient doucement balloter par les flots calmes."
 "Sei se mit à composer quelques poèmes. Ils parlaient des oiseaux marins, du dur labeur des pêcheurs, de l’attente de leurs proches. Plusieurs aussi comme le voulait la coutume, sur les saisons. C’était bientôt l’automne et cela s’y prêtait fort bien."
-"De son côté, Ezo hésitait. Elle prit le pinceau que lui tendait Sei, et commença à composer. Elle voulut s’essayer aux poèmes naturalistes, mais à chaque fois qu’elle commençait à écrire, elle parlait irrémédiablement des soldats impériaux qu’elle voyait, ou des navires de guerre ventripotents qui se languissaient dans la rade. Elle finit par pousser un soupir."
+"De son côté, Ezo hésitait. Elle prit le pinceau que lui tendait Sei, et commença à composer. Elle voulut s’essayer aux poèmes naturalistes, mais à chaque fois qu’elle commençait à écrire, elle parlait irrémédiablement des soldats impériaux qu’elle voyait, ou des navires de guerre ventripotents qui se languissaient dans la rade."
+"Elle finit par pousser un soupir."
 show sei B4 S1 Y1 at right
 with dissolve
 sei "Qu’est-ce qu’il y a ? L’inspiration ne vient pas ?"
@@ -675,3 +688,5 @@ sei "Et la prochaine fois que tu doutes ainsi, tu peux m’en parler !"
 "Ezo acquiesça sans bruit. Elle était vraiment heureuse d’avoir trouvé une amie et même plus."
 hide sei
 with dissolve
+
+jump sei_ch3

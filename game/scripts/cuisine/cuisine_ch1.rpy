@@ -765,9 +765,7 @@ menu:
         clateau "Mais ! Et le pot-au-feu ?"
         hide clateau
         with dissolve
-        hide yoshino
-        with dissolve
-        show yoshino B7 S2 Y2 at left, xflip
+        show yoshino B7 S2 Y2 at right
         with dissolve
         yoshino "Pfff, tu comprends rien aux filles… Bien évidemment qu’elle préfère les desserts !"
     " Le pot-au-feu, c’est nourrissant, c’est rustique, bref, c’est parfait pour un militaire.":

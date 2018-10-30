@@ -19,6 +19,8 @@ image bg salle = "bg/bg_salle.jpg"
 image bg White = "#ffffff"
 image bg Black = '#000000'
 
+image filter blue = 'filters/blue.png'
+
 #CGs
 image cg akie = "cgs/akie_cg1.png"
 image cg clateau = "cgs/clateau_cg1.png"
@@ -984,7 +986,9 @@ label start:
     hide ezo
     with dissolve
     scene bg Black
-    with dissolve
+    with Dissolve(3)
+    scene bg grenier
+    with Dissolve(3)
     # ne pas montrer le sprite d’Ezo
     hide ezo
     with dissolve
@@ -1738,7 +1742,7 @@ label start:
             with dissolve
             clateau "Je vais te laisser. À demain."
             scene bg Black
-            with dissolve
+            with Dissolve(1)
 
             jump salle_ch1
         "La cuisine":
@@ -1761,7 +1765,7 @@ label start:
             with dissolve
             clateau "Ahaha, oui ! Vous allez bien vous entendre."
             scene bg Black
-            with dissolve
+            with Dissolve(1)
 
             jump cuisine_ch1
         "Le bar":
@@ -1775,7 +1779,7 @@ label start:
             with dissolve
             ezo "Je ne pense pas que ce soit les clients le problème mais soit…"
             scene bg Black
-            with dissolve
+            with Dissolve(1)
 
             jump bar_ch1
     # Fondu en noir

@@ -35,6 +35,11 @@ with dissolve
 ezo "Alors Tsugumi se tue à la tâche pour des prunes !"
 "Pendant quelques jours, on ne vit pas Tsugumi, mais elle passa en fin de semaine."
 
+scene bg Black
+with dissolve
+scene bg bar
+with dissolve
+
 hide ran
 with dissolve
 show tsugumi B5 S1 Y6 at right
@@ -44,7 +49,6 @@ show ezo B4 S3 Y2 at left, xflip
 with dissolve
 ezo "J’espère que ça n’arrivera pas…"
 show ran B1 S1 Y2 at right
-with dissolve
 hide tsugumi
 with dissolve
 ran "Tant d’abnégation, ça me surpasse !"
@@ -57,7 +61,6 @@ show ezo B1 S3 Y3 at left, xflip
 with dissolve
 ezo "Bonne idée !"
 show ran B4 S1 Y1 at right
-with dissolve
 hide tsugumi
 with dissolve
 ran "Je ne sais pas si c’est le moment…"
@@ -121,6 +124,8 @@ with dissolve
 show ran B5 S1 Y4 at right
 with dissolve
 ran "J’ai attendu cette phrase tellement longtemps… j’ai ressentie une grande sensation de plénitude en vous entendant prononcer ces mots."
+scene bg Black
+with Dissolve(1)
 scene bg cuisine
 with dissolve
 "Le lendemain, on avait envoyé Akié au marché pour essayer de dénicher de quoi faire tourner le restaurant. Elle revint en courant."
@@ -187,25 +192,25 @@ show ran B1 S1 Y2 at right
 with dissolve
 ran "Je pense… qu’il y aurait peut-être un moyen de sauver Tsugumi."
 "Ezo se rapprocha de Ran."
-show ezo B1 S3 Y2 at center
+show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Vraiment ? Comment ?"
 show ran B1 S1 Y2 at right
 with dissolve
 ran "Monsieur Clateau dispose de nombreuses relations dans l’armée non ? Nous pourrions en tirer profit pour atteindre mademoiselle Tsugumi."
-show ezo B2 S2 Y1 at center
+show ezo B2 S2 Y1 at left, xflip
 with dissolve
 ezo "Ah… c’est gentil d’essayer de trouver des solutions, mais Clateau et moi sommes des traîtres et des soutiens du Shogun, nous n’aurons rien en parlant avec des soldats impériaux."
 show ran B1 S3 Y3 at right
 with dissolve
 ran "Je l’entends bien, mademoiselle Ezo, mais en prenant mon propre cas… Mon père était samouraï, et pourtant il a rejoint l’Empereur.  Je pense qu’il y a de nombreux officiers formés par la mission militaire dont faisait parti monsieur Clateau qui doivent servir dans l’armée impériale."
-show ezo B1 S3 Y7 at center
+show ezo B1 S3 Y7 at left, xflip
 with dissolve
 ezo "C’est… c’est pas bête."
 show ran B5 S2 Y8 at right
 with dissolve
 ran "Bien évidemment !"
-show ezo B5 S2 Y2 at center
+show ezo B5 S2 Y2 at left, xflip
 with dissolve
 ezo "Mais est-ce que Clateau voudra bien ?"
 show ran B2 S1 Y4 at right

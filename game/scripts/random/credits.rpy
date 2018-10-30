@@ -1,23 +1,24 @@
 label credits:
-    $ credits_speed = 25 #scrolling speed in seconds
-    scene bg main_gui #replace this with a fancy background
-    with dissolve
-    show theend:
-        yanchor 0.5 ypos 0.5
-        xanchor 0.5 xpos 0.15
-    with dissolve
-    with Pause(3)
-    hide theend
-    with dissolve
-    show cred at Move((0.15, 5.0), (0.15, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
-    with Pause(credits_speed)
-    show thanks:
-        yanchor 0.5 ypos 0.5
-        xanchor 0.5 xpos 0.5
-    with dissolve
-    with Pause(3)
-    hide thanks
-    return
+    pass
+$ credits_speed = 25 #scrolling speed in seconds
+scene bg main_gui #replace this with a fancy background
+with dissolve
+show theend:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.15
+with dissolve
+$renpy.pause(3, hard='True')
+hide theend
+with dissolve
+show cred at Move((0.15, 5.0), (0.15, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+$renpy.pause(credits_speed, hard='True')
+show thanks:
+    yanchor 0.5 ypos 0.5
+    xanchor 0.5 xpos 0.5
+with dissolve
+$renpy.pause(3, hard='True')
+hide thanks
+$ MainMenu(confirm=False)()
 
 init python:
     credits = ('Backgrounds', 'Airgoof'), ('Backgrounds', 'Dorktwerp'), ('Sprites and CG', 'Ballclown'), ('GUI', 'Cuddlywad'), ('Writing', 'Dorktwerp'), ('Writing', 'Fingerpookie'), ('Programming', 'Dorktwerp'), ('Music', 'Grumblemuck'), ('Music', 'Headwookum')

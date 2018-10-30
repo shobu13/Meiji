@@ -12,7 +12,7 @@ ezo "j’ai bientôt terminé le plat, tu veux venir goûter ?"
 
 scene cg yoshino
 with dissolve
-with Pause(10)
+$renpy.pause(10, hard='True')
 
 scene bg Black
 with dissolve

@@ -40,11 +40,12 @@ scene bg port
 with dissolve
 "Ran et Ezo étaient parvenues jusqu’à Paris. Elles se baladaient dans les rues de la capitale, Ezo faisant office de guide touristique."
 "Arrivée sur le champ de Mars, elles voulurent se reposer un peu, mais au beau milieu on était en train de construire une hideuse tour en métal."
-"Outrée, Ezo préféra emener Ran sous l’arc de Triomphe. Ezo expliquait comme elle pouvait les raisons de la construction du monument pour impressionner Ran, qui se collait à elle. Ezo était de plus en plus stressée. Pendant son monologue, Ran lui tapota l’épaule. Ezo se retourna brusquement, et Ran la tira à elle pour l’embrasser."
+"Outrée, Ezo préféra emener Ran sous l’arc de Triomphe. Ezo expliquait comme elle pouvait les raisons de la construction du monument pour impressionner Ran, qui se collait à elle."
+"Ezo était de plus en plus stressée. Pendant son monologue, Ran lui tapota l’épaule. Ezo se retourna brusquement, et Ran la tira à elle pour l’embrasser."
 
 scene cg ran
 with dissolve
-with Pause(10)
+$renpy.pause(10, hard='True')
 
 scene bg Black
 with dissolve

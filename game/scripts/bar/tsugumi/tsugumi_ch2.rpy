@@ -9,7 +9,7 @@ show chapter_ch2:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(3)
+$renpy.pause(3, hard='True')
 
 scene bg grenier
 with dissolve
@@ -417,7 +417,7 @@ show tsugumi B1 S1 Y2 at right
 with dissolve
 tsugumi "Bah, on a qu'à s'asseoir sur le lit !"
 "Tsugumi se posa sur le lit."
-show tsugumi B1 S1 Y2 at left, xflip
+show tsugumi B1 S1 Y2 at right
 with dissolve
 tsugumi "Ouah, il est bien rembourré, on dirait pas !"
 hide tsugumi
@@ -683,10 +683,10 @@ with dissolve
 show tsugumi B2 S1 Y2 at right
 with dissolve
 tsugumi "J’ai été vraiment contente de prendre ce repas avec toi, Ezo ! T’es vraiment une amie !"
-tsugumi "Tsugumi avait retrouvé son habituel sourire."
-tsugumi "Ezo(B6/S2/Y1/R3/gauche) De rien… tu comptes beaucoup pour moi."
 "Tsugumi avait retrouvé son habituel sourire."
 show ezo B6 S2 Y1 R3 at left, xflip
 with dissolve
 ezo "De rien… tu comptes beaucoup pour moi."
 "Tsugumi la salua de la main, toujours souriante et quitta le restaurant. Akié lui répondit pendant qu’Ezo se cachait ; son visage devenu écarlate dans ses mains."
+
+jump tsugumi_ch3

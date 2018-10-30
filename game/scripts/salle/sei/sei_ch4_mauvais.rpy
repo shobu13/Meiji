@@ -23,12 +23,13 @@ sei "Adieu, Ezo."
 "Le caractère d’Ezo se dégrada beaucoup. Elle devint plus sèche, moins aimable. Plus stricte aussi. Les nuits d’Ezo furent troublées pendant encore des années par ce soir où elle avait perdu Sei."
 
 scene bg Black
+with Dissolve(3)
 stop music fadeout 1.0
 show chapter_ch4_mauvais:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(10)
+$renpy.pause(10, hard='True')
 
 scene bg Black
 with dissolve

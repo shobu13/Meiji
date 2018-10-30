@@ -5,7 +5,7 @@ show chapter_cuisine_ch1:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(3)
+$renpy.pause(3, hard='True')
 
 scene bg grenier
 with dissolve
@@ -1137,6 +1137,7 @@ if relation_yoshino > relation_clateau:
     with dissolve
     yoshino "Parfait."
     "La fin de la journée fut rythmée comme la précédente, mais cette fois Ezo n’avait plus en tête que le lendemain. Fatiguée par sa courte nuit de la veille, elle s’endormit promptement."
+    jump yoshino_ch2
 else:
     # Si Clateau
     "Ezo commença à ranger les couteaux utilisés pendant la journée. Clateau vint l’aider et commença à lui parler."
@@ -1157,3 +1158,4 @@ else:
     scene bg grenier
     with dissolve
     "La fin de la journée fut rythmée comme la précédente, mais cette fois Ezo n’avait plus en tête que le lendemain. Fatiguée par sa courte nuit de la veille, elle s’endormit promptement."
+    jump clateau_ch2

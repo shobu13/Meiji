@@ -12,12 +12,13 @@ clateau "Non Ezo. Je ne te renverrai pas à la guerre. Maintenant retourne aupr�
 "Clateau monta dans le navire. Ezo resta jusqu’à la fin, hurlant à Clateau de rester. Elle s’égosilla jusqu’à ce que le bateau quitte le port. À la fin, elle était en larme."
 
 scene bg Black
+with Dissolve(3)
 stop music fadeout 1.0
 show chapter_ch4_mauvais:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(10)
+$renpy.pause(10, hard='True')
 
 scene bg Black
 with dissolve

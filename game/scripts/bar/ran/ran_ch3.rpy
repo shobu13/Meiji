@@ -7,7 +7,7 @@ show chapter_ch3:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(3)
+$renpy.pause(3, hard='True')
 
 scene bg bar
 with dissolve
@@ -43,7 +43,7 @@ with dissolve
 show tsugumi B4 S3 Y6 at right
 with dissolve
 tsugumi "Pfff, c’est calme ces temps-ci."
-show ezo B8S1 Y2 at left, xflip
+show ezo B8 S1 Y2 at left, xflip
 with dissolve
 ezo "Tu voudrais que ce soit le bordel ?!"
 show tsugumi B1 S1 Y1 at right
@@ -130,7 +130,7 @@ with dissolve
 show yoshino B4 S1 Y at right
 with dissolve
 yoshino "Tu devrais te mêler de ce qui te regarde…"
-show ezo BB5 S1 Y2 at left, xflip
+show ezo B5 S1 Y2 at left, xflip
 with dissolve
 ezo "Mais ça me regarde !"
 show ezo B1 S3 Y1 R2 at left, xflip
@@ -233,7 +233,7 @@ with dissolve
 "Avant qu’Ezo puisse encore répondre, Ran disparu dans la ruelle."
 "Ran avait laissé Ezo confuse. Elle savait maintenant avec certitude que Ran ne l’avait pas laissé. Mais Ezo comprenait maintenant les raisons de Ran. Si elle faisait du bruit, elle allait mettre en péril tout ce que Ran avait fait."
 "En déambulant dans les rues maintenant presque noires, elle trébucha sur quelque chose."
-show ezo B8 Y5 at center
+show ezo B8 Y5 at left, xflip
 with dissolve
 ezo "Ah, c’est pas le moment !"
 hide ezo
@@ -373,7 +373,8 @@ with dissolve
 ran "Un plan ?"
 show ezo B4 S3 Y2 at left, xflip
 with dissolve
-ezo "J’ai demandé à Clateau de faire jouer ses relations. Même si il a « démissionné » de l’armée française, il a été artificier pendant très longtemps. Toutes ses connaissances et ses compétences doivent certainement intéresser le gouvernement. Il est d’accord pour proposer cela en échange de l’annulation de ton mariage arrangé."
+ezo "J’ai demandé à Clateau de faire jouer ses relations. Même si il a « démissionné » de l’armée française, il a été artificier pendant très longtemps."
+"Toutes ses connaissances et ses compétences doivent certainement intéresser le gouvernement. Il est d’accord pour proposer cela en échange de l’annulation de ton mariage arrangé."
 show ran B6 S3 Y4 at right
 with dissolve
 ran "je… je ne pensais pas que monsieur Clateau avait une telle influence."

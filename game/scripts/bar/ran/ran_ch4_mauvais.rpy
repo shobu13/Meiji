@@ -26,12 +26,14 @@ with dissolve
 "Ezo quitta le restaurant peu après, et n’y revint plus jamais."
 
 scene bg Black
+with Dissolve(3)
+with Dissolve(3)
 stop music fadeout 1.0
 show chapter_ch4_mauvais:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(10)
+$renpy.pause(10, hard='True')
 
 scene bg Black
 with dissolve

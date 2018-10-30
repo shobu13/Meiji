@@ -9,7 +9,7 @@ show chapter_ch2:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(3)
+$renpy.pause(3, hard='True')
 
 scene bg grenier
 with dissolve
@@ -152,9 +152,6 @@ with dissolve
 ezo "J’espère que je ne ferai pas tâche…"
 hide ezo
 with dissolve
-# TODONE fondu en noir
-scene bg Black
-with dissolve
 
 "La maison de Ran était une belle et grande bâtisse traditionnelle japonaise. Tout en bois, cerclé d’une promenade externe, jardin avec un étang, bâtiment orienté nord-sud…"
 show ezo B1 S3 Y2 at left, xflip
@@ -183,11 +180,12 @@ with dissolve
 scene bg Black
 with dissolve
 
-scene bg wafu
+scene bg chambre
 with dissolve
 "Ran conduisit Ezo à sa chambre. Toute la maisonnée était baignée dans une atmosphère japonaise, et elle détonnait beaucoup avec le restaurant, qui lui était construit sur un modèle occidental d’Europe de l’Ouest."
 "C’était la première fois qu’Ezo s’y retrouvait confronté directement. Quand elle se trouvait sur l’île dont elle porte le nom, finalement, elle n’avait été que dans des fortins ou des navires occidentaux."
-"La chambre de Ran était bien évidemment une pièce japonaise à tatami. En entrant, on pouvait voir un tokonoma, ces petites alcôves où l’on expose des estampes ou d’autres objets d’arts. Là était affiché le caractère de la paresse, joliment calligraphié, ainsi que de l’ikebana, qui diffusait une bonne odeur de fleur dans la pièce."
+"La chambre de Ran était bien évidemment une pièce japonaise à tatami. En entrant, on pouvait voir un tokonoma, ces petites alcôves où l’on expose des estampes ou d’autres objets d’arts."
+"Là était affiché le caractère de la paresse, joliment calligraphié, ainsi que de l’ikebana, qui diffusait une bonne odeur de fleur dans la pièce."
 show ezo B1 S3 Y1 at left, xflip
 with dissolve
 ezo "C’est très... féminin."
@@ -243,7 +241,8 @@ with dissolve
 ran "C’est vrai que vous êtes militaire… Mais vous n’aviez pas de nom avant qu’on vous nomme ainsi ?"
 show ezo B4 S2 Y1 at left, xflip
 with dissolve
-ezo "Pas vraiment. Je suis orpheline de guerre et j’ai été pris comme enfant de troupe. On m’a traînée de bataille en bataille sans se soucier de mon sort. C’est à partir de la retraite à Hakodate qu’on a commencé à me surnommer « Ezo », vu que je faisais une grande promotion de la nouvelle « République d’Ezo » que les partisans du Shogun avaient fondé sur l’île."
+ezo "Pas vraiment. Je suis orpheline de guerre et j’ai été pris comme enfant de troupe. On m’a traînée de bataille en bataille sans se soucier de mon sort."
+"C’est à partir de la retraite à Hakodate qu’on a commencé à me surnommer « Ezo », vu que je faisais une grande promotion de la nouvelle « République d’Ezo » que les partisans du Shogun avaient fondé sur l’île."
 show ran B4 S3 Y3 at right
 with dissolve
 ran "Vous n’avez point eu une vie facile ! Comme je vous plaint."
@@ -303,9 +302,6 @@ with dissolve
 hide ran
 with dissolve
 "Les filles étaient plus détendues pour la suite de leur rencontre. Comme Ran dormait beaucoup au travail, elles n’avaient pas tellement l’occasion de parler longuement. Ran se montrait très curieuse, et la sagacité d’Ezo pour répondre à ses questions les rapprochaient."
-# TODONE fondu en noir
-scene bg Black
-with dissolve
 
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
@@ -387,7 +383,7 @@ tsugumi "Ouais, désolé, c’était un peu fort."
 show ezo B4 S2 Y6 at left, xflip
 with dissolve
 ezo "Si elle nous avait entendue, on serait déjà transformée en hachis…"
-show tsugumi B1 S2 1 at right
+show tsugumi B1 S2 Y1 at right
 with dissolve
 tsugumi "Mais ça ne change rien au fait que je n’imaginais pas un tandem entre la militaire et la bourgeoise !"
 show ezo B1 S1 Y3 at left, xflip
@@ -444,7 +440,7 @@ with dissolve
 yoshino "Tu es bizarrement active, Ran. Habituellement tu aurai attendu que Sei ou Akié prennent leurs pauses pour leur refiler discrètement ton taff."
 show ran B2 S1 Y1 at right
 with dissolve
-ran "Oui, mais voir des gens travailleurs comme mademoiselle Tsugumi ou mademoiselles Ezo."
+ran "Oui, mais voir des gens travailleurs comme mademoiselle Tsugumi ou mademoiselles Ezo m'a motivée."
 show yoshino B5 S2 Y3 at left, xflip
 with dissolve
 yoshino "Et tu ne nies même pas en plus !"
@@ -474,7 +470,7 @@ with dissolve
 "Finalement, en passant un plat un peu brusquement à Ran, cette dernière l’échappa."
 show yoshino B8 S3 Y1 at right
 with dissolve
-yoshino "Ah bah bravo, Ran ! Tu peux pas être un tout petit peu tendue ? T’es pas en terre glaise, que je sache !"
+yoshino "Ah bah bravo, Ran ! Tu peux pas être un tout petit peu tendue ? T’es pas en argile, que je sache !"
 show ran B4 S3 Y2 at left, xflip
 with dissolve
 ran "Je, je suis désolée, mademoiselle Yoshino. Je ferai plus attention à l’avenir..."
@@ -507,6 +503,8 @@ hide yoshino
 with dissolve
 # TODONE fondu en noir
 scene bg Black
+with dissolve
+scene bg salle
 with dissolve
 
 show ran B6 S1 Y6 at right
@@ -639,7 +637,7 @@ with dissolve
 ezo "Oh…"
 show ran B2 S1 Y4 at right
 with dissolve
-ran "D’autant que, depuis la petite ruelle, j’ai pu apercevoir monsieur Clateau en slip qui étendait son ligne, cette expérience a été plus qu’amusante."
+ran "D’autant que, depuis la petite ruelle, j’ai pu apercevoir monsieur Clateau en slip qui étendait son linge, cette expérience a été plus qu’amusante."
 show ezo B8 S1 Y8 -R1 at left, xflip
 with dissolve
 ezo "Quoi ?!"
@@ -763,7 +761,7 @@ with dissolve
 # TODONE Ezo est en serveuse
 $ezo_outfit = 'Se'
 
-scene bg Bar
+scene bg bar
 with dissolve
 "Le lendemain, Tsugumi regardait Ezo et Ran avec un petit sourire narquois. Akié était à côté, et prenait sa pause."
 show tsugumi B1 S1 Y2 at right

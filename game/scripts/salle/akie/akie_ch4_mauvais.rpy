@@ -46,12 +46,13 @@ ezo "Je vois."
 "Un matin, Ezo n’était plus dans sa chambre. Il n’y avait qu’une lettre, de quelques mots, qui expliquait à Clateau qu’elle retournait dans l’armée. Elle ne revint plus jamais au restaurant."
 
 scene bg Black
+with Dissolve(3)
 stop music fadeout 1.0
 show chapter_ch4_mauvais:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(10)
+$renpy.pause(10, hard='True')
 
 scene bg Black
 with dissolve

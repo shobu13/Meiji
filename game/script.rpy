@@ -180,7 +180,7 @@ image akie_yeux_Y6 = "Akie/akie_eyes6.png"
 image akie_yeux_Y7 = "Akie/akie_eyes7.png"
 image akie_yeux_Y8 = "Akie/akie_eyes8.png"
 ###Expressions
-image akie_exp_R1 = "Akie/akie_blush1.png"
+image akie_exp_R1 = "Akie/akie_blush.png"
 image akie_exp_R2 = "Akie/akie_blush2.png"
 image akie_exp_R3 = "Akie/akie_blush3.png"
 image akie_exp_eH = "Akie/akie_geh.png"

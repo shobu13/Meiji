@@ -5,7 +5,7 @@ show chapter_bar_ch1:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(3)
+$renpy.pause(3, hard='True')
 
 scene bg grenier
 with dissolve
@@ -1170,6 +1170,7 @@ tsugumi "Bon, c’est pas tout ça, mais je dois y aller ! Bonne journée à vou
 hide tsugumi
 with dissolve
 "La fin de journée se passa comme d’habitude. Ran et Ezo travaillèrent, ou en tout cas essayèrent. Le soir, Tsugumi revint, un peu plus tôt que d’habitude."
+$tsugumi_route = False
 # Si les points tsugumi>points Ran
 if relation_tsugumi > relation_ran:
     show tsugumi B4 S1 Y1 at right
@@ -1177,7 +1178,6 @@ if relation_tsugumi > relation_ran:
     tsugumi "Dit Ezo, ça te dirait de venir à notre fameuse réunion syndicale ? Tu m’avais l’air intéressée."
     hide tsugumi
     with dissolve
-    $tsugumi_route = False
     menu:
         " Oui, pour sûr !":
             show ezo B2 S3 Y4 at left, xflip
@@ -1277,3 +1277,4 @@ with dissolve
 hide ezo
 with dissolve
 "Ezo, fatiguée de sa journée, salua Ran de la main, et pendant que cette dernière repartait, Ezo aussi se dirigea vers sa chambre."
+jump ran_ch2

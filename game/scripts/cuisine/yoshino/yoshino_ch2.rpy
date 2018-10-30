@@ -7,13 +7,12 @@ show chapter_ch2:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(3)
+$renpy.pause(3, hard='True')
 
 scene bg grenier
 with dissolve
 # TODONE Ezo en millitaire
-show ezo Mi
-with dissolve
+$ezo_outfit = 'Mi'
 "Et qu’elle était invitée chez elle. Cela l’avait perturbée pendant un moment. Puis, le fait de rentrer dans la vie privée de Yoshino, qu’elle voyait à la fois dure mais aussi mignonne, attisait sa curiosité."
 "Dans la pénombre de l’aube matinale, elle regardait ses vêtements. Visiblement, elle n’avait rien à par sa tenue militaire et son uniforme de cuistot."
 show ezo B4 S2 Y2 at left, xflip

@@ -50,12 +50,13 @@ yoshino "Dehors, j’ai dit ! DEHORS !"
 "Ezo tourna les talons, en laissant Yoshino dans sa chambre, seule dans la pénombre."
 
 scene bg Black
+with Dissolve(3)
 stop music fadeout 1.0
 show chapter_ch4_mauvais:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(10)
+$renpy.pause(10, hard='True')
 
 scene bg Black
 with dissolve

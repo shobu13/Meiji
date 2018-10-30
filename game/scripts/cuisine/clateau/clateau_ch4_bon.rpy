@@ -31,7 +31,7 @@ with dissolve
 
 scene cg clateau
 with dissolve
-with Pause(10)
+$renpy.pause(10, hard='True')
 
 scene bg Black
 with dissolve

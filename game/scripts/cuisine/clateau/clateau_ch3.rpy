@@ -5,7 +5,7 @@ show chapter_ch3:
     yanchor 0.5 ypos 0.5
     xanchor 0.5 xpos 0.5
 with dissolve
-with Pause(3)
+$renpy.pause(3, hard='True')
 
 scene bg cuisine
 with dissolve

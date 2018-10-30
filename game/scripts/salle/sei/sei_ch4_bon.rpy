@@ -12,7 +12,7 @@ play music "audio/VN_theme_ending_version.ogg" loop fadeout 1.0 fadein 1.0
 
 scene cg sei
 with dissolve
-with Pause(10)
+$renpy.pause(10, hard='True')
 
 show bg Black
 with dissolve

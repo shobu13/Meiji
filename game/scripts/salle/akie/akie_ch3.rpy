@@ -149,6 +149,8 @@ with dissolve
 scene bg Black
 with dissolve
 
+scene bg rue
+with dissolve
 $ezo_outfit = 'Mi'
 "Ils partirent tous se préparer. Ezo renfila son uniforme militaire, et elle fut la première arrivée."
 "Tout le monde était remonté, notamment Ran, qui arriva en armure complète de samouraï. Elle bougeait avec peine, et on l’entendait à peine, si bien qu’elle dû la retirer avant de pouvoir commencer à participer."
@@ -200,8 +202,6 @@ with dissolve
 "Ils se mirent tous en route, vers le port. Comme Clateau l’avait prévu, il y avait un gros navire en bois, assez décrépit, qui attendait sur le port, et assez peu de marins pour le garder. Tsugumi, Ran, Yoshino et Ezo se cachaient derrière des barriques en bois."
 show tsugumi B3 S1 Y1 at right
 with dissolve
-label test:
-    pass
 tsugumi "Clateau avait raison, y’a presque personne."
 show ran B4 S3 Y4 at left, xflip
 with dissolve

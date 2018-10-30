@@ -983,7 +983,8 @@ label start:
             ezo "C’est du passé maintenant. Je ne suis plus dans aucune armée. Je peux vivre comme je l’entends."
     hide ezo
     with dissolve
-    "Le lendemain"
+    scene bg Black
+    with dissolve
     # ne pas montrer le sprite d’Ezo
     hide ezo
     with dissolve
@@ -1420,6 +1421,8 @@ label start:
                     with dissolve
                     tsugumi "Hein ? T’es qui ? Houlà, qu’est-ce que j’ai fait hier soir ?"
             hide ezo
+            with dissolve
+            hide tsugumi
             with dissolve
             show ran B5 S1 Y2 at right
             with dissolve

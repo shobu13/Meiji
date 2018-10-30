@@ -103,6 +103,8 @@ with dissolve
 show yoshino B1 S3 Y1 at right
 with dissolve
 yoshino "Ne me dit pas que t’as aussi pris du pain rassis !?"
+hide ezo
+with dissolve
 show clateau B5 S1 Y2 at left, xflip
 with dissolve
 clateau "Ah, euh…"
@@ -526,9 +528,6 @@ menu:
         yoshino " Tu vois, ici, à part les ouvriers comme Tsugumi, on a aussi des clients un peu plus raffinés qui viennent, il faut savoir satisfaire leurs attentes."
         "Yoshino posa avec grande précaution son gâteau son l’assiette. La chantilly était élégamment entortillée sur le dessus et un biscuit était planté dedans."
         show ezo B2 S2 Y2 at left, xflip
-        ezo "Ou peut-être que c’est la clientèle fortunée qui vient pour tes plats et non l’inverse…"
-        "Yoshino posa avec grande précaution son gâteau son l’assiette. La chantilly était élégamment entortillée sur le dessus et un biscuit était planté dedans."
-        show ezo B2 S2 Y2 at left, xflip
         with dissolve
         ezo "Ou peut-être que c’est la clientèle fortunée qui vient pour tes plats et non l’inverse…"
         show yoshino B1 S1 Y1 at right
@@ -766,6 +765,8 @@ menu:
         clateau "Mais ! Et le pot-au-feu ?"
         hide clateau
         with dissolve
+        hide yoshino
+        with dissolve
         show yoshino B7 S2 Y2 at left, xflip
         with dissolve
         yoshino "Pfff, tu comprends rien aux filles… Bien évidemment qu’elle préfère les desserts !"
@@ -851,6 +852,8 @@ ran "Que le petit peuple est amusant !"
 hide ran
 with dissolve
 hide tsugumi
+with dissolve
+hide ezo
 with dissolve
 show yoshino B5 S3 Y3 at right
 with dissolve
@@ -975,10 +978,12 @@ with dissolve
 scene bg grenier
 with dissolve
 "Ezo pénétra dans sa chambre, vraiment fatiguée. Elle se déshabilla tout en pensant à ce que Clateau lui avait dit. Yoshino était une orpheline de guerre ? Cela explique peut-être pourquoi elle est si renfermée sur elle-même."
-"Ezo continua à réfléchir. Ses parents avaient donc participés à la guerre ? Était-ce des militaires, ou des civils ? Et dans quel camp étaient-ils ? Ezo se questionnait. Avec la fatigue et l’alcool, elle avait mal à la tête, du mal à penser. Puis elle eut une illumination. Et si, pendant la guerre, elle avait tué les parents de Yoshino ? Elle avait perdue le compte de ses victimes depuis bien longtemps, mais elle ne pouvait pas oublier cette possibilité. Ezo finit par s’endormir loin dans la nuit, torturée par ses pensées."
+"Ezo continua à réfléchir. Ses parents avaient donc participés à la guerre ? Était-ce des militaires, ou des civils ? Et dans quel camp étaient-ils ? Ezo se questionnait. Avec la fatigue et l’alcool, elle avait mal à la tête, du mal à penser."
+"Puis elle eut une illumination. Et si, pendant la guerre, elle avait tué les parents de Yoshino ? Elle avait perdue le compte de ses victimes depuis bien longtemps, mais elle ne pouvait pas oublier cette possibilité."
+"Ezo finit par s’endormir loin dans la nuit, torturée par ses pensées."
 # TODONE fondu en noir
 scene bg Black
-with dissolve
+with Dissolve(1)
 
 scene bg grenier
 with dissolve
@@ -1062,7 +1067,9 @@ hide ezo
 with dissolve
 hide yoshino
 with dissolve
-"Ezo commença son apprentissage avec Yoshino dans le monde sucré des desserts. Contrairement à Clateau, les plats étaient fondamentalement plus simples à préparer, il n’y avait pas de viande à découper ou de légumes à faire macérer. Mais Yoshino était d’une rigueur extrême, les dosages étant fait au milligramme près."
+"Ezo commença son apprentissage avec Yoshino dans le monde sucré des desserts. Contrairement à Clateau, les plats étaient fondamentalement plus simples à préparer, il n’y avait pas de viande à découper ou de légumes à faire macérer."
+"Mais Yoshino était d’une rigueur extrême, les dosages étant fait au milligramme près."
+
 show ezo B2 S3 Y4 at left, xflip
 with dissolve
 ezo "Je m’en tire mieux que je pensais !"
@@ -1070,6 +1077,8 @@ show yoshino B1 S1 Y3 at right
 with dissolve
 yoshino "Pas mal, mais on peut mieux faire… on va rajouter un peu de chantilly sur le dessus."
 "Cette fois-ci, ce fut Clateau qui intervint."
+hide ezo
+with dissolve
 show clateau B1 S2 Y1 at left, xflip
 with dissolve
 clateau "De la chantilly ? Je pense que ce sorbet est déjà suffisamment chargé !"
@@ -1080,6 +1089,8 @@ yoshino "Non ! Il faut encore en ajouter. N’est-ce pas ?"
 menu:
     " Plus de crème, oui.":
         $relation_yoshino += 1
+        hide clateau
+        with dissolve
         show ezo B2 S3 Y4 at left, xflip
         with dissolve
         ezo "Plus de crème, oui."
@@ -1089,6 +1100,8 @@ menu:
     " Ça risque de faire gras…":
         $ relation_clateau += 1
         hide yoshino
+        with dissolve
+        hide clateau
         with dissolve
         show ezo B1 S3 Y2 at left, xflip
         with dissolve

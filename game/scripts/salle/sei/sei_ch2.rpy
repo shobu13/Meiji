@@ -1,3 +1,6 @@
+label sei_ch2:
+    pass
+
 scene bg grenier
 with dissolve
 

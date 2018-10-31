@@ -131,7 +131,8 @@ with dissolve
 ezo "T’aimes ça à ce point, la littérature ?"
 show sei B2 S1 Y1 at right
 with dissolve
-sei "Oh oui ! Toute petite, j’ai appris le Mayôshû par cœur. J’ai aussi lu le Makura no Shôshi, le Dit de Genji… et des contes aussi, comme Kaguya Hime, celui-là je le connais par cœur. Ah, et bien sur le Tossa Nikki, la peine de Ki no Tsurayuki envers sa fille décédée est tellement touchante ! Et aussi… Ah, désolée, je m’emporte un peu quand on parle de littérature !"
+sei "Oh oui ! Toute petite, j’ai appris le Mayôshû par cœur. J’ai aussi lu le Makura no Shôshi, le Dit de Genji… et des contes aussi, comme Kaguya Hime, celui-là je le connais par cœur."
+"Ah, et bien sur le Tossa Nikki, la peine de Ki no Tsurayuki envers sa fille décédée est tellement touchante ! Et aussi… Ah, désolée, je m’emporte un peu quand on parle de littérature !"
 show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "Pas de problème ! Ça… ça me change beaucoup de mon quotidien d’avant. C’est si raffiné !"
@@ -326,7 +327,7 @@ with dissolve
 akie "Mais oui ! Regarde comme tu as rattrapé la gaffe de Sei, ce matin ! Et en retour, elle t’aide pour les choses un peu plus intellectuelles, vous êtes complémentaires."
 hide akie
 with dissolve
-show sei B1 S1 Y4 at right
+show sei B1 S1 Y3 at right
 with dissolve
 sei "Oui, c’est un plaisir de travailler avec Ezo !"
 show ezo B4 S3 Y1 R2 at left, xflip
@@ -375,7 +376,7 @@ with dissolve
 hide sei
 with dissolve
 "Sei plissa les yeux et regarda en détail le petit carnet."
-show sei B2 S1 Y4 at right
+show sei B2 S1 Y3 at right
 with dissolve
 sei "Ah, il était au jeune homme avec une tunique bleue, qui a prit un café il y a environ deux heures !"
 show akie B1 S1 Y2 at left, xflip
@@ -421,7 +422,8 @@ $ezo_outfit = 'Mi'
 
 scene bg wafu
 with dissolve
-"À la fin de la semaine, Ezo eut de nouveau un jour de repos, et retourna chez Sei. Ensemble, elles pratiquèrent le français. Elles avaient été un petit peu optimiste dans leurs prévisions : non seulement apprendre une nouvelle langue était très dur, et en plus, Ezo avait surestimé ses capacités d’enseignement, car c’était là aussi une chose difficile."
+"À la fin de la semaine, Ezo eut de nouveau un jour de repos, et retourna chez Sei. Ensemble, elles pratiquèrent le français."
+"Elles avaient été un petit peu optimiste dans leurs prévisions : non seulement apprendre une nouvelle langue était très dur, et en plus, Ezo avait surestimé ses capacités d’enseignement, car c’était là aussi une chose difficile."
 show ezo B1 S3 Y4 at left, xflip
 with dissolve
 ezo "Tu retiens vite le vocabulaire ! Maintenant, voyons la conjugaison… pour te dire je suis pas bien sûre de la connaître moi non plus donc j’ai apporté un livre de grammaire…"
@@ -451,7 +453,7 @@ with dissolve
 hide sei
 with dissolve
 "Sei ne garda pas longtemps sa moue désapprobatrice et se mit à rire, elle aussi."
-show sei B6 S2 Y7 at right
+show sei B5 S3 Y1 at right
 with dissolve
 sei "Bien, maintenant, c’est l’heure d’apprendre des kanji, Ezo !"
 show ezo B5 S1 Y7 at left, xflip
@@ -478,7 +480,7 @@ with dissolve
 "Un matin, elles se changeaient toutes dans la cuisine, avant de prendre leur service. Ezo arrivait souvent déjà changée, puisqu’elle habitait au-dessus, mais cette fois-là elle se changea avec les autres. Elle avait fait laver son uniforme par Clateau et elle venait de le récupérer."
 show sei B6 S2 Y7 R3 at right
 with dissolve
-sei "E-Ezo, je savais que les françaises étaient _à la mode_ mais c’est très osé."
+sei "E-Ezo, je savais que les françaises étaient à la mode mais c’est très osé."
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Pardon ?"
@@ -577,7 +579,8 @@ scene bg Black
 with dissolve
 scene bg bar
 with dissolve
-"Le soir, Ezo et Sei prirent un petit moment de détente au bar de Ran. Ezo avait amené de petites fiches en carton où elle avait noté les kanji qu’elle ne connaissait pas. Sei, de son côté, avait emporté un des livres d’Ezo et déchiffrait la langue mot par mot. Tsugumi, la petite ouvrière, les regardait avec sa pinte avec des gros yeux ronds."
+"Le soir, Ezo et Sei prirent un petit moment de détente au bar de Ran. Ezo avait amené de petites fiches en carton où elle avait noté les kanji qu’elle ne connaissait pas."
+"Sei, de son côté, avait emporté un des livres d’Ezo et déchiffrait la langue mot par mot. Tsugumi, la petite ouvrière, les regardait avec sa pinte avec des gros yeux ronds."
 show ezo B1 S3 Y2 at left, xflip
 with dissolve
 ezo "Qu’est-ce qu’il y a ?"
@@ -623,6 +626,10 @@ sei "Mais non enfin ! Tu apprends vite, et tu sais déjà de nombreuses choses q
 hide sei
 with dissolve
 "Ezo lui répondit par un sourire, mais elle pensait au fond d’elle-même que Tsugumi avait peut-être raison : ce n’était pas vraiment sa place."
+scene bg Black
+with Dissolve(1)
+scene bg bar
+with dissolve
 "Quelques jours plus tard, un midi, Sei fut confrontée à un des nombreux clients occidentaux qui, pour certains et parfois pour beaucoup, ne parlaient pas japonais."
 "Ezo se préparait à aller aider Sei en fâcheuse posture, quand elle vit que Sei se débrouillait plutôt bien. On la voyait hésitante, mais elle réussit à guider le client jusqu’à une table et à prendre sa commande."
 show ezo B1 S3 Y4 at left, xflip

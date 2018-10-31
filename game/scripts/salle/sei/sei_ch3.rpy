@@ -49,7 +49,13 @@ hide ezo
 with dissolve
 "Pas du tout convaincu, Ezo décida d’aller directement à la source, chez Sei, pour demander des nouvelles."
 "Mais cette attente la stressait, et comme Sei n’était pas là, elle commençait de nouveau à se comporter difficilement avec les clients, perdant patience quand ceux-ci lui faisait des remarques."
+scene bg Black
+with dissolve
+scene bg rue
+with dissolve
 "Quand elle arriva devant la maison de Sei, et après avoir toqué en vain, elle se décida à ouvrir la porte qui était restée entrouverte."
+scene bg wafu
+with dissolve
 "Il n’y avait pas de bruit et la chambre restait vide."
 show ezo B4 S3 Y1 at left, xflip
 with dissolve
@@ -69,8 +75,12 @@ with dissolve
 show ezo B5 S1 Y3 at left, xflip
 with dissolve
 ezo "Faisons une chose après l’autre : je vais d’abord punir Clateau de m’avoir menti, et quand il m’aura craché le morceau, je fonce voir Sei !"
-hide ezo
+scene bg Black
 with dissolve
+scene bg bar
+with dissolve
+"Ezo retourna au restaurant et aperçut Clateau, encore en train de passer le balai devant la porte après la fermeture de l’établissement."
+"Arrivée à sa portée, elle le lui prit des mains sans crier gare et s'en servit pour le faire trébucher."
 show ezo B3 S1 Y4 at left, xflip
 with dissolve
 ezo "Dis voir, tu ne te serai pas un peu foutu de ma gueule par hasard ?"
@@ -98,14 +108,16 @@ clateau "C’est le gouvernement là. Comment tu veux faire pour la sortir de l�
 show ezo B8 S1 Y5 at left, xflip
 with dissolve
 ezo "La ferme ! Comme si j’allais rester là à rien faire. En plus c’est très bien Hokkaidô."
-hide ezo
-with dissolve
-hide clateau
+scene bg grenier
 with dissolve
 "Ezo poussa Clateau et continua à pester contre lui, sur le chemin menant à sa chambre."
 "Mais au fond d’elle-même, elle se questionnait.Comment allait-elle s’y prendre pour récupérer Sei ? Était-ce seulement possible? "
 "Elle ne savait pas où elle était, et même si elle allait la chercher, elle ne pourrait pas la ramener au restaurant avant d’avoir trouver un accord avec ceux qui l’ont envoyé dans cette école, sinon ce sera sans fin."
 "Ezo s’endormit anxieuse, en serrant contre elle son coussin."
+scene bg Black
+with Dissolve(1)
+scene bg bar
+with dissolve
 "Le lendemain, elle était d’encore plus mauvaise humeur, si bien que les clients n’osaient même plus s’en plaindre."
 "Elle prit sa pause de midi au bar, quelques heures plus tard, et enchaîna bière sur bière de manière compulsive."
 show tsugumi B4 S1 Y4 at right
@@ -242,10 +254,11 @@ ran "Sei est actuellement persuadée de devoir remplir son devoir pour nous mett
 show ezo B1 S1 Y2 at left, xflip
 with dissolve
 ezo "Je ferais de mon mieux !"
-hide ezo
+scene bg Black
+with Dissolve(1)
+scene bg wafu
 with dissolve
-hide ran
-with dissolve
+#TODO soir
 "Le soir, Ezo reparti pour la maison de Sei."
 "Son intuition lui dit de revenir plus tard et elle avait raison : cette fois il y avait de la lumière, et elle pouvait distinguer une vague une silhouette derrière les paravents."
 "Ezo prit un caillou, et le lança sur la porte, pour que Sei la remarque."
@@ -285,12 +298,16 @@ ezo "Alors rentrons !"
 show sei B6 S2 Y1 at right
 with dissolve
 sei "Mais je ne peux pas ! Et si je fais des histoires, c’est vous qui allez avoir des problèmes avec le gouvernement."
+show ezo B5 S1 Y2
+with dissolve
+ezo "Ne t’inquiète pas, je suis là pour toi"
 menu:
     " Ne t’inquiète pas, je suis là pour toi":
         pass
     " J’ai demandé à Ran et Clateau de s’occuper de la partie administrative. On pourra vaincre ce gouvernement !":
-        scene bg Black
-        with Dissolve(1)
+        show ezo B5 S1 Y2
+        with dissolve
+        ezo "J’ai demandé à Ran et Clateau de s’occuper de la partie administrative. On pourra vaincre ce gouvernement !"
         jump sei_ch4_mauvais
 # Si « ne t’inquiète pas, je suis là pour toi » sinon MAUVAIS CHAPITRE
 "Ezo fixait Sei après sa déclaration."
@@ -311,6 +328,8 @@ with dissolve
 hide sei
 with dissolve
 "Ezo sorti de la pièce en faisant attention à ne pas agrandir le trou qu’elle avait fait dans la porte coulissante."
+scene bg bar
+with dissolve
 "Quand elle rentra, Clateau l’attendait et comme elle était seule, il s’inquiéta."
 show clateau B4 S2 Y2 at right
 with dissolve

@@ -186,6 +186,7 @@ scene bg Black
 with dissolve
 scene bg salle
 with dissolve
+$ezo_outfit = 'Se'
 "Le lendemain, lors du service, c’est assez logiquement Akié qui s’occupa d’Ezo. Elle était encore un peu rude et agissait encore de manière trop carrée pour une serveuse."
 "À chaque fois qu’elle répondait trop sérieusement, Akié arrivait pour désamorcer la situation et donner des conseils à Ezo. Elle était patiente avec elle, et essayait d’être la plus compréhensible possible."
 "Un moment où Ezo revenait de la réserve, elle s’était collée au mur et une belle tâche de farine faisait une auréole sur son uniforme."
@@ -374,6 +375,7 @@ scene bg Black
 with dissolve
 scene bg rue
 with dissolve
+$ezo_outfit = 'Mi'
 "Le prochain jour de repos, Ezo arriva devant Akié avec un énorme sac de provisions. Yoshino ne l’avait pas fait à moitié."
 "Toutes les choses inutiles et bientôt périmée ou à jeter lui avait été donnée, rien n’avait été oublié."
 show akie B1 S2 Y2 at right
@@ -603,10 +605,10 @@ with dissolve
 akie "Mais oui !"
 hide ezo
 hide akie
-scene bg grenier
-with dissolve
 "Akié caressa la tête d’Ezo. Celle-ci, rassurée, ne protesta pas contre le fait d’être traitée comme une enfant, pour une fois."
 "Elle se contenta de lui sourire, et une fois devant le restaurant, Akié reparti chez elle."
+scene bg grenier
+with dissolve
 "Ezo, remontée sans sa chambre, s’endormi en repensant à la journée. Elle était contente d’avoir une amie, quelqu’un qui la comprenait."
 
 scene bg Black

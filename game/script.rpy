@@ -608,7 +608,7 @@ init:
         saucisse = DynamicCharacter("saucisse_nom", color=(108, 2, 199, 255))
 
         dissolve = Dissolve(0.2)
-        connards = Character("connards")
+        connards = Character("voyous")
 
     image chapter_salle_ch1 = Text("{size=60}Travail en salle", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
 
@@ -1130,7 +1130,7 @@ label start:
             ezo "Dis tout de suite que je suis conne ! Mais ça me va comme ça. Au moins je pourrais glander aujourd’hui."
             show ran B1 S1 Y4 at right
             with dissolve
-            ran "Comme je te comprends. Par quoi veux-tu commencer ?"
+            ran "Comme je vous comprends. Par quoi voulez-vous commencer ?"
         " Être pleine d’entrain":
             hide clateau
             with dissolve
@@ -1244,6 +1244,7 @@ label start:
                 with dissolve
                 clateau "Allons allons, ce n’est pas bien grave."
         show ezo B1 S3 Y2 at left, xflip
+        hide yoshino
         with dissolve
         ezo "{i}Il faudrait que j’aille voir les autres aussi, pour me faire une idée.{/i}"
         # à elle-même
@@ -1337,7 +1338,7 @@ label start:
         with dissolve
         show ezo B2 S3 Y2 at left, xflip
         with dissolve
-        ezo "Bon, j’en ai assez vu ici. Allons voir les autres."
+        ezo "Bon, j’en ai assez vu ici."
         hide ezo
         with dissolve
         if moment_journee == 3:
@@ -1603,7 +1604,7 @@ label start:
                     show tsugumi B2 S1 Y1 at left, xflip
                     with dissolve
                     tsugumi "Du calme du calme ! Je te taquinais, c’est tout ! Tu m’as l’air d’avoir le sang chaud. D’ailleurs, cet uniforme, c’en est un de l’armée ?"
-                    "Ezo se mit au garde à vous"
+                    "Ezo se mit au garde à vous."
                     show ezo B2 S1 Y2 at right
                     with dissolve
                     ezo "De l’armée de la République d’Ezo, au service du Shogun !"

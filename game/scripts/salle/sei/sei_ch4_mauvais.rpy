@@ -20,6 +20,9 @@ ezo "Bon. D’accord. J’y vais. A… adieu."
 show sei B4 S1 Y1 at right
 with dissolve
 sei "Adieu, Ezo."
+hide sei
+hide ezo
+with dissolve
 "Le dernier sourire de Sei était emprunt de tristesse. Ezo sortie lentement de la pièce, elle avait l’impression que chaque pas qu’elle faisait rajoutait un poids sur elle."
 "Ezo reprit son travail au restaurant. Elle n’avait plus que quelques contacts distants avec Sei. Son travail ne lui laissait pas énormément de temps."
 "Le caractère d’Ezo se dégrada beaucoup. Elle devint plus sèche, moins aimable. Plus stricte aussi. Les nuits d’Ezo furent troublées pendant encore des années par ce soir où elle avait perdu Sei."

@@ -172,6 +172,7 @@ show clateau B1 S1 Y2 at right
 with dissolve
 clateau "Ahahah… ce n’est rien…"
 #  TODONE : Mettre son habit de serveuse à Ezo
+$ezo_outfit = 'Se'
 # fondu en noir
 scene bg Black
 with dissolve
@@ -550,6 +551,10 @@ menu:
         scene bg grenier
         with dissolve
         "Ezo partit se coucher, et finalement elle ne mit pas longtemps avant de s’endormir. Mais elle se réveilla très tôt."
+        scene bg Black
+        with Dissolve(1)
+        scene bg grenier
+        with dissolve
         show ezo B6 S2 Y3 at left, xflip
         with dissolve
         ezo "Puisque je suis levée, autant descendre…"

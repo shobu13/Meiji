@@ -19,10 +19,12 @@ with dissolve
 "En repensant à Akié, elle déboula en cuisine après avoir descendu l’escalier quatre à quatre."
 show ezo B1 S2 Y1 at left, xflip
 with dissolve
-ezo "Ou… ou est Akié."
+ezo "Où… où est Akié."
 hide ezo
 with dissolve
-"Clateau et Yoshino attendait dans la cuisine, devant un café. Leurs traits tirés n’annonçait rien de bon."
+scene bg cuisine
+with dissolve
+"Clateau et Yoshino attendaient dans la cuisine, devant un café. Leurs traits tirés n’annonçait rien de bon."
 show clateau B3 S1 Y3 at right
 with dissolve
 clateau "Ils… ils sont partis avec elle."
@@ -45,6 +47,8 @@ yoshino "Je sais que c’est dur, mais tu ne reverras plus Akié."
 show ezo B1 S1 Y2 at left, xflip
 with dissolve
 ezo "Je vois."
+scene bg grenier
+with dissolve
 "Elle passa le reste de la semaine sans parler. Les autres aussi étaient encore sous le choc, et personne ne la dérangea."
 "Un matin, Ezo n’était plus dans sa chambre. Il n’y avait qu’une lettre, de quelques mots, qui expliquait à Clateau qu’elle retournait dans l’armée. Elle ne revint plus jamais au restaurant."
 

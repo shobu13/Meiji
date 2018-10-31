@@ -6,6 +6,7 @@
 #backgrounds
 
 image bg main_gui = "gui/main_menu.png"
+image bg game_gui = "gui/game_menu.png"
 image bg wafu = "bg/bg_japonaise.jpg"
 image bg cuisine = "bg/bg_cuisine.jpg"
 image bg bar = "bg/bg_bar.jpg"

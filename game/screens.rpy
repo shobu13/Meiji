@@ -304,7 +304,7 @@ screen navigation():
             # options
             hotspot (100, 354, 125, 55) action ShowMenu("preferences")
             # galerie
-            hotspot (106, 444, 118, 52) action Start()
+            hotspot (106, 444, 118, 52) action ShowMenu("gallery")
             # credits
             hotspot (110, 531, 107, 37) action ShowMenu("about")
             # quitter
@@ -325,7 +325,7 @@ screen navigation():
             # options
             hotspot (100, 354, 125, 55) action ShowMenu("preferences")
             # galerie
-            hotspot (106, 444, 118, 52) action Start()
+            hotspot (106, 444, 118, 52) action ShowMenu("gallery")
             # credits
             hotspot (110, 531, 107, 37) action ShowMenu("about")
             # quitter

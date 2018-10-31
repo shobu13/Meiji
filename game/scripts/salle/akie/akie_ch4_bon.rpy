@@ -17,7 +17,7 @@ show akie B1 S1 Y4 at right
 with dissolve
 akie "Tu as réussi, mon chaton !"
 "Akié se pencha encore un peu plus, et elle posa ses lèvres sur celles d’Ezo."
-
+$persistent.akie_end = True
 scene cg akie
 with dissolve
 $renpy.pause(10, hard='True')

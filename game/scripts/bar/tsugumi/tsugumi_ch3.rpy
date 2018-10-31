@@ -52,9 +52,9 @@ show ran B1 S1 Y2 at right
 hide tsugumi
 with dissolve
 ran "Tant d’abnégation, ça me surpasse !"
-show tsugumi B4 S1 Y1 at right
-with dissolve
 hide ran
+with dissolve
+show tsugumi B4 S1 Y1 at right
 with dissolve
 tsugumi "Les autres ouvriers commencent à se réunir. On va bientôt lancer la grève."
 show ezo B1 S3 Y3 at left, xflip

@@ -1,8 +1,6 @@
 label sei_ch4_mauvais:
     pass
 
-scene bg salle
-with dissolve
 "Sei fit un non de la tête."
 show sei B4 S2 Y2 at right
 with dissolve

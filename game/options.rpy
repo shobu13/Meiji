@@ -15,7 +15,7 @@
 ##
 ## La chaîne de caractère contenu dans _() est éligible à la traduction.
 
-define config.name = _("Meiji")
+define config.name = _("Meiji_wa_yuri")
 
 
 ## Détermine si le titre renseigné plus haut est affiché sur l'écran du menu
@@ -40,7 +40,7 @@ define gui.about = _p("""
 ## l’exécutable. Il ne doit contenir que des caractères ASCII et ne doit pas
 ## contenir d’espace, de virgules ou de points-virgule.
 
-define build.name = "Ezo2"
+define build.name = "Meiji_wa_yuri"
 
 
 ## Sons et musiques ############################################################
@@ -226,3 +226,5 @@ init python:
 # define build.itch_project = "renpytom/test-project"
 
 define config.mouse = { 'default' : [ ("gui/meiji_curseur_souris.png", 0, 0)] }
+
+define config.windows_icon = "icon.ico"

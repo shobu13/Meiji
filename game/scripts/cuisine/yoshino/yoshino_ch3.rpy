@@ -21,6 +21,8 @@ ezo "Comment ça va ce matin ? Tu veux que je t’aide aux desserts aujourd’hu
 show yoshino B1 S3 Y3 at right
 with dissolve
 yoshino "J’ai pas besoin de t’avoir dans les pattes tout le temps, va plutôt aider Clateau !"
+hide yoshino
+with dissolve
 "La réponse de Yoshino était cassante, mais c’était aussi dans son caractère, donc Ezo ne s’y formalisa pas."
 show ezo B4 S2 Y1 at left, xflip
 with dissolve
@@ -310,7 +312,7 @@ with dissolve
 ezo "Je sais, laisse-moi tranquille !"
 show clateau B3 S3 Y4 at right
 with dissolve
-clateau "Mais qu’est-ce que tu fais aussi ?"
+clateau "Mais qu’est-ce que tu fais ?"
 show ezo B5 S2 Y8 at left, xflip
 with dissolve
 ezo "Je sais pas trop, un fraisier, probablement."
@@ -384,19 +386,18 @@ show yoshino B1 S3 Y1 at left, xflip
 with dissolve
 yoshino "Quoi, vous nous espionniez ?"
 hide akie
-with dissolve
 show sei B1 S2 Y3 at right
 with dissolve
 sei "Nous étions tous très inquiets de savoir si tu allais revenir, Yoshino !"
 hide sei
-with dissolve
 show clateau B1 S2 Y1 Go at right
 with dissolve
 clateau "Ezo ne nous as pas loupés, pendant son pamphlet !"
 hide clateau
+hide yoshino
 with dissolve
 "Yoshino se mit à rougir en voyant que tout le monde s’était inquiété pour elle."
-show yoshino B2 S1 Y2 at right
+show yoshino B2 S1 Y2 at xflip, right
 with dissolve
 yoshino "Bon, bah… merci de votre sollicitude. J’essayerai d’avoir plus confiance en moi à l’avenir."
 show akie B1 S1 Y4 at left, xflip

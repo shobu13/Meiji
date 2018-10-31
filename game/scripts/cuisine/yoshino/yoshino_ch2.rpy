@@ -126,8 +126,6 @@ yoshino "Tu fais la forte, mais Clateau te réveille les matins. Et tu as besoin
 show ezo B4 S2 Y1 at left, xflip
 with dissolve
 ezo "Oui mais tu sais, moi, je suis militaire, j’ai fait des tas de choses ignobles. Je peux plus vraiment prétendre être naïve."
-label test:
-    pass
 
 "Le regard de Yoshino s’assombrit."
 show yoshino B1 S1 Y1 at right
@@ -317,7 +315,7 @@ with dissolve
 akie "Et là, Yoshino a pris le chaton dans ses bras !"
 show tsugumi B4 S1 Y5 at left, xflip
 with dissolve
-tsugumi "Quoi, cette furie à réussi à faire ça ? Mince j’aurai voulu voir ça, ça a dû être un instant mémorable !"
+tsugumi "Quoi, cette furie a réussi à faire ça ? Mince j’aurai voulu voir ça, ça a dû être un instant mémorable !"
 hide akie
 with dissolve
 "Derrière elle, se rapprochait Yoshino."
@@ -863,7 +861,7 @@ with dissolve
 clateau "Hm… À bien réfléchir, je me souviens qu’elle m’a dit apprécier la castella, sa mère lui en faisait quand elle était petite."
 show ezo B1 S2 Y7 -R2 at left, xflip
 with dissolve
-ezo "C’est pas un village dans le Lot ?"
+ezo "Ouah, ça sonne espagnol. Il va falloir l'importer ?"
 show clateau B7 S4 Y5 at right
 with dissolve
 clateau "Mais non ! C’est une pâtisserie d’origine portugaise. Mais c’est très populaire, ici."

@@ -289,7 +289,7 @@ ezo "Il y en a ?"
 show yoshino B8 S3 Y1 at right
 with dissolve
 yoshino "Ah, oui, il y en a ! Mais sache que c’est pas pour mon plaisir ! J’essaye d’exterminer des vermines à longueur de journée, mais elles pullulent toujours autant !"
-show ezo B1 S1 Y2 at left, xflip
+show ezo B1 S1 Y2 -Go at left, xflip
 with dissolve
 ezo "Eh bien justement ! Les chats chassent les souris. Si on les nourrit, ils resteront autour du restaurant, et mangeront les souris. En plus une fois nourris, les chats arrêteront de chaparder sur le marché. Tout le monde s’y retrouvera."
 hide yoshino
@@ -317,7 +317,7 @@ with dissolve
 "Il fallait juste oser passer le premier front."
 scene bg Black
 with dissolve
-scene bg cuisine
+scene bg bar
 with dissolve
 "Le soir, alors que le service se terminait, Ezo et les autres se retrouvèrent toutes au bar. Akié était toujours aux petits soins avec Ezo."
 "Cette dernière se faisait servir une grande pinte de bière, pour imiter Tsugumi."
@@ -550,8 +550,7 @@ akie "Me raccompagner ? Mais tu n’aimes pas trop sortir en ville, non ?"
 show ezo B2 S3 Y4 at left, xflip
 with dissolve
 ezo "Ne t’inquiète pas, au soir la ville est calme, ça ne me pose pas de problèmes. Et je vois bien que t’as peur du noir !"
-hide akie
-hide ezo
+scene bg rue
 with dissolve
 "Akié se laissa raccompagner par Ezo. Elles marchaient dans la rue, seulement faiblement éclairé par le crépuscule et les quelques lampions qui étaient ça et là accrochés aux portes des maisons."
 "Akié n’était guère rassurée et se collait à Ezo."

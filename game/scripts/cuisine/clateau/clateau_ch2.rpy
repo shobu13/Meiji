@@ -147,7 +147,7 @@ with dissolve
 show ezo B1 S3 Y2 Go at right
 with dissolve
 ezo "Ouah, le passe-temps de jeune fille…"
-show sei B1 S1 Y4 at left, xflip
+show sei B1 S1 Y3 at left, xflip
 with dissolve
 sei "Hihihi, oui, c’est vrai que c’est très féminin… Et vous ?"
 hide ezo
@@ -171,6 +171,7 @@ with dissolve
 sei "Non, je suis venue avec Akié. D’ailleurs, la revoilà !"
 hide ezo
 hide akie
+hide sei
 with dissolve
 "Akié surgit d’une petite ruelle, portant un sac de papier et avec la bouche pleine."
 show akie B1 S1 Y4 at left, xflip
@@ -283,6 +284,7 @@ with dissolve
 yoshino "Elle s’emporte facilement mais elle en pense pas moins…"
 hide yoshino
 with dissolve
+$ezo_outfit = 'Cui'
 "Un peu plus tard dans la journée, Ran rentra dans la cuisine, contrariée."
 show ran B1 S3 Y8 at right
 with dissolve
@@ -395,6 +397,7 @@ with dissolve
 
 scene bg port
 with dissolve
+$ezo_outfit = 'Mi'
 "À la fin de la semaine, Ezo partie donc voir les installations navales avec Tsugumi."
 "C’était là que la jeune ouvrière travaillais."
 show tsugumi B1 S1 Y1 at right
@@ -637,6 +640,7 @@ hide akie
 with dissolve
 hide yoshino
 with dissolve
+$ezo_outfit = 'Cui'
 "Akié avait appuyé sa phrase avec un gros clin d’œil. Devant son insistance, Yoshino devinait ce qu’elle voulait, et dans un profond soupir, elle quitta la cuisine."
 "Ezo et Clateau se retrouvaient maintenant seuls dans la même pièce. Sans Yoshino pour faire le lien, ils allaient être obligés de se parler."
 show ezo B1 S2 Y1 at left, xflip

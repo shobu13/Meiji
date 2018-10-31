@@ -262,7 +262,7 @@ menu:
         with dissolve
         ezo "Tu me sous-estime !"
 hide yoshino
-with dissolve
+hide clateau
 hide ezo
 with dissolve
 "Yoshino et Clateau étaient tous les deux en train de s’occuper de la cuisine. Le rythme était important."

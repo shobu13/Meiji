@@ -609,7 +609,7 @@ init:
         saucisse = DynamicCharacter("saucisse_nom", color=(108, 2, 199, 255))
 
         dissolve = Dissolve(0.2)
-        connards = Character("voyous")
+        connards = Character("Voyous")
 
     image chapter_salle_ch1 = Text("{size=60}Travail en salle", font="gui/Sofia-Regular.otf", text_align=0.5, color="#e5cdcd")
 
@@ -1172,7 +1172,7 @@ label start:
         ezo "Allons voir la cuisine."
         hide ezo
         with dissolve
-        "Le reste de l’équipe quitta la pièce, laissant Ezo seule avec Yoshino et Clateau."
+        "En cuisine, Ezo retrouva Yoshino, concentrée sur une préparation."
         show yoshino B5 S3 Y1 at right
         with dissolve
         yoshino "Hmpf, j’espère que tu ne nous retarderas pas, j’ai déjà fort à faire avec cet idiot de patron !"
@@ -1247,7 +1247,7 @@ label start:
         show ezo B1 S3 Y2 at left, xflip
         hide yoshino
         with dissolve
-        ezo "{i}Il faudrait que j’aille voir les autres aussi, pour me faire une idée.{/i}"
+        ezo "{i}Je pense que j'ai vu ce qu'il y avait à voir.{/i}"
         # à elle-même
         hide yoshino
         with dissolve
@@ -1273,7 +1273,7 @@ label start:
         # Salle
         scene bg salle
         with dissolve
-        "Ezo se dirigea ensuite dans la salle, où l’attendait avec Akié et Sei."
+        "Ezo se dirigea ensuite dans la salle."
         show akie B1 S1 Y4 at right
         with dissolve
         akie "Ma p’tite Ezo ! Encore merci pour hier !"
@@ -1518,6 +1518,8 @@ label start:
                     show yoshino B8 Y5 at right
                     with dissolve
                     yoshino "Espèce de…"
+                    scene bg bar
+                    with dissolve
                     "Yoshino passablement agacée, allait passer par dessus le passe-plat en voulant tarter Ran quand Clateau la rattrapa."
                     "Il la remit en cuisine tout en faisant un petit signe rapide à Ran et Ezo leur disant d’aller bosser."
                 "Voilà ce qui arrive quand on passe son temps à tirer au flan pendant les heures creuses.":

@@ -1,3 +1,6 @@
+init:
+    image vignette none = "gui/slot_hover_background.png"
+
 init python:
 
     # Step 1. Create the gallery object.
@@ -7,12 +10,34 @@ init python:
 
     # This button has a condition associated with it, allowing the game
     # to choose which images unlock.
-    g.button("end1")
-    g.condition("persistent.unlock_1")
-    g.image("bad_ending")
+    g.button("akie")
+    g.condition("persistent.akie_end")
+    g.image("cg akie")
+
+    g.button("clateau")
+    g.condition("persistent.clateau_end")
+    g.image("cg clateau")
+
+    g.button("ran")
+    g.condition("persistent.ran_end")
+    g.image("cg ran")
+
+    g.button("sei")
+    g.condition("persistent.sei_end")
+    g.image("cg sei")
+
+    g.button("tsugumi")
+    g.condition("persistent.tsugumi_end")
+    g.image("cg tsugumi")
+
+    g.button("yoshino")
+    g.condition("persistent.yoshino_end")
+    g.image("cg yoshino")
 
     # The transition used when switching images.
     g.transition = dissolve
+
+    g.locked_button="vignette none"
 
 # Step 3. The gallery screen we use.
 screen gallery:
@@ -37,13 +62,13 @@ screen gallery:
         yspacing 100
 
         # Call make_button to show a particular button.
-        add g.make_button("end1", "gui/slot_hover_background.png", xalign=0.5, yalign=0.5)
-        add g.make_button("end1", "gui/slot_hover_background.png", xalign=0.5, yalign=0.5)
-        add g.make_button("end1", "gui/slot_hover_background.png", xalign=0.5, yalign=0.5)
+        add g.make_button("akie", "images/gui/akie_vignette.png", xalign=0.5, yalign=0.5)
+        add g.make_button("clateau", "images/gui/clateau_vignette.png", xalign=0.5, yalign=0.5)
+        add g.make_button("ran", "images/gui/ran_vignette.png", xalign=0.5, yalign=0.5)
 
-        add g.make_button("end1", "gui/slot_hover_background.png", xalign=0.5, yalign=0.5)
-        add g.make_button("end1", "gui/slot_hover_background.png", xalign=0.5, yalign=0.5)
-        add g.make_button("end1", "gui/slot_hover_background.png", xalign=0.5, yalign=0.5)
+        add g.make_button("sei", "images/gui/sei_vignette.png", xalign=0.5, yalign=0.5)
+        add g.make_button("tsugumi", "images/gui/tsugumi_vignette.png", xalign=0.5, yalign=0.5)
+        add g.make_button("yoshino", "images/gui/yoshino_vignette.png", xalign=0.5, yalign=0.5)
 
         text ""
         text ""

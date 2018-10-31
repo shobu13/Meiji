@@ -1,8 +1,6 @@
 label clateau_ch4_mauvais:
     pass
 
-scene bg port
-with dissolve
 show ezo B5 S1 Y2 at left, xflip
 with dissolve
 ezo "Alors, laisse-moi partir avec toi ! Au moins, je pourrais m’assurer qu’il ne t’arrive rien."

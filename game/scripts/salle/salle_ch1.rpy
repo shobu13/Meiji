@@ -172,12 +172,12 @@ show clateau B1 S1 Y2 at right
 with dissolve
 clateau "Ahahah… ce n’est rien…"
 #  TODONE : Mettre son habit de serveuse à Ezo
-$ezo_outfit = 'Se'
 # fondu en noir
 scene bg Black
 with dissolve
 scene bg salle
 with dissolve
+$ezo_outfit = 'Se'
 "Le malentendu dissipé, Ezo fut accompagnée par Sei et Akié pour aller en salle. La salle du restaurant était plongée dans une ambiance un peu tamisée, et calme."
 "Son style second empire en plein milieu de la capitale nipponne l’avait rapidement fait connaître de la bourgeoise locale."
 "Après plusieurs décennies de fermeture du pays, nombreux étaient ceux qui venaient ici pour goûter à leur morceau « d’occident »."

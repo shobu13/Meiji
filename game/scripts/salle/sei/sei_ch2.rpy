@@ -257,6 +257,7 @@ with dissolve
 akie "Clateau vient de me dire que nous allons recevoir des clients importants… il va falloir faire attention."
 hide akie
 with dissolve
+$ezo_outfit = 'Se'
 "En effet, venaient de rentrer dans la salle deux personnes qui semblaient importantes."
 "Le premier était un officier de la marine japonaise, endimanché dans un costume noir, et le second un anglais avec une petite moustache, lui aussi dans un beau costume."
 show ezo B1 S2 Y2 at left, xflip
@@ -418,10 +419,9 @@ with dissolve
 scene bg Black
 with dissolve
 # TODONE Ezo est en milli
-$ezo_outfit = 'Mi'
-
 scene bg wafu
 with dissolve
+$ezo_outfit = 'Mi'
 "À la fin de la semaine, Ezo eut de nouveau un jour de repos, et retourna chez Sei. Ensemble, elles pratiquèrent le français."
 "Elles avaient été un petit peu optimiste dans leurs prévisions : non seulement apprendre une nouvelle langue était très dur, et en plus, Ezo avait surestimé ses capacités d’enseignement, car c’était là aussi une chose difficile."
 show ezo B1 S3 Y4 at left, xflip
